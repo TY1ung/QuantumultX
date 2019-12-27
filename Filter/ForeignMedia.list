@@ -186,3 +186,5 @@ USER-AGENT,YouTube*,Available
 DOMAIN-SUFFIX,googlevideo.com,Available
 DOMAIN-SUFFIX,youtube.com,Available
 DOMAIN,youtubei.googleapis.com,Available
+# > Chaturbate
+DOMAIN-SUFFIX,chaturbate.com,Available
