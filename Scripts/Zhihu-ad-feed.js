@@ -1,5 +1,6 @@
 /*
 Remove Zhihu ads
+
 Regex: ^https://api.zhihu.com/moments\?(action|feed_type)
 */
 
