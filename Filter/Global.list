@@ -548,6 +548,8 @@ DOMAIN-SUFFIX,onedrive.com,PROXY
 DOMAIN-SUFFIX,storage.live.com,PROXY
 DOMAIN-SUFFIX,storage.msn.com,PROXY
 DOMAIN,oneclient.sfx.ms,PROXY
+# > Cryptocurrency
+DOMAIN-SUFFIX,huobi.co,PROXY
 # > Other
 DOMAIN-SUFFIX,0rz.tw,PROXY
 DOMAIN-SUFFIX,4bluestones.biz,PROXY
