@@ -1,10 +1,4 @@
 /*
-Surge 4.0 :
-[Script]
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-# Get JingDong cookie.
-http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-~~~~~~~~~~~~~~~~
 QX 1.0.5 :
 [task_local]
 0 9 * * * JD_DailyBonus.js
