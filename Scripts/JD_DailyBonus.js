@@ -16,7 +16,7 @@ QX or Surge MITM = api.m.jd.com
 ~~~~~~~~~~~~~~~~
 */
 
-var log = true; //是否开启日志, false则关闭
+var log = false; //是否开启日志, false则关闭, true则开户
 var $nobyda = nobyda();
 var KEY = $nobyda.read("CookieJD");
 
