@@ -121,7 +121,7 @@ function JingDongBean() {
                 } else {
                   if (data.match(/continuityAward/)) {
                     if (cc.data.continuityAward.beanAward.beanCount) {
-                      merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + cc.data.continuityAward.beanAward.beanCount + "京豆 🐶"
+                      merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + cc.data.continuityAward.beanAward.beanCount + "京豆 🎉"
                       merge.JDBean.bean = cc.data.continuityAward.beanAward.beanCount
                       merge.JDBean.success = 1
                     } else {
@@ -132,7 +132,7 @@ function JingDongBean() {
                     if (data.match(/新人签到/)) {
                       const regex = /beanCount\":\"(\d+)\".+今天/;
                       const quantity = regex.exec(data)[1];
-                      merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + quantity + "京豆 🐶"
+                      merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + quantity + "京豆 🎉"
                       merge.JDBean.bean = quantity
                       merge.JDBean.success = 1
                     } else {
@@ -192,7 +192,7 @@ function JingDongTurn() {
               if (data.match(/(京豆|\"910582\")/)) {
                 if (log) console.log("京东商城-转盘签到成功response: \n" + data)
                 if (cc.data.prizeSendNumber) {
-                  merge.JDTurn.notify = "京东商城-转盘: 成功, 明细: " + cc.data.prizeSendNumber + "京豆 🐶"
+                  merge.JDTurn.notify = "京东商城-转盘: 成功, 明细: " + cc.data.prizeSendNumber + "京豆 🎉"
                   merge.JDTurn.success = 1
                   merge.JDTurn.bean = cc.data.prizeSendNumber
                 } else {
@@ -206,7 +206,7 @@ function JingDongTurn() {
                     JingDongTurn()
                   }, 2000)
                 } else if (data.match(/chances\":\"0\".+未中奖/)) {
-                  merge.JDTurn.notify = "京东商城-转盘: 成功, 状态: 未中奖 🐶"
+                  merge.JDTurn.notify = "京东商城-转盘: 成功, 状态: 未中奖 🎉"
                   merge.JDTurn.success = 1
                 } else if (data.match(/(T215|次数为0)/)) {
                   merge.JDTurn.notify = "京东商城-转盘: 失败, 原因: 已转过 ⚠️"
@@ -271,11 +271,11 @@ function JingRongBean() {
                   if (data.match(/\"resultCode\":\"00000\"/)) {
                     if (log) console.log("京东金融-京豆签到成功response: \n" + data)
                     if (c.resultData.data.rewardAmount != "0") {
-                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: " + c.resultData.data.rewardAmount + "京豆 🐶"
+                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: " + c.resultData.data.rewardAmount + "京豆 🎉"
                       merge.JRBean.success = 1
                       merge.JRBean.bean = c.resultData.data.rewardAmount
                     } else {
-                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: 无奖励 🐶"
+                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: 无奖励 🎉"
                       merge.JRBean.success = 1
                     }
                   } else {
@@ -428,7 +428,7 @@ function JRDoubleSign() {
                     merge.JRDSign.notify = "京东金融-双签: 失败, 原因: Cookie失效‼️"
                     merge.JRDSign.fail = 1
                   } else if (cc.resultData.data.businessData.businessCode == "000sq" && cc.resultData.data.businessData.businessMsg == "成功") {
-                    merge.JRDSign.notify = "京东金融-双签: 成功, 明细: 无奖励 🐶"
+                    merge.JRDSign.notify = "京东金融-双签: 成功, 明细: 无奖励 🎉"
                     merge.JRDSign.success = 1
                   } else {
                     merge.JRDSign.notify = "京东金融-双签: 失败, 原因: 未知 ⚠️"
@@ -469,7 +469,7 @@ function JingDongShake() {
           if (data.match(/prize/)) {
             if (log) console.log("京东商城-摇一摇签到成功response: \n" + data)
             if (cc.data.prizeBean) {
-              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: " + cc.data.prizeBean.count + "京豆 🐶"
+              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: " + cc.data.prizeBean.count + "京豆 🎉"
               merge.JDShake.bean = cc.data.prizeBean.count
               merge.JDShake.success = 1
             } else {
@@ -484,7 +484,7 @@ function JingDongShake() {
           } else {
             if (log) console.log("京东商城-摇一摇签到失败response: \n" + data)
             if (data.match(/true/)) {
-              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: 无奖励 🐶"
+              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: 无奖励 🎉"
               merge.JDShake.success = 1
             } else {
               if (data.match(/(无免费|8000005)/)) {
@@ -536,7 +536,7 @@ function JDGroceryStore() {
             if (log) console.log("京东商城-超市签到成功response: \n" + data)
             if (data.match(/(\"text\":\"\d+京豆\")/)) {
               beanQuantity = cc.awardList[0].text.match(/\d+/)
-              merge.JDGStore.notify = "京东商城-超市: 成功, 明细: " + beanQuantity + "京豆 🐶"
+              merge.JDGStore.notify = "京东商城-超市: 成功, 明细: " + beanQuantity + "京豆 🎉"
               merge.JDGStore.bean = beanQuantity
               merge.JDGStore.success = 1
             } else {
@@ -595,7 +595,7 @@ function JingDongClocks() {
             if (log) console.log("京东商城-钟表签到成功response: \n" + data)
             if (data.match(/(\"text\":\"\d+京豆\")/)) {
               beanQuantity = cc.awardList[0].text.match(/\d+/)
-              merge.JDClocks.notify = "京东商城-钟表: 成功, 明细: " + beanQuantity + "京豆 🐶"
+              merge.JDClocks.notify = "京东商城-钟表: 成功, 明细: " + beanQuantity + "京豆 🎉"
               merge.JDClocks.bean = beanQuantity
               merge.JDClocks.success = 1
             } else {
