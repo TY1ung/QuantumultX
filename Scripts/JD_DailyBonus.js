@@ -403,7 +403,7 @@ function JRDoubleSign() {
           if (data.match(/京豆X/)) {
             if (log) console.log("京东金融-双签签到成功response: \n" + data)
             if (cc.resultData.data.businessData.businessData.awardListVo[0].count) {
-              merge.JRDSign.notify = "京东金融-双签: 成功, 明细: " + cc.resultData.data.businessData.businessData.awardListVo[0].count + "京豆 🐶"
+              merge.JRDSign.notify = "京东金融-双签: 成功, 明细: " + cc.resultData.data.businessData.businessData.awardListVo[0].count + "京豆 🎉"
               merge.JRDSign.bean = cc.resultData.data.businessData.businessData.awardListVo[0].count
               merge.JRDSign.success = 1
             } else {
