@@ -111,7 +111,7 @@ function JingDongBean() {
                 if (log) console.log("京东商城-京豆签到成功response: \n" + data)
                 if (data.match(/dailyAward/)) {
                   if (cc.data.dailyAward.beanAward.beanCount) {
-                    merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + cc.data.dailyAward.beanAward.beanCount + "京豆 "
+                    merge.JDBean.notify = "京东商城-京豆: 成功, 明细: " + cc.data.dailyAward.beanAward.beanCount + "京豆 🎉"
                     merge.JDBean.bean = cc.data.dailyAward.beanAward.beanCount
                     merge.JDBean.success = 1
                   } else {
