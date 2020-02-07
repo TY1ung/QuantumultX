@@ -277,7 +277,7 @@ function JingRongBean() {
                       merge.JRBean.success = 1
                       merge.JRBean.bean = c.resultData.data.rewardAmount
                     } else {
-                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: 无奖励 🎉"
+                      merge.JRBean.notify = "京东金融-京豆: 成功, 明细: 无奖励 🤪"
                       merge.JRBean.success = 1
                     }
                   } else {
@@ -431,7 +431,7 @@ function JRDoubleSign() {
                     merge.JRDSign.notify = "京东金融-双签: 失败, 原因: Cookie失效‼️"
                     merge.JRDSign.fail = 1
                   } else if (cc.resultData.data.businessData.businessCode == "000sq" && cc.resultData.data.businessData.businessMsg == "成功") {
-                    merge.JRDSign.notify = "京东金融-双签: 成功, 明细: 无奖励 🎉"
+                    merge.JRDSign.notify = "京东金融-双签: 成功, 明细: 无奖励 🤪"
                     merge.JRDSign.success = 1
                   } else {
                     merge.JRDSign.notify = "京东金融-双签: 失败, 原因: 未知 ⚠️"
@@ -487,7 +487,7 @@ function JingDongShake() {
           } else {
             if (log) console.log("京东商城-摇一摇签到失败response: \n" + data)
             if (data.match(/true/)) {
-              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: 无奖励 🎉"
+              merge.JDShake.notify = "京东商城-摇摇: 成功, 明细: 无奖励 🤪"
               merge.JDShake.success = 1
             } else {
               if (data.match(/(无免费|8000005)/)) {
@@ -543,7 +543,7 @@ function JDGroceryStore() {
               merge.JDGStore.bean = beanQuantity
               merge.JDGStore.success = 1
             } else {
-              merge.JDGStore.notify = "京东商城-超市: 成功, 明细: 无京豆 🎉"
+              merge.JDGStore.notify = "京东商城-超市: 成功, 明细: 无京豆 🤪"
               merge.JDGStore.success = 1
             }
           } else {
@@ -602,7 +602,7 @@ function JingDongClocks() {
               merge.JDClocks.bean = beanQuantity
               merge.JDClocks.success = 1
             } else {
-              merge.JDClocks.notify = "京东商城-钟表: 成功, 明细: 无京豆 🎉"
+              merge.JDClocks.notify = "京东商城-钟表: 成功, 明细: 无京豆 🤪"
               merge.JDClocks.success = 1
             }
           } else {
@@ -661,7 +661,7 @@ function JingDongPet() {
               merge.JDPet.bean = beanQuantity
               merge.JDPet.success = 1
             } else {
-              merge.JDPet.notify = "京东商城-宠物: 成功, 明细: 无京豆 🎉"
+              merge.JDPet.notify = "京东商城-宠物: 成功, 明细: 无京豆 🤪"
               merge.JDPet.success = 1
             }
           } else {
@@ -719,7 +719,7 @@ function JDFlashSale() {
               merge.JDFSale.bean = cc.result.count
               merge.JDFSale.success = 1
             } else {
-              merge.JDFSale.notify = "京东商城-闪购: 成功, 明细: 无京豆 🎉"
+              merge.JDFSale.notify = "京东商城-闪购: 成功, 明细: 无京豆 🤪"
               merge.JDFSale.success = 1
             }
           } else {
@@ -778,7 +778,7 @@ function JingDongBook() {
               merge.JDBook.bean = beanQuantity
               merge.JDBook.success = 1
             } else {
-              merge.JDBook.notify = "京东商城-图书: 成功, 明细: 无京豆 🎉"
+              merge.JDBook.notify = "京东商城-图书: 成功, 明细: 无京豆 🤪"
               merge.JDBook.success = 1
             }
           } else {
@@ -840,7 +840,7 @@ function JDSecondhand() {
               merge.JDShand.bean = beanQuantity
               merge.JDShand.success = 1
             } else {
-              merge.JDShand.notify = "京东拍拍-二手: 成功, 明细: 无京豆 🎉"
+              merge.JDShand.notify = "京东拍拍-二手: 成功, 明细: 无京豆 🤪"
               merge.JDShand.success = 1
             }
           } else {
