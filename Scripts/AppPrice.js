@@ -145,7 +145,7 @@ if (isSurge) {
 // #endregion
 
 const region = "us"
-const appIds = ["916366645","1067198688","425073498"]
+const appIds = ["916366645","425073498","1067198688","1006995319","768160271","909587083"]
 
 var cacheData = $persistentStore.read()
 if (!cacheData) {
