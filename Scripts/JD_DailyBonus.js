@@ -208,7 +208,7 @@ function JingDongTurn() {
                     JingDongTurn()
                   }, 2000)
                 } else if (data.match(/chances\":\"0\".+未中奖/)) {
-                  merge.JDTurn.notify = "京东商城-转盘: 成功, 状态: 未中奖 🎉"
+                  merge.JDTurn.notify = "京东商城-转盘: 成功, 状态: 未中奖 🤪"
                   merge.JDTurn.success = 1
                 } else if (data.match(/(T215|次数为0)/)) {
                   merge.JDTurn.notify = "京东商城-转盘: 失败, 原因: 已转过 ⚠️"
