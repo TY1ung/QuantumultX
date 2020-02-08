@@ -1,6 +1,5 @@
 /*
-JingDong bonus fifteen in one
-~~~~~~~~~~~~~~~~
+JingDong bonus fifteen in one.V58
 QX 1.0.5 :
 [task_local]
 5 0 * * * JD_DailyBonus.js
@@ -1029,11 +1028,11 @@ function JingDongCash() {
           if (cc.busiCode == "0") {
             if (log) console.log("京东现金-红包签到成功response: \n" + data)
             if (cc.result.signResult.signData.amount) {
-              merge.JDCash.notify = "京东现金-红包: 成功, 明细: " + cc.result.signResult.signData.amount + "红包 🎉"
+              merge.JDCash.notify = "京东现金-红包: 成功, 明细: " + cc.result.signResult.signData.amount + "红包 🧧"
               merge.JDCash.QCash = cc.result.signResult.signData.amount
               merge.JDCash.success = 1
             } else {
-              merge.JDCash.notify = "京东现金-红包: 成功, 明细: 无红包 🤪"
+              merge.JDCash.notify = "京东现金-红包: 成功, 明细: 无红包 🧧"
               merge.JDCash.success = 1
             }
           } else {
