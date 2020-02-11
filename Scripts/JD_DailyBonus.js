@@ -1,10 +1,10 @@
 /*
-JingDong bonus twenty-one in one
-Update 2020.2.10 21:00 v63
+JingDong bonus twenty two in one
+Update 2020.2.11 18:00 v64
 ~~~~~~~~~~~~~~~~
 QX 1.0.5 :
 [task_local]
-1 0 * * * JD_DailyBonus.js
+5 0 * * * JD_DailyBonus.js
 [rewrite_local]
 # Get JingDong cookie. QX 1.0.5(188+):
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) url script-request-header JD_DailyBonus.js
@@ -35,6 +35,7 @@ var merge = {
   JRGame:  {success:0,fail:0,bean:0,steel:0,notify:''},
   JRSeeAds:{success:0,fail:0,bean:0,steel:0,notify:''},
   JDLive:  {success:0,fail:0,bean:0,steel:0,notify:''},
+  JDCare:  {success:0,fail:0,bean:0,steel:0,notify:''},
   JDPrize: {success:0,fail:0,bean:0,steel:0,notify:'',key:0},
   JRSteel: {success:0,fail:0,bean:0,steel:0,notify:'',TSteel:0},
   JDCash:  {success:0,fail:0,bean:0,steel:0,notify:'',Cash:0,TCash:0},
@@ -68,6 +69,7 @@ async function all() {//签到模块相互独立,您可注释某一行以禁用�
   await JingRSeeAds(); //金融看广告
   await JingRongGame(); //金融游戏大厅
   await JingDongLive(); //京东智能生活馆
+  await JDPersonalCare(); //京东个人护理馆
   await JDMagicCube(); //京东小魔方
   await JingDongPrize(); //京东抽大奖
   await JingDongShake(); //京东摇一摇
@@ -1132,6 +1134,68 @@ function JingDongShoes() {
   });
 }
 
+function JDPersonalCare() {
+
+  return new Promise(resolve => {
+    const JDPCUrl = {
+      url: 'https://api.m.jd.com/client.action?functionId=userSign',
+      headers: {
+        Cookie: KEY,
+      },
+      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22-1%22%7D%2C%22url%22%3A%22%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22STS6JHl931Aa7q%2Bo6vftHqo3RcKNOFFGCx0CyChzsNsaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200167278_29506468_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%229Q5M61a9M3kaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&client=apple&clientVersion=8.5.0&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&sign=bfda3167110017fc8ff5dedb11c61db6&st=1581362338975&sv=110"
+    };
+
+    $nobyda.post(JDPCUrl, function(error, response, data) {
+      try {
+        if (error) {
+          merge.JDCare.notify = "京东商城-个护: 签到接口请求失败 ‼️‼️"
+          merge.JDCare.fail = 1
+        } else {
+          const cc = JSON.parse(data)
+          if (data.match(/签到成功/)) {
+            if (log) console.log("京东商城-个护签到成功response: \n" + data)
+            if (data.match(/(\"text\":\"\d+京豆\")/)) {
+              beanQuantity = cc.awardList[0].text.match(/\d+/)
+              merge.JDCare.notify = "京东商城-个护: 成功, 明细: " + beanQuantity + "京豆 🎉"
+              merge.JDCare.bean = beanQuantity
+              merge.JDCare.success = 1
+            } else {
+              merge.JDCare.notify = "京东商城-个护: 成功, 明细: 无京豆 🤪"
+              merge.JDCare.success = 1
+            }
+          } else {
+            if (log) console.log("京东商城-个护签到失败response: \n" + data)
+            if (data.match(/(已签到|已领取)/)) {
+              merge.JDCare.notify = "京东商城-个护: 失败, 原因: 已签过 ⚠️"
+              merge.JDCare.fail = 1
+            } else {
+              if (data.match(/(不存在|已结束|未开始)/)) {
+                merge.JDCare.notify = "京东商城-个护: 失败, 原因: 活动已结束 ⚠️"
+                merge.JDCare.fail = 1
+              } else {
+                if (cc.code == 3) {
+                  merge.JDCare.notify = "京东商城-个护: 失败, 原因: Cookie失效‼️"
+                  merge.JDCare.fail = 1
+                } else if (cc.code == "600") {
+                  merge.JDCare.notify = "京东商城-个护: 失败, 原因: 认证失败 ⚠️"
+                  merge.JDCare.fail = 1
+                } else {
+                  merge.JDCare.notify = "京东商城-个护: 失败, 原因: 未知 ⚠️"
+                  merge.JDCare.fail = 1
+                }
+              }
+            }
+          }
+        }
+        resolve('done')
+      } catch (eor) {
+        $nobyda.notify("京东商城-个护" + eor.name + "‼️", JSON.stringify(eor), eor.message)
+        resolve('done')
+      }
+    })
+  });
+}
+
 function JDMagicCube() {
 
   return new Promise(resolve => {
@@ -1412,7 +1476,7 @@ function JingDongPrize() {
                         merge.JDPrize.bean = c.data.beanNumber
                       } else if (data.match(/\"couponInfoVo\"/)) {
                         if (data.match(/\"limitStr\"/)) {
-                          merge.JDPrize.notify = "京东商城-大奖: 成功, 明细: 优惠券→ " + c.data.couponInfoVo.limitStr
+                          merge.JDPrize.notify = "京东商城-大奖: 获得满" + c.data.couponInfoVo.quota + "减" + c.data.couponInfoVo.discount + "优惠券→ " + c.data.couponInfoVo.limitStr
                           merge.JDPrize.success = 1
                         } else {
                           merge.JDPrize.notify = "京东商城-大奖: 成功, 明细: 优惠券"
