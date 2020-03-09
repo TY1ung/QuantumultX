@@ -1,23 +1,19 @@
 /*
 京东多合一签到脚本
-更新于: 2020.2.27 17:30 v73
+更新于: 2020.3.6 22:00 v77
 有效接口: 21
-
 ~~~~~~~~~~~~~~~~
-
 QX 1.0.5+ :
-
 [task_local]
 # 京东多合一签到
+# 注意此为本地路径, 请根据实际情况自行调整
 5 0 * * * JD_DailyBonus.js
-
 [rewrite_local]
 # 获取京东Cookie. 
 # 注意此为本地路径, 请根据实际情况自行调整.
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header JD_DailyBonus.js
-
 ~~~~~~~~~~~~~~~~
-QX MITM = api.m.jd.com
+QX 或 Surge 或 Loon MITM = api.m.jd.com
 ~~~~~~~~~~~~~~~~
 */
 
@@ -26,8 +22,7 @@ var stop = 0; //自定义延迟签到,单位毫秒,(如填200则每个接口延�
 var $nobyda = nobyda();
 
 //  填此处↓↓↓
-var Key = ''; //如果使用JSBox或Node.js, 此处自行抓包填写您的Cookie.
-//  填此处↑↑↑
+var Key = ''; //如果使用JSBox或Node.js, 单引号内自行填写您抓取的Cookie.
 
 var KEY = Key?Key:$nobyda.read("CookieJD")
 async function all() {//签到模块相互独立,您可注释某一行以禁用某个接口.
@@ -763,8 +758,8 @@ function JDFlashSale(s) {
               merge.JDFSale.fail = 1
             } else {
               if (data.match(/(不存在|已结束|\"2008\")/)) {
-                merge.JDFSale.notify = "京东商城-闪购: 失败, 原因: 需瓜分 ⚠️"
-                merge.JDFSale.fail = 1
+                //merge.JDFSale.notify = "京东商城-闪购: 失败, 原因: 需瓜分 ⚠️"
+                //merge.JDFSale.fail = 1
                 FlashSaleDivide(s)
               } else {
                 if (data.match(/(\"code\":\"3\"|\"1003\")/)) {
@@ -801,36 +796,36 @@ function FlashSaleDivide(s) {
     $nobyda.post(Url, function(error, response, data) {
       try {
         if (error) {
-          merge.JDFSale.notify += "\n京东闪购-瓜分: 签到接口请求失败 ‼️‼️"
-          merge.JDFSale.fail += 1
+          merge.JDFSale.notify = "京东闪购-瓜分: 签到接口请求失败 ‼️‼️"
+          merge.JDFSale.fail = 1
         } else {
           const cc = JSON.parse(data)
           if (cc.result.code == 0) {
             if (log) console.log("京东闪购-瓜分签到成功response: \n" + data)
             if (data.match(/(\"jdBeanNum\":\d+)/)) {
-              merge.JDFSale.notify += "\n京东闪购-瓜分: 成功, 明细: " + cc.result.jdBeanNum + "京豆 🐶"
+              merge.JDFSale.notify = "京东闪购-瓜分: 成功, 明细: " + cc.result.jdBeanNum + "京豆 🐶"
               merge.JDFSale.bean = cc.result.jdBeanNum
               merge.JDFSale.success = 1
             } else {
-              merge.JDFSale.notify += "\n京东闪购-瓜分: 成功, 明细: 无京豆 🐶"
+              merge.JDFSale.notify = "京东闪购-瓜分: 成功, 明细: 无京豆 🐶"
               merge.JDFSale.success = 1
             }
           } else {
             if (log) console.log("京东闪购-瓜分签到失败response: \n" + data)
             if (data.match(/(已参与|已领取|\"2006\")/)) {
-              merge.JDFSale.notify += "\n京东闪购-瓜分: 失败, 原因: 已瓜分 ⚠️"
-              merge.JDFSale.fail += 1
+              merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: 已瓜分 ⚠️"
+              merge.JDFSale.fail = 1
             } else {
               if (data.match(/(不存在|已结束|未开始|\"2008\")/)) {
-                merge.JDFSale.notify += "\n京东闪购-瓜分: 失败, 原因: 活动已结束 ⚠️"
-                merge.JDFSale.fail += 1
+                merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: 活动已结束 ⚠️"
+                merge.JDFSale.fail = 1
               } else {
                 if (data.match(/(\"code\":\"1003\"|未获取)/)) {
-                  merge.JDFSale.notify += "\n京东闪购-瓜分: 失败, 原因: Cookie失效‼️"
-                  merge.JDFSale.fail += 1
+                  merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: Cookie失效‼️"
+                  merge.JDFSale.fail = 1
                 } else {
-                  merge.JDFSale.notify += "\n京东闪购-瓜分: 失败, 原因: 未知 ⚠️"
-                  merge.JDFSale.fail += 1
+                  merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: 未知 ⚠️"
+                  merge.JDFSale.fail = 1
                 }
               }
             }
@@ -977,7 +972,7 @@ function JingDMakeup(s) {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded", Cookie: KEY,
       },
-      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22-1%22%7D%2C%22url%22%3A%22%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22BrrbMFwDMOFxMQzzIJNfYEoNLQhhUfcDeTnHobclnXIaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200138455_29326119_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22QrWSYkHHb9EaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&client=apple&clientVersion=8.5.0&d_brand=apple&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&sign=c097f212b640b012dde453e38b170181&st=1581083231607&sv=120"
+      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22-1%22%7D%2C%22url%22%3A%22%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22Ivkdqs6fb5SN1HsgsPsE7vJN9NGIydei6Ik%2B1rAyngwaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200138455_30206794_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22YU1cvfWmabwaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&build=167092&client=apple&clientVersion=8.5.2&d_brand=apple&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&scope=11&sign=cc38bf6e24fd65e4f43868ccbe679f85&st=1582992598833&sv=112"
     };
 
     $nobyda.post(JDMUrl, function(error, response, data) {
@@ -1039,7 +1034,7 @@ function JingDongClean(s) {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded", Cookie: KEY,
       },
-      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22-1%22%7D%2C%22url%22%3A%22%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%220DCYitB5zjVNs1uJtgAyvLQOzyQVTH%2BFMDqRxeYve3MaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200561054_30225115_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22sA4xbQtr7KEaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&build=167058&client=apple&clientVersion=8.5.0&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&partner=apple&sign=076d7b52e4463e626bbbb1f372321579&st=1582795255840&sv=110"
+      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22-1%22%7D%2C%22url%22%3A%22%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22toAaSwvOdZQ24LjB14tAfLpo1LN3nmmO%5C%2F%5C%2FTmvE54qx0aZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200561054_30543015_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22gGrX2PS7K%2B4aZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&client=apple&clientVersion=8.5.2&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&sign=017be567539bc398acaeca0c676f6d68&st=1583337795433&sv=100"
     };
 
     $nobyda.post(JDCUUrl, function(error, response, data) {
@@ -1283,7 +1278,7 @@ function JDPersonalCare(s) {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded", Cookie: KEY,
       },
-      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22https%3A%5C%2F%5C%2Fpro.m.jd.com%5C%2Fmall%5C%2Factive%5C%2FNJ1kd1PJWhwvhtim73VPsD1HwY3%5C%2Findex.html%3FcollectionId%3D294%22%7D%2C%22url%22%3A%22https%3A%5C%2F%5C%2Fpro.m.jd.com%5C%2Fmall%5C%2Factive%5C%2FNJ1kd1PJWhwvhtim73VPsD1HwY3%5C%2Findex.html%3FcollectionId%3D294%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22VbhIOAHq8pYnqG3c9OiSBOOM48CwdylSzuzWwekDqjAaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200167278_30014261_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22WclrLgxjzxgaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&client=apple&clientVersion=8.5.0&d_brand=apple&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&osVersion=13.3.1&partner=apple&scope=11&screen=1242%2A2208&sign=c80f594767e30db47d5003a90cf59884&st=1582473893299&sv=111"
+      body: "body=%7B%22riskParam%22%3A%7B%22eid%22%3A%22O5X6JYMZTXIEX4VBCBWEM5PTIZV6HXH7M3AI75EABM5GBZYVQKRGQJ5A2PPO5PSELSRMI72SYF4KTCB4NIU6AZQ3O6C3J7ZVEP3RVDFEBKVN2RER2GTQ%22%2C%22shshshfpb%22%3A%22v1%5C%2FzMYRjEWKgYe%2BUiNwEvaVlrHBQGVwqLx4CsS9PH1s0s0Vs9AWk%2B7vr9KSHh3BQd5NTukznDTZnd75xHzonHnw%3D%3D%22%2C%22pageClickKey%22%3A%22Babel_Sign%22%2C%22childActivityUrl%22%3A%22https%3A%5C%2F%5C%2Fpro.m.jd.com%5C%2Fmall%5C%2Factive%5C%2FNJ1kd1PJWhwvhtim73VPsD1HwY3%5C%2Findex.html%3FcollectionId%3D294%22%7D%2C%22url%22%3A%22https%3A%5C%2F%5C%2Fpro.m.jd.com%5C%2Fmall%5C%2Factive%5C%2FNJ1kd1PJWhwvhtim73VPsD1HwY3%5C%2Findex.html%3FcollectionId%3D294%22%2C%22params%22%3A%22%7B%5C%22enActK%5C%22%3A%5C%22s55ikt1mqamq2urVohl2XynV6sTk2F7AcEqmlRXiAEwaZs%5C%2Fn4coLNw%3D%3D%5C%22%2C%5C%22isFloatLayer%5C%22%3Afalse%2C%5C%22ruleSrv%5C%22%3A%5C%2200167278_30235275_t1%5C%22%2C%5C%22signId%5C%22%3A%5C%22CwZft%2B%2BK85YaZs%5C%2Fn4coLNw%3D%3D%5C%22%7D%22%2C%22geo%22%3A%7B%22lng%22%3A%220.000000%22%2C%22lat%22%3A%220.000000%22%7D%7D&client=apple&clientVersion=8.5.2&openudid=1fce88cd05c42fe2b054e846f11bdf33f016d676&partner=apple&scope=11&screen=1242%2A2208&sign=c80eda36646cc12b5cd8909976addb68&st=1583078529622&sv=121"
     };
 
     $nobyda.post(JDPCUrl, function(error, response, data) {
