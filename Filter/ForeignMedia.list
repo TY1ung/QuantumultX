@@ -188,6 +188,7 @@ USER-AGENT,PBS*,Available
 DOMAIN-SUFFIX,pbs.org,Available
 # > Pornhub
 DOMAIN-SUFFIX,phncdn.com,Available
+DOMAIN-SUFFIX,phprcdn.com,Available
 DOMAIN-SUFFIX,pornhub.com,Available
 DOMAIN-SUFFIX,pornhubpremium.com,Available
 # > 台湾好
