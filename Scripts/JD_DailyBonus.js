@@ -1,7 +1,7 @@
 /*
 京东多合一签到脚本
-更新于: 2020.3.19 20:50 v84
-有效接口: 22
+更新于: 2020.3.20 19:00 v84.1
+有效接口: 23
 ~~~~~~~~~~~~~~~~
 QX 1.0.5+ :
 [task_local]
@@ -41,7 +41,7 @@ async function all() {//签到模块相互独立,您可注释某一行以禁用�
   await JingDongCash(stop); //京东现金红包
   await JingDongShoes(stop); //京东鞋靴馆
   await JingDongFood(stop); //京东美食馆
-  //await JingRSeeAds(stop); //金融看广告
+  await JingRSeeAds(stop); //金融看广告
   await JingRongGame(stop); //金融游戏大厅
   await JingDongLive(stop); //京东智能生活馆
   await JingDongClean(stop); //京东清洁馆
@@ -1407,10 +1407,10 @@ function JingRSeeAds(s) {
                 if (data.match(/(\"resultCode\":3|先登录)/)) {
                   merge.JRSeeAds.notify = "京东金融-广告: 失败, 原因: Cookie失效‼️"
                   merge.JRSeeAds.fail = 1
-                } else {
-                  merge.JRSeeAds.notify = "京东金融-广告: 失败, 原因: 未知 ⚠️"
-                  merge.JRSeeAds.fail = 1
-                }
+                } //else {
+                  //merge.JRSeeAds.notify = "京东金融-广告: 失败, 原因: 未知 ⚠️"
+                  //merge.JRSeeAds.fail = 1
+                //}
               }
             }
           }
