@@ -2,6 +2,44 @@
 京东多合一签到脚本
 更新于: 2020.3.26 23:35 v0.90
 有效接口: 22+
+兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+TG频道: @NobyDa 
+问题反馈: @NobyDa_bot 
+如果转载: 请注明出处
+*************************
+【 JSbox, Node.js 说明 】 :
+*************************
+开启抓包app后, Safari浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历后, 返回抓包app搜索关键字 functionId=signBean 复制请求头Cookie填入以下Key处的单引号内即可 */
+
+var Key = ''; //单引号内自行填写您抓取的Cookie
+
+var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
+
+/* 注1: 以上选项仅针对于JsBox或Node.js, 如果使用QX,Surge,Loon, 请使用脚本获取Cookie.
+   注2: 双账号用户抓取"账号1"Cookie后,请勿点击退出账号,请清除浏览器资料或更换浏览器登录"账号2"抓取.
+   注3: 如果复制的Cookie开头为"Cookie: "请把它删除后填入.
+   注4: 如果使用QX,Surge,Loon并获取Cookie后, 再重复填写以上选项, 则签到优先读取以上Cookie.
+*************************
+【 QX, Surge, Loon 说明 】 :
+*************************
+初次使用时, app配置文件添加脚本配置,并启用Mitm后, Safari浏览器打开登录 https://bean.m.jd.com ,点击签到并且出现签到日历后, 如果通知获得cookie成功, 则可以使用此签到脚本。 注: 请勿在京东APP内获取!!!
+由于cookie的有效性(经测试网页Cookie有效周期最长31天)，如果脚本后续弹出cookie无效的通知，则需要重复上述步骤。 签到脚本将在每天的凌晨0:05执行, 您可以修改执行时间。 因部分接口京豆限量领取, 建议调整为凌晨签到。
+*************************
+【 配置双京东账号签到说明 】 : 
+*************************
+正确配置QX、Surge、Loon后, 并使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号,并清除浏览器资料或更换浏览器登录"账号2"获取即可.
+注: 获取"账号1"或"账号2"的Cookie后, 后续仅可更新该"账号1"或"账号2"的Cookie.
+如需写入其他账号,您可开启脚本内"DeleteCookie"选项以清除Cookie
+*************************
+【Surge, Loon2.1+ 脚本配置】:
+*************************
+[Script]
+# 京东多合一签到
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# 获取京东Cookie.
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+[MITM]
+hostname = api.m.jd.com
 *************************
 【 QX 1.0.5+ 脚本配置 】 :
 *************************
