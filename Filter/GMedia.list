@@ -36,9 +36,9 @@ USER-AGENT,YouTubeMusic*,GMedia
 # > All4
 USER-AGENT,All4*,GMedia
 DOMAIN-SUFFIX,c4assets.com,GMedia
-DOMAIN-SUFFIX,channel4.com,AGMedia
+DOMAIN-SUFFIX,channel4.com,GMedia
 # > AbemaTV
-USER-AGENT,AbemaTV*,AGMedia
+USER-AGENT,AbemaTV*,GMedia
 DOMAIN-SUFFIX,abema.io,GMedia
 DOMAIN-SUFFIX,ameba.jp,GMedia
 DOMAIN-SUFFIX,abema.tv,GMedia
