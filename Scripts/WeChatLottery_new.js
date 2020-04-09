@@ -16,11 +16,15 @@
 Author: zZPiglet
 ----------
 更新日志：
+- 2020/04/09：
+更新接口 v1 -> v2，看不懂这个小程序反复横跳的操作。
+修改 token 失效时的通知。
+修改部分细节。
 - 2020/04/07：
 注意⚠️：更新接口 v2 -> v1，注意更改 rewrite，正则部分变更为「^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign」。
 因有反馈关注公众号也不一定会自动参加"幸运大礼"，故取消"幸运大礼"是否自动抽奖设置并默认进行自动抽奖。
 增加"幸运大礼"三等奖开奖。（大多为三等奖，故默认以三等奖接口开奖，暂未进行奖项判断，奖项判断可行，先咕咕咕）
-增加自动兑换（*测试*），可自行更改 exchangeMoney 参数为需要兑换的金额，默认为 50，若不需要请改为 0。若有问题请先自行回滚上一版本。
+增加自动兑换（*测试*），可自行更改 exchangeMoney 参数为需要兑换的金额，默认为 50，若不需要请改为 0。
 由于小程序更新后 token 失效时段不确定，且 token 有效期不再很持久，建议将 rewrite 及 hostname 填在本地而非使用订阅，以便快速更新 token。
 若有大佬中奖"幸运大礼"中一等奖或二等奖，希望可以抓包开奖过程并提交至 issue。
 步骤：进微信小程序 -> 打开 Thor（或可导入 Thor 查看记录的抓包软件）-> 使用默认的全局抓包 -> 点小程序里的"我的-中奖纪录-中奖的一等奖或二等奖幸运大礼-开奖" -> 关 Thor -> 导出此次抓包所有记录
@@ -64,7 +68,7 @@ hostname = api-hdcj.9w9.com
 //填入想要自动兑换的金额，默认 50。若不需要请改为 0。
 const exchangeMoney = 50 //5, 20, 0
 
-const mainURL = 'https://api-hdcj.9w9.com/v1/'
+const mainURL = 'https://api-hdcj.9w9.com/v2/'
 const CheckinURL = mainURL + 'sign/sign'
 const CheckindataURL = mainURL + 'sign'
 const DataURL = mainURL + 'informations'
@@ -82,20 +86,27 @@ const TokenName = '活动抽奖'
 const TokenKey = 'wclotterynew'
 const UidKey = 'wcluid'
 const datainfo = {}
+let ValidToken = true
 const $cmp = compatibility()
 
 async function Sign() {
-    await Checkin()
-    await Join()
-    await Exchangerandom()
-    await Task()
-    await Win()
-    await Share()
-    await GetData()
-    if (exchangeMoney) {
-        await Exchange()
+    await Valid()
+    if (ValidToken) {
+        await Checkin()
+        await Join()
+        await Exchangerandom()
+        await Task()
+        await Win()
+        await Share()
+        await GetData()
+        if (exchangeMoney) {
+            await Exchange()
+        }
+        await notify()
+    } else {
+        $cmp.notify('活动抽奖 - Token 失效❗️', '', '脚本终止，请重新获取 Token')
     }
-    await notify()
+
 }
 
 if ($cmp.isRequest) {
@@ -133,6 +144,39 @@ function GetToken() {
     }
 }
 
+function Valid() {
+    return new Promise(resolve => {
+        let LotteryData = {
+            url: DataURL,
+            headers: {
+                "token" : $cmp.read('wclotterynew'),
+            }
+        }
+        $cmp.get(LotteryData, function (error, response, data) {
+            try {
+                if (response.status == 200) {
+                    const obj = JSON.parse(data)
+                    datainfo.exchangeId = 52
+                    datainfo.exchangeStatus = obj.data.user_info.lucky_count >= 12000 ? true : false
+                    if (exchangeMoney == 5) {
+                        datainfo.exchangeId = 454
+                        datainfo.exchangeStatus = obj.data.user_info.lucky_count >= 2500 ? true : false
+                    } else if (exchangeMoney == 20) {
+                        datainfo.exchangeId = 455
+                        datainfo.exchangeStatus = obj.data.user_info.lucky_count >= 8000 ? true : false
+                    }
+                } else {
+                    ValidToken = false
+                }
+                resolve ('done')
+            } catch (e) {
+                $cmp.notify("活动抽奖有效期" + e.name + "‼️", JSON.stringify(e), e.message)
+                resolve('done')
+            }
+        })
+    })
+}
+
 function Checkin() {
     return new Promise(resolve => {
         const LotteryCheckin = {
@@ -163,14 +207,14 @@ function Checkin() {
                             datainfo.luckcoin = checkindata.data.sign_lucky[day - 1]
                             resolve('done')
                         } catch (e) {
-                            $cmp.notify("活动抽奖签到结果"+e.name+"‼️", JSON.stringify(e), e.message)
+                            $cmp.notify("活动抽奖签到结果" + e.name + "‼️", JSON.stringify(e), e.message)
                             resolve('done')
                         }
                     })
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -203,6 +247,7 @@ function Join() {
                 const index = JSON.parse(data)
                 let list = index.data.mr_data
                 for (var l of list) {
+                    let lname = l.sponsor_name
                     if (l.join_status == true) {
                         datainfo.skipedCnt += 1
                     } else {
@@ -218,11 +263,11 @@ function Join() {
                                     datainfo.joinCnt += 1
                                 } else {
                                     datainfo.failCnt += 1
-                                    $cmp.log('\n' + l.sponsor_name + '：' + joindata.message.error)
+                                    $cmp.log('\n' + lname + '：' + joindata.message.error)
                                 }
                                 resolve('done')
                             } catch (e) {
-                                $cmp.notify("活动抽奖参与\"${l.sponsor_name}\"抽奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                                $cmp.notify("活动抽奖参与" + lname + "抽奖" + e.name + "‼️", JSON.stringify(e), e.message)
                                 resolve('done')
                             }
                         })
@@ -230,7 +275,7 @@ function Join() {
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖获取抽奖列表"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖获取抽奖列表" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -239,6 +284,7 @@ function Join() {
                 const index = JSON.parse(data)
                 let list = index.data.tj_data
                 for (var l of list) {
+                    let lname = l.sponsor_name
                     if (l.join_status == true) {
                         datainfo.skipedCnt += 1
                     } else {
@@ -254,11 +300,11 @@ function Join() {
                                     datainfo.joinCnt += 1
                                 } else {
                                     datainfo.failCnt += 1
-                                    $cmp.log('\n' + l.sponsor_name + '：' + joindata.message.error)
+                                    $cmp.log('\n' + lname + '：' + joindata.message.error)
                                 }
                                 resolve('done')
                             } catch (e) {
-                                $cmp.notify("活动抽奖参与\"${l.sponsor_name}\"抽奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                                $cmp.notify("活动抽奖参与" + lname + "抽奖" + e.name + "‼️", JSON.stringify(e), e.message)
                                 resolve('done')
                             }
                         })
@@ -266,43 +312,34 @@ function Join() {
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖获取抽奖列表"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖获取抽奖列表" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
         $cmp.get(LotteryLuckGift, function(error, response, data) {
             try{
                 const luckgiftindex = JSON.parse(data)
-                let lglist = luckgiftindex.data.hb_data
-                for (var lgl of lglist) {
-                    if (lgl.join_status == 0) {
-                        datainfo.skipedCnt += 1
-                    } else {
-                        const LotteryJoin = {
-                            url: LotteryURL + lgl.id + '/join',
-                            headers:  commonheaders,
-                            body: { "template": "" }
-                        }
-                        $cmp.post(LotteryJoin, function (error, response, data) {
-                            try{
-                                const joindata = JSON.parse(data)
-                                if (joindata.success == true) {
-                                    datainfo.joinCnt += 1
-                                } else {
-                                    datainfo.failCnt += 1
-                                    $cmp.log('\n' + lgl.sponsor_name + '：' + joindata.message.error)
-                                }
-                                resolve('done')
-                            } catch (e) {
-                                $cmp.notify("活动抽奖参与\"${lgl.sponsor_name}\"抽奖"+e.name+"‼️", JSON.stringify(e), e.message)
-                                resolve('done')
-                            }
-                        })
-                    }
+                let newlg = luckgiftindex.data.hb_data[0]
+                const LotteryJoin = {
+                    url: LotteryURL + newlg.id + '/join',
+                    headers:  commonheaders,
+                    body: { "template": "" }
                 }
+                $cmp.post(LotteryJoin, function (error, response, data) {
+                    try{
+                        const joindata = JSON.parse(data)
+                        if (joindata.success == true) {
+                            datainfo.joinCnt += 1
+                        }
+                        resolve('done')
+                    } catch (e) {
+                        $cmp.notify("活动抽奖幸运大礼" + e.name + "‼️", JSON.stringify(e), e.message)
+                        resolve('done')
+                    }
+                })
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖获取抽奖列表"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖获取抽奖列表" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -329,7 +366,7 @@ function Exchangerandom() {
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖随机兑换结果"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖随机兑换结果" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -360,6 +397,7 @@ function Task() {
                         url: TaskURL + newl.id,
                         headers:  commonheaders
                     }
+                    let ename = newl.name
                     $cmp.post(LotteryTask, function (error, response, data) {
                         try{
                             const task = JSON.parse(data)
@@ -368,11 +406,11 @@ function Task() {
                                 datainfo.taskcoin += Number(task.data.lucky_count)
                             } else if (task.success == false) {
                                 datainfo.taskfailCnt += 1
-                                $cmp.log('\n' + newl.name + '：' + task.message.error)
+                                $cmp.log('\n' + ename + '：' + task.message.error)
                             }
                             resolve('done')
                         } catch (e) {
-                            $cmp.notify("活动抽奖\"${newl.name}\"任务"+e.name+"‼️", JSON.stringify(e), e.message)
+                            $cmp.notify("活动抽奖" + ename + "任务" + e.name + "‼️", JSON.stringify(e), e.message)
                             resolve('done')
                         }
                     })
@@ -382,6 +420,7 @@ function Task() {
                         url: TaskURL + dayl.id,
                         headers:  commonheaders
                     }
+                    let ename = dayl.name
                     $cmp.post(LotteryTask, function (error, response, data) {
                         try{
                             const task = JSON.parse(data)
@@ -390,11 +429,11 @@ function Task() {
                                 datainfo.taskcoin += Number(task.data.lucky_count)
                             } else if (task.success == false) {
                                 datainfo.taskfailCnt += 1
-                                $cmp.log('\n' + dayl.name + '：' + task.message.error)
+                                $cmp.log('\n' + ename + '：' + task.message.error)
                             }
                             resolve('done')
                         } catch (e) {
-                            $cmp.notify("活动抽奖\"${dayl.name}\"任务"+e.name+"‼️", JSON.stringify(e), e.message)
+                            $cmp.notify("活动抽奖" + ename + "任务" + e.name + "‼️", JSON.stringify(e), e.message)
                             resolve('done')
                         }
                     })
@@ -404,6 +443,7 @@ function Task() {
                         url: TaskURL + weekl.id,
                         headers:  commonheaders
                     }
+                    let ename = weekl.name
                     $cmp.post(LotteryTask, function (error, response, data) {
                         try{
                             const task = JSON.parse(data)
@@ -412,18 +452,18 @@ function Task() {
                                 datainfo.taskcoin += Number(task.data.lucky_count)
                             } else if (task.success == false) {
                                 datainfo.taskfailCnt += 1
-                                $cmp.log('\n' + weekl.name + '：' + task.message.error)
+                                $cmp.log('\n' + ename + '：' + task.message.error)
                             }
                             resolve('done')
                         } catch (e) {
-                            $cmp.notify("活动抽奖\"${weekl.name}\"任务"+e.name+"‼️", JSON.stringify(e), e.message)
+                            $cmp.notify("活动抽奖" + ename + "任务" + e.name + "‼️", JSON.stringify(e), e.message)
                             resolve('done')
                         }
                     })
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖任务列表"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖任务列表" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -464,7 +504,7 @@ function Win() {
                                     }
                                     resolve('done')
                                 } catch (e) {
-                                    $cmp.notify("活动抽奖\"${winl.sponsor_name}\"开奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                                    $cmp.notify("活动抽奖" + winl.sponsor_name + "开奖" + e.name + "‼️", JSON.stringify(e), e.message)
                                     resolve('done')
                                 }
                             })
@@ -482,7 +522,7 @@ function Win() {
                                     }
                                     resolve('done')
                                 } catch (e) {
-                                    $cmp.notify("活动抽奖\"${winl.sponsor_name}\"开奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                                    $cmp.notify("活动抽奖" + winl.sponsor_name + "开奖" + e.name + "‼️", JSON.stringify(e), e.message)
                                     resolve('done')
                                 }
                             })
@@ -507,7 +547,7 @@ function Win() {
                                             }
                                             resolve('done')
                                         } catch (e) {
-                                            $cmp.notify("活动抽奖\"${winl.sponsor_name}\"开奖"+e.name+"‼️", JSON.stringify(e), e.message)
+                                            $cmp.notify("活动抽奖" + winl.sponsor_name + "开奖" + e.name + "‼️", JSON.stringify(e), e.message)
                                             resolve('done')
                                         }
                                     })
@@ -517,7 +557,7 @@ function Win() {
                     }
                     resolve('done')
                 } catch (e) {
-                    $cmp.notify("活动抽奖任务列表"+e.name+"‼️", JSON.stringify(e), e.message)
+                    $cmp.notify("活动抽奖任务列表" + e.name + "‼️", JSON.stringify(e), e.message)
                     resolve('done')
                 }
             })
@@ -544,7 +584,7 @@ function Share() {
                 }
                 resolve('done')
             } catch (e) {
-                $cmp.notify("活动抽奖分享"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖分享" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
@@ -566,28 +606,18 @@ function GetData() {
                 datainfo.luckmoney = obj.data.user_info.money;
                 resolve ('done')
             } catch (e) {
-                $cmp.notify("活动抽奖结果"+e.name+"‼️", JSON.stringify(e), e.message)
+                $cmp.notify("活动抽奖结果" + e.name + "‼️", JSON.stringify(e), e.message)
                 resolve('done')
             }
         })
     })
-
 }
 
 function Exchange() {
     return new Promise(resolve => {
-        let exchangeId = 52
-        let exchangeStatus = datainfo.allluckcoin >= 12000 ? true : false
-        if (exchangeMoney == 5) {
-            exchangeId = 454
-            exchangeStatus = datainfo.allluckcoin >= 2500 ? true : false
-        } else if (exchangeMoney == 20) {
-            exchangeId = 455
-            exchangeStatus = datainfo.allluckcoin >= 8000 ? true : false
-        }
-        if (exchangeStatus) {
+        if (datainfo.exchangeStatus) {
             const LotteryExchange = {
-                url: ExchangeURL + exchangeId,
+                url: ExchangeURL + datainfo.exchangeId,
                 headers: {
                     "token" : $cmp.read('wclotterynew'),
                     "uid" : $cmp.read('wcluid'),
@@ -604,7 +634,7 @@ function Exchange() {
                     }
                     resolve('done')
                 } catch (e) {
-                    $cmp.notify("活动抽奖兑换结果"+e.name+"‼️", JSON.stringify(e), e.message)
+                    $cmp.notify("活动抽奖兑换结果" + e.name + "‼️", JSON.stringify(e), e.message)
                     resolve('done')
                 }
             })
@@ -622,7 +652,6 @@ function notify() {
             let coupon = ''
             let em = ''
             let exmoney = 0
-            let a = true
             if (datainfo.error == 1) {
                 $cmp.log("wclcheckin failed response: \n" + datainfo.errormessage)
                 Title += '签到接口请求失败️'
@@ -633,14 +662,6 @@ function notify() {
                     detail += '签到获得 ' + datainfo.luckcoin + ' 币，'
                 } else if (datainfo.checkin.message.code == 1) {
                     Title += '重复签到！😊'
-                } else if (datainfo.checkin.message.error == 'token expired') {
-                    Title += 'Token 失效❗️'
-                    em += '签到 Token 失效，请重新获取。'
-                    a = false
-                } else if (datainfo.checkin.message.error == 'token missing') {
-                    Title += '未获取 Token⚠️️'
-                    em += '请先获取 Token。'
-                    a = false
                 } else {
                     $cmp.log("wclcheckin failed response: \n" + JSON.stringify(datainfo.checkin))
                     Title += '签到失败‼️'
@@ -657,8 +678,6 @@ function notify() {
                     detail += '分享获得 ' + datainfo.share.data.count + ' 币，'
                 } else if (datainfo.share.message.code == 1) {
                     subTitle += '分享重复 '
-                } else if (datainfo.share.message.error == 'token missing' || datainfo.share.message.error == 'token expired') {
-
                 } else {
                     $cmp.log("wclshare failed response: \n" + JSON.stringify(datainfo.share))
                     subTitle += '分享失败 '
@@ -683,8 +702,6 @@ function notify() {
                         exmoney += Number(datainfo.exchangerandom.data.money)
                     } else if (datainfo.exchangerandom.message.code == 1) {
                         subTitle += '兑换重复 '
-                    } else if (datainfo.exchangerandom.message.error == 'token missing' || datainfo.exchangerandom.message.error == 'token expired') {
-
                     } else {
                         $cmp.log("wclexchange failed response: \n" + JSON.stringify(datainfo.exchangerandom))
                         subTitle += '兑换失败 '
@@ -694,8 +711,6 @@ function notify() {
                 if (datainfo.exchange) {
                     if (datainfo.exchange.success == true) {
                         exmoney += Number(datainfo.exchange.data.money)
-                    } else if (datainfo.exchange.message.error == 'token missing' || datainfo.exchange.message.error == 'token expired') {
-
                     } else {
                         $cmp.log("wclexchange failed response: \n" + JSON.stringify(datainfo.exchange))
                         subTitle += '兑换 ' + exchangeMoney + ' 元失败 '
@@ -718,9 +733,7 @@ function notify() {
                     coupon += '\n中奖获得 ' + datainfo.couponCnt + ' 张券，详情请进入小程序查看（大概率无用）'
                 }
             }
-            if (a) {
-                detail += '账户共有 ' + datainfo.allluckcoin + " 币及 " + datainfo.luckmoney + " 元。💰"
-            }
+            detail += '账户共有 ' + datainfo.allluckcoin + " 币及 " + datainfo.luckmoney + " 元。💰"
             if (datainfo.joinCnt > 0) {
                 subTitle += '参与抽奖 ' + datainfo.joinCnt + ' 个 '
             }
