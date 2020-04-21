@@ -149,34 +149,6 @@ DOMAIN,d349g9zuie06uo.cloudfront.net,GMedia
 USER-AGENT,mytv*,GMedia
 DOMAIN-SUFFIX,mytvsuper.com,GMedia
 DOMAIN-SUFFIX,tvb.com,GMedia
-# > Netflix
-USER-AGENT,Argo*,GMedia
-DOMAIN-SUFFIX,netflix.com,GMedia
-DOMAIN-SUFFIX,netflix.net,GMedia
-DOMAIN-SUFFIX,nflxext.com,GMedia
-DOMAIN-SUFFIX,nflximg.com,GMedia
-DOMAIN-SUFFIX,nflximg.net,GMedia
-DOMAIN-SUFFIX,nflxso.net,GMedia
-DOMAIN-SUFFIX,nflxvideo.net,GMedia
-DOMAIN-SUFFIX,netflixdnstest0.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest1.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest2.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest3.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest4.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest5.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest6.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest7.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest8.com,GMedia
-DOMAIN-SUFFIX,netflixdnstest9.com,GMedia
-IP-CIDR,23.246.0.0/18,GMedia
-IP-CIDR,37.77.184.0/21,GMedia
-IP-CIDR,45.57.0.0/17,GMedia
-IP-CIDR,64.120.128.0/17,GMedia
-IP-CIDR,66.197.128.0/17,GMedia
-IP-CIDR,108.175.32.0/20,GMedia
-IP-CIDR,192.173.64.0/18,GMedia
-IP-CIDR,198.38.96.0/19,GMedia
-IP-CIDR,198.45.48.0/20,GMedia
 # > niconico
 USER-AGENT,Niconico*,GMedia
 DOMAIN-SUFFIX,dmc.nico,GMedia
