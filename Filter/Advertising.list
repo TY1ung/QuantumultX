@@ -350,6 +350,14 @@ DOMAIN,t-ads.xiaohongshu.com,REJECT
 DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
+# > YouTube
+HOST-SUFFIX,azabu-u.ac.jp,AdBlock
+HOST-SUFFIX,couchcoaster.jp,AdBlock
+HOST-SUFFIX,delivery.dmkt-sp.jp,AdBlock
+HOST-SUFFIX,ehg-youtube.hitbox.com,AdBlock
+HOST-SUFFIX,m-78.jp,AdBlock
+HOST-SUFFIX,nichibenren.or.jp,AdBlock
+HOST-SUFFIX,nicorette.co.kr,AdBlock
 # (Z)
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
