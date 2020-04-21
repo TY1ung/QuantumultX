@@ -1,5 +1,6 @@
 # Update-2020.4.9 Self-use rule, Remove versus shenji duplicates and optimizations
 # This rule does not include shenji
+
 DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
 DOMAIN-SUFFIX,comet.yahoo.com,REJECT
 DOMAIN-SUFFIX,gemini.yahoo.com,REJECT
@@ -127,13 +128,6 @@ DOMAIN-SUFFIX,s.zampdsp.com,REJECT
 DOMAIN-SUFFIX,stat.letv.com,REJECT
 DOMAIN-SUFFIX,static.app.m.letv.com,REJECT
 DOMAIN-SUFFIX,zamplus.com,REJECT
-DOMAIN-SUFFIX,azabu-u.ac.jp,REJECT
-DOMAIN-SUFFIX,couchcoaster.jp,REJECT
-DOMAIN-SUFFIX,delivery.dmkt-sp.jp,REJECT
-DOMAIN-SUFFIX,ehg-youtube.hitbox.com,REJECT
-DOMAIN-SUFFIX,m-78.jp,REJECT
-DOMAIN-SUFFIX,nichibenren.or.jp,REJECT
-DOMAIN-SUFFIX,nicorette.co.kr,REJECT
 DOMAIN-SUFFIX,adnet.sohu.com,REJECT
 DOMAIN-SUFFIX,data.vod.itc.cn,REJECT
 DOMAIN-SUFFIX,epro.sogou.com,REJECT
@@ -7945,7 +7939,6 @@ DOMAIN-SUFFIX,zuimeitianqi.inveno.com,REJECT
 DOMAIN-SUFFIX,zws.avvo.com,REJECT
 DOMAIN-SUFFIX,img.adnyg.com.w.kunlungr.com,REJECT
 DOMAIN-SUFFIX,log.tagtic.cn,REJECT
-DOMAIN-SUFFIX,ulogs.umeng.com,REJECT
 DOMAIN-SUFFIX,zx.baosmx.com,REJECT
 DOMAIN-SUFFIX,zxcs.ggwan.com,REJECT
 DOMAIN-SUFFIX,zxcs.linghit.com,REJECT
