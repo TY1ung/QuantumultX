@@ -140,7 +140,6 @@ DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
 DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
-DOMAIN-SUFFIX,ocsp.apple.com,REJECT
 # > Alibaba
 DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
