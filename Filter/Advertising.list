@@ -327,6 +327,17 @@ DOMAIN,iad0ssl.pconline.com.cn,REJECT
 DOMAIN,imgad0.pcauto.com.cn,REJECT
 DOMAIN,imgad0.pconline.com.cn,REJECT
 DOMAIN,ivy.pchouse.com.cn,REJECT
+# (U)
+# > Umeng
+HOST,alog.umeng.co,REJECT
+HOST,alog.umeng.com,REJECT
+HOST,alogs.umeng.com,REJECT
+HOST,alog.umengcloud.com,REJECT
+HOST,alogs.umengcloud.com,REJECT
+HOST,ar.umeng.com,REJECT
+HOST,plbslog.umeng.com,REJECT
+HOST,ulogs.umeng.com,REJECT
+HOST,ulogs.umengcloud.com,REJECT
 # (W)
 # > WiFi 万能钥匙
 DOMAIN,a.wkanx.com,REJECT
@@ -349,6 +360,14 @@ DOMAIN,t-ads.xiaohongshu.com,REJECT
 DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
+# > YouTube
+HOST-SUFFIX,azabu-u.ac.jp,REJECT
+HOST-SUFFIX,couchcoaster.jp,REJECT
+HOST-SUFFIX,delivery.dmkt-sp.jp,REJECT
+HOST-SUFFIX,ehg-youtube.hitbox.com,REJECT
+HOST-SUFFIX,m-78.jp,REJECT
+HOST-SUFFIX,nichibenren.or.jp,REJECT
+HOST-SUFFIX,nicorette.co.kr,REJECT
 # (Z)
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
