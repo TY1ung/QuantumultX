@@ -351,13 +351,13 @@ DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
 DOMAIN,iyes.youku.com,REJECT
 # > YouTube
-HOST-SUFFIX,azabu-u.ac.jp,AdBlock
-HOST-SUFFIX,couchcoaster.jp,AdBlock
-HOST-SUFFIX,delivery.dmkt-sp.jp,AdBlock
-HOST-SUFFIX,ehg-youtube.hitbox.com,AdBlock
-HOST-SUFFIX,m-78.jp,AdBlock
-HOST-SUFFIX,nichibenren.or.jp,AdBlock
-HOST-SUFFIX,nicorette.co.kr,AdBlock
+HOST-SUFFIX,azabu-u.ac.jp,REJECT
+HOST-SUFFIX,couchcoaster.jp,REJECT
+HOST-SUFFIX,delivery.dmkt-sp.jp,REJECT
+HOST-SUFFIX,ehg-youtube.hitbox.com,REJECT
+HOST-SUFFIX,m-78.jp,REJECT
+HOST-SUFFIX,nichibenren.or.jp,REJECT
+HOST-SUFFIX,nicorette.co.kr,REJECT
 # (Z)
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
