@@ -369,6 +369,10 @@ HOST-SUFFIX,m-78.jp,REJECT
 HOST-SUFFIX,nichibenren.or.jp,REJECT
 HOST-SUFFIX,nicorette.co.kr,REJECT
 # (Z)
+# > Zhihu
+HOST,mqtt.zhihu.com,REJECT
+HOST,sugar.zhihu.com,REJECT
+HOST-SUFFIX,xdrig.com,REJECT
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
 DOMAIN,pvnapp.zol.com.cn,REJECT
