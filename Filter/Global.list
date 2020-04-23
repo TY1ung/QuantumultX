@@ -413,6 +413,8 @@ USER-AGENT,Roam*,PROXY
 DOMAIN,testflight.apple.com,PROXY
 # >> Apple URL Shortener
 DOMAIN-SUFFIX,appsto.re,PROXY
+# >> App Store
+DOMAIN,p14-buy.itunes.apple.com,PROXY
 # >> iBooks Store download
 DOMAIN,books.itunes.apple.com,PROXY
 # >> iTunes Store Moveis Trailers
