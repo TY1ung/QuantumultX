@@ -498,6 +498,7 @@ DOMAIN-SUFFIX,x-art.com,PROXY
 DOMAIN-SUFFIX,yimg.com,PROXY
 DOMAIN,api.steampowered.com,PROXY
 DOMAIN,store.steampowered.com,PROXY
+# > Customization
 DOMAIN-SUFFIX,v2ex.com,PROXY
 DOMAIN-SUFFIX,hkgpao.com,PROXY
 DOMAIN-SUFFIX,qiandao.today,PROXY
@@ -509,3 +510,4 @@ DOMAIN-SUFFIX,merlinblog.xyz,PROXY
 DOMAIN-SUFFIX,dleris.best,PROXY
 DOMAIN-SUFFIX,limbopro.xyz,PROXY
 DOMAIN-SUFFIX,jable.tv,PROXY
+DOMAIN-SUFFIX,deepl.com,PROXY
