@@ -24,6 +24,3 @@ HOST-SUFFIX,windows.com,Microsoft
 HOST-SUFFIX,windows.net,Microsoft
 HOST-SUFFIX,xbox.com,Microsoft
 HOST-SUFFIX,xboxlive.com,Microsoft
-HOST-SUFFIX,s-microsoft.com,Microsoft
-HOST-SUFFIX,windowsupdate.com,Microsoft
-DOMAIN,officecdn-microsoft-com.akamaized.net,Microsoft
