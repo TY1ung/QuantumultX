@@ -376,3 +376,5 @@ HOST-SUFFIX,xdrig.com,REJECT
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
 DOMAIN,pvnapp.zol.com.cn,REJECT
+# (Others)
+HOST-SUFFIX,todays.wa11ace.net,REJECT
