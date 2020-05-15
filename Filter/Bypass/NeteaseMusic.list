@@ -6,6 +6,6 @@ host-suffix, music.126.net,Netease Music
 ip-cidr, 59.111.181.0/24,Netease Music
 ip-cidr, 115.236.118.0/24,Netease Music
 ip-cidr, 223.252.199.0/24,Netease Music
-host-keyword, netease, UnblockNeteaseMusic
+host-keyword, netease,Netease Music
 user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,Netease Music
 user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**,Netease Music
