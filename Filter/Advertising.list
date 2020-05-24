@@ -156,11 +156,11 @@ DOMAIN-SUFFIX,pos.baidu.com,REJECT
 DOMAIN,afd.baidu.com,REJECT
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,duclick.baidu.com,REJECT
-DOMAIN,mobads.baidu.com,REJECT
-DOMAIN,mobads-logs.baidu.com,REJECT
-DOMAIN,nsclick.baidu.com,REJECT
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
+DOMAIN-SUFFIX,nsclick.baidu.com,REJECT
 # > ByteDance
-DOMAIN,ad.toutiao.com,REJECT
+DOMAIN-SUFFIX,ad.toutiao.com,REJECT
 # > BitAuto
 DOMAIN,adx.yiche.com,REJECT
 DOMAIN,log.ycapp.yiche.com,REJECT
@@ -176,11 +176,11 @@ DOMAIN,vdapprecv.app.cntvwb.cn,REJECT
 # > ChinaTelecom
 DOMAIN,ad.21cn.com,REJECT
 DOMAIN,ad.k.21cn.com,REJECT
-DOMAIN,admarket.21cn.com,REJECT
-DOMAIN,adshows.21cn.com,REJECT
+DOMAIN-SUFFIX,admarket.21cn.com,REJECT
+DOMAIN-SUFFIX,adshows.21cn.com,REJECT
 # > 车来了
-DOMAIN,atrace.chelaile.net.cn,REJECT
-DOMAIN,logs.chelaile.net.cn,REJECT
+DOMAIN-SUFFIX,atrace.chelaile.net.cn,REJECT
+DOMAIN-SUFFIX,logs.chelaile.net.cn,REJECT
 # (G)
 # > Google
 DOMAIN-SUFFIX,doubleclick.net,REJECT
@@ -192,46 +192,46 @@ DOMAIN-SUFFIX,googlesyndication.com,REJECT
 DOMAIN-SUFFIX,da.mgtv.com,REJECT
 DOMAIN-SUFFIX,da.hunantv.com,REJECT
 # > Hupu
-DOMAIN,adx.hupu.com,REJECT
+DOMAIN-SUFFIX,adx.hupu.com,REJECT
 DOMAIN,adx-api.hupu.com,REJECT
-DOMAIN,goblin.hupu.com,REJECT
+DOMAIN-SUFFIX,goblin.hupu.com,REJECT
 # (I)
 # > iQiyi
-DOMAIN,t7z.cupid.iqiyi.com,REJECT
+DOMAIN-SUFFIX,t7z.cupid.iqiyi.com,REJECT
 IP-CIDR,101.227.97.240/32,REJECT,no-resolve
 IP-CIDR,101.227.200.11/32,REJECT,no-resolve
 IP-CIDR,101.227.200.28/32,REJECT,no-resolve
 IP-CIDR,124.192.153.42/32,REJECT,no-resolve
 # > Ifeng
 DOMAIN-SUFFIX,deliver.ifeng.com,REJECT
-DOMAIN,api.newad.ifeng.com,REJECT
-DOMAIN,ifengad.3g.ifeng.com,REJECT
+DOMAIN-SUFFIX,api.newad.ifeng.com,REJECT
+DOMAIN-SUFFIX,ifengad.3g.ifeng.com,REJECT
 # (K)
 # > KuGou and Kuwo
-DOMAIN,adserviceretry.kugou.com,REJECT
-DOMAIN,ads.service.kugou.com,REJECT
+DOMAIN-SUFFIX,adserviceretry.kugou.com,REJECT
+DOMAIN-SUFFIX,ads.service.kugou.com,REJECT
 DOMAIN,adsfile.bssdlbig.kugou.com,REJECT
-DOMAIN,g.koowo.com,REJECT
-DOMAIN,kgmobilestat.kugou.com,REJECT
+DOMAIN-SUFFIX,g.koowo.com,REJECT
+DOMAIN-SUFFIX,kgmobilestat.kugou.com,REJECT
 DOMAIN,kgmobilestatbak.kugou.com,REJECT
-DOMAIN,mobilelog.kugou.com,REJECT
-DOMAIN,mobilead.kuwo.cn,REJECT
-DOMAIN,rich.kuwo.cn,REJECT
+DOMAIN-SUFFIX,mobilelog.kugou.com,REJECT
+DOMAIN-SUFFIX,mobilead.kuwo.cn,REJECT
+DOMAIN-SUFFIX,rich.kuwo.cn,REJECT
 # > Kingsoft
 DOMAIN,ad-stat.ksosoft.com,REJECT
 DOMAIN,img.auction-ads.wpscdn.cn,REJECT
 DOMAIN,counter.kingsoft.com,REJECT
-DOMAIN,counter.ksosoft.com,REJECT
-DOMAIN,minfo.wps.cn,REJECT
-DOMAIN,mobad.ijinshan.com,REJECT
-DOMAIN,ups.ksmobile.net,REJECT
-DOMAIN,ws.ksmobile.net,REJECT
+DOMAIN-SUFFIX,counter.ksosoft.com,REJECT
+DOMAIN-SUFFIX,minfo.wps.cn,REJECT
+DOMAIN-SUFFIX,mobad.ijinshan.com,REJECT
+DOMAIN-SUFFIX,ups.ksmobile.net,REJECT
+DOMAIN-SUFFIX,ws.ksmobile.net,REJECT
 # (L)
 # > Le
 DOMAIN-SUFFIX,webp2p.letv.com,REJECT
-DOMAIN,ark.letv.com,REJECT
+DOMAIN-SUFFIX,ark.letv.com,REJECT
 DOMAIN,emma-414870e223.huodonghezi.com,REJECT
-DOMAIN,g3.letv.com,REJECT
+DOMAIN-SUFFIX,g3.letv.com,REJECT
 DOMAIN,n.mark.letv.com,REJECT
 # > 乐播投屏
 DOMAIN,ad.hpplay.cn,REJECT
@@ -243,80 +243,80 @@ DOMAIN,rp.hpplay.cn,REJECT
 DOMAIN-SUFFIX,ad.intl.xiaomi.com,REJECT
 DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
 DOMAIN-SUFFIX,admob.xiaomi.com,REJECT
-DOMAIN,adv.sec.intl.miui.com,REJECT
-DOMAIN,adv.sec.miui.com,REJECT
+DOMAIN-SUFFIX,adv.sec.intl.miui.com,REJECT
+DOMAIN-SUFFIX,adv.sec.miui.com,REJECT
 # > 墨迹天气
-DOMAIN,ad.api.moji.com,REJECT
-DOMAIN,adlaunch.moji.com,REJECT
+DOMAIN-SUFFIX,ad.api.moji.com,REJECT
+DOMAIN-SUFFIX,adlaunch.moji.com,REJECT
 DOMAIN,ads.mojicdn.com,REJECT
-DOMAIN,v1.log.moji.com,REJECT
+DOMAIN-SUFFIX,v1.log.moji.com,REJECT
 # (N)
 # > NetEase
 DOMAIN,ad.bn.netease.com,REJECT
-DOMAIN,ad.yixin.im,REJECT
-DOMAIN,admusicpic.music.126.net,REJECT
-DOMAIN,gorgon.youdao.com,REJECT
-DOMAIN,iadmat.nosdn.127.net,REJECT
-DOMAIN,iadmusicmat.music.126.net,REJECT
+DOMAIN-SUFFIX,ad.yixin.im,REJECT
+DOMAIN-SUFFIX,admusicpic.music.126.net,REJECT
+DOMAIN-SUFFIX,gorgon.youdao.com,REJECT
+DOMAIN-SUFFIX,iadmat.nosdn.127.net,REJECT
+DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
 DOMAIN,iadmusicmatvideo.music.126.net,REJECT
-DOMAIN,impservice.dictapp.youdao.com,REJECT
-DOMAIN,impservice.youdao.com,REJECT
-DOMAIN,log.yex.youdao.com,REJECT
+DOMAIN-SUFFIX,impservice.dictapp.youdao.com,REJECT
+DOMAIN-SUFFIX,impservice.youdao.com,REJECT
+DOMAIN-SUFFIX,log.yex.youdao.com,REJECT
 DOMAIN,log-yex.youdao.com,REJECT
-DOMAIN,n.3g.163.com,REJECT
-DOMAIN,nex.163.com,REJECT
-DOMAIN,yt-adp.nosdn.127.net,REJECT
-DOMAIN,yt-adp.ws.126.net,REJECT
+DOMAIN-SUFFIX,n.3g.163.com,REJECT
+DOMAIN-SUFFIX,nex.163.com,REJECT
+DOMAIN-SUFFIX,yt-adp.nosdn.127.net,REJECT
+DOMAIN-SUFFIX,yt-adp.ws.126.net,REJECT
 # (P)
 # > PPTV
-DOMAIN,ads.aplus.pptv.com,REJECT
+DOMAIN-SUFFIX,ads.aplus.pptv.com,REJECT
 DOMAIN,ads.aplusapi.pptv.com,REJECT
-DOMAIN,asimgs.pplive.cn,REJECT
-DOMAIN,de.as.pptv.com,REJECT
+DOMAIN-SUFFIX,asimgs.pplive.cn,REJECT
+DOMAIN-SUFFIX,de.as.pptv.com,REJECT
 # > Photoable
 DOMAIN,regist.fotoable.com,REJECT
 DOMAIN,cdn.adapi.fotoable.com,REJECT
 # > PeanutWiFiMpass
-DOMAIN,adnew.wifi8.com,REJECT
+DOMAIN-SUFFIX,adnew.wifi8.com,REJECT
 DOMAIN,adfile.wifi8.com,REJECT
 # (S)
 # > Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN,adimg.vue.weibo.com,REJECT
-DOMAIN,u1.img.mobile.sina.cn,REJECT
-DOMAIN,sax.sina.com.cn,REJECT
-DOMAIN,saxs.sina.com.cn,REJECT
-DOMAIN,saxn.sina.com.cn,REJECT
+DOMAIN-SUFFIX,u1.img.mobile.sina.cn,REJECT
+DOMAIN-SUFFIX,sax.sina.com.cn,REJECT
+DOMAIN-SUFFIX,saxs.sina.com.cn,REJECT
+DOMAIN-SUFFIX,saxn.sina.com.cn,REJECT
 # > Sohu
 DOMAIN-SUFFIX,ad.sohu.com,REJECT
 DOMAIN-SUFFIX,ads.sohu.com,REJECT
 DOMAIN-SUFFIX,aty.sohu.com,REJECT
 DOMAIN,imp.optaim.com,REJECT
 DOMAIN,v2.reachmax.cn,REJECT
-DOMAIN,track.sohu.com,REJECT
+DOMAIN-SUFFIX,track.sohu.com,REJECT
 DOMAIN,hui.sohu.com,REJECT
 # (T)
 # > Tencent
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
-DOMAIN,adsmind.apdcdn.tc.qq.com,REJECT
+DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com,REJECT
 DOMAIN,adsmind.gdtimg.com,REJECT
 DOMAIN,adsmind.tc.qq.com,REJECT
-DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN,pgdt.gtimg.com,REJECT
 DOMAIN,pgdt.ugdtimg.com,REJECT
 DOMAIN,splashqqlive.gtimg.com,REJECT
-DOMAIN,wa.gtimg.com,REJECT
+DOMAIN-SUFFIX,wa.gtimg.com,REJECT
 DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 # > The Paper
 DOMAIN,admonitor.thepaper.cn,REJECT
-DOMAIN,adpai.thepaper.cn,REJECT
-DOMAIN,imgadpai.thepaper.cn,REJECT
+DOMAIN-SUFFIX,adpai.thepaper.cn,REJECT
+DOMAIN-SUFFIX,imgadpai.thepaper.cn,REJECT
 # > Thunder
-DOMAIN,adsp.xunlei.com,REJECT
-DOMAIN,etl.xlmc.sandai.net,REJECT
+DOMAIN-SUFFIX,adsp.xunlei.com,REJECT
+DOMAIN-SUFFIX,etl.xlmc.sandai.net,REJECT
 # > 同花顺
 DOMAIN,adm.10jqka.com.cn,REJECT
 DOMAIN,stat.10jqka.com.cn,REJECT
@@ -325,19 +325,13 @@ DOMAIN,ad-analysis.pconline.com.cn,REJECT
 DOMAIN,iad0ssl.pcauto.com.cn,REJECT
 DOMAIN,iad0ssl.pconline.com.cn,REJECT
 DOMAIN,imgad0.pcauto.com.cn,REJECT
-DOMAIN,imgad0.pconline.com.cn,REJECT
+DOMAIN-SUFFIX,imgad0.pconline.com.cn,REJECT
 DOMAIN,ivy.pchouse.com.cn,REJECT
 # (U)
 # > Umeng
-HOST,alog.umeng.co,REJECT
-HOST,alog.umeng.com,REJECT
-HOST,alogs.umeng.com,REJECT
-HOST,alog.umengcloud.com,REJECT
-HOST,alogs.umengcloud.com,REJECT
-HOST,ar.umeng.com,REJECT
-HOST,plbslog.umeng.com,REJECT
-HOST,ulogs.umeng.com,REJECT
-HOST,ulogs.umengcloud.com,REJECT
+DOMAIN-SUFFIX,umeng.co,REJECT
+DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,umengcloud.com,REJECT
 # (W)
 # > WiFi 万能钥匙
 DOMAIN,a.wkanx.com,REJECT
@@ -345,12 +339,12 @@ DOMAIN,cwx.lianwangtech.com,REJECT
 DOMAIN,c1wx.lianwangtech.com,REJECT
 # (X)
 # > 喜马拉雅
-DOMAIN,ad.ximalaya.com,REJECT
+DOMAIN-SUFFIX,ad.ximalaya.com,REJECT
 DOMAIN,adbs.ximalaya.com,REJECT
-DOMAIN,adse.ximalaya.com,REJECT
-DOMAIN,adse.wsa.ximalaya.com,REJECT
+DOMAIN-SUFFIX,adse.ximalaya.com,REJECT
+DOMAIN-SUFFIX,adse.wsa.ximalaya.com,REJECT
 DOMAIN,adbehavior.wsa.ximalaya.com,REJECT
-DOMAIN,adsebs.ximalaya.com,REJECT
+DOMAIN-SUFFIX,adsebs.ximalaya.com,REJECT
 # > 小红书
 DOMAIN,ads-img-qc.xhscdn.com,REJECT
 DOMAIN,ads-video-qc.xhscdn.com,REJECT
@@ -359,22 +353,22 @@ DOMAIN,t-ads.xiaohongshu.com,REJECT
 # > Youku
 DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
-DOMAIN,iyes.youku.com,REJECT
+DOMAIN-SUFFIX,iyes.youku.com,REJECT
 # > YouTube
-HOST-SUFFIX,azabu-u.ac.jp,REJECT
-HOST-SUFFIX,couchcoaster.jp,REJECT
-HOST-SUFFIX,delivery.dmkt-sp.jp,REJECT
-HOST-SUFFIX,ehg-youtube.hitbox.com,REJECT
-HOST-SUFFIX,m-78.jp,REJECT
-HOST-SUFFIX,nichibenren.or.jp,REJECT
-HOST-SUFFIX,nicorette.co.kr,REJECT
+DOMAIN-SUFFIX,azabu-u.ac.jp,REJECT
+DOMAIN-SUFFIX,couchcoaster.jp,REJECT
+DOMAIN-SUFFIX,delivery.dmkt-sp.jp,REJECT
+DOMAIN-SUFFIX,ehg-youtube.hitbox.com,REJECT
+DOMAIN-SUFFIX,m-78.jp,REJECT
+DOMAIN-SUFFIX,nichibenren.or.jp,REJECT
+DOMAIN-SUFFIX,nicorette.co.kr,REJECT
 # (Z)
 # > Zhihu
 HOST,mqtt.zhihu.com,REJECT
-HOST,sugar.zhihu.com,REJECT
-HOST-SUFFIX,xdrig.com,REJECT
+DOMAIN-SUFFIX,sugar.zhihu.com,REJECT
+DOMAIN-SUFFIX,xdrig.com,REJECT
 # > ZOL
-DOMAIN,apppv.zol.com.cn,REJECT
-DOMAIN,pvnapp.zol.com.cn,REJECT
+DOMAIN-SUFFIX,apppv.zol.com.cn,REJECT
+DOMAIN-SUFFIX,pvnapp.zol.com.cn,REJECT
 # (Others)
 HOST-SUFFIX,todays.wa11ace.net,REJECT
