@@ -145,7 +145,7 @@ DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
 DOMAIN,tunion-api.m.taobao.com,REJECT
 # > AutoHome
-DOMAIN,adproxy.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,adproxy.autohome.com.cn,REJECT
 DOMAIN,rd.autohome.com.cn,REJECT
 DOMAIN,al.autohome.com.cn,REJECT
 DOMAIN,applogapi.autohome.com.cn,REJECT
@@ -153,8 +153,8 @@ DOMAIN,applogapi.autohome.com.cn,REJECT
 # > Baidu
 DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,pos.baidu.com,REJECT
-DOMAIN,afd.baidu.com,REJECT
-DOMAIN,als.baidu.com,REJECT
+DOMAIN-SUFFIX,afd.baidu.cn,REJECT
+DOMAIN-SUFFIX,als.baidu.cn,REJECT
 DOMAIN,duclick.baidu.com,REJECT
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
@@ -197,7 +197,6 @@ DOMAIN,adx-api.hupu.com,REJECT
 DOMAIN-SUFFIX,goblin.hupu.com,REJECT
 # (I)
 # > iQiyi
-DOMAIN-SUFFIX,t7z.cupid.iqiyi.com,REJECT
 IP-CIDR,101.227.97.240/32,REJECT,no-resolve
 IP-CIDR,101.227.200.11/32,REJECT,no-resolve
 IP-CIDR,101.227.200.28/32,REJECT,no-resolve
@@ -210,7 +209,7 @@ DOMAIN-SUFFIX,ifengad.3g.ifeng.com,REJECT
 # > KuGou and Kuwo
 DOMAIN-SUFFIX,adserviceretry.kugou.com,REJECT
 DOMAIN-SUFFIX,ads.service.kugou.com,REJECT
-DOMAIN,adsfile.bssdlbig.kugou.com,REJECT
+DOMAIN-SUFFIX,bssdlbig.kugou.com,REJECT
 DOMAIN-SUFFIX,g.koowo.com,REJECT
 DOMAIN-SUFFIX,kgmobilestat.kugou.com,REJECT
 DOMAIN,kgmobilestatbak.kugou.com,REJECT
@@ -249,7 +248,7 @@ DOMAIN-SUFFIX,adv.sec.miui.com,REJECT
 DOMAIN-SUFFIX,ad.api.moji.com,REJECT
 DOMAIN-SUFFIX,adlaunch.moji.com,REJECT
 DOMAIN,ads.mojicdn.com,REJECT
-DOMAIN-SUFFIX,v1.log.moji.com,REJECT
+DOMAIN-SUFFIX,log.moji.com,REJECT
 # (N)
 # > NetEase
 DOMAIN,ad.bn.netease.com,REJECT
@@ -294,7 +293,7 @@ DOMAIN-SUFFIX,aty.sohu.com,REJECT
 DOMAIN,imp.optaim.com,REJECT
 DOMAIN,v2.reachmax.cn,REJECT
 DOMAIN-SUFFIX,track.sohu.com,REJECT
-DOMAIN,hui.sohu.com,REJECT
+DOMAIN-SUFFIX,hui.sohu.com,REJECT
 # (T)
 # > Tencent
 DOMAIN-SUFFIX,e.qq.com,REJECT
@@ -319,7 +318,7 @@ DOMAIN-SUFFIX,adsp.xunlei.com,REJECT
 DOMAIN-SUFFIX,etl.xlmc.sandai.net,REJECT
 # > 同花顺
 DOMAIN,adm.10jqka.com.cn,REJECT
-DOMAIN,stat.10jqka.com.cn,REJECT
+DOMAIN-SUFFIX,stat.10jqka.com.cn,REJECT
 # > 太平洋
 DOMAIN,ad-analysis.pconline.com.cn,REJECT
 DOMAIN,iad0ssl.pcauto.com.cn,REJECT
@@ -352,7 +351,7 @@ DOMAIN,t-ads.xiaohongshu.com,REJECT
 # (Y)
 # > Youku
 DOMAIN-SUFFIX,atm.youku.com,REJECT
-DOMAIN,ad.mobile.youku.com,REJECT
+DOMAIN-SUFFIX,ad.mobile.youku.com,REJECT
 DOMAIN-SUFFIX,iyes.youku.com,REJECT
 # > YouTube
 DOMAIN-SUFFIX,azabu-u.ac.jp,REJECT
