@@ -1,5 +1,5 @@
 #自用，更改自Anti-Ad
-#VER=20200530095505
+#VER=20200531012331
 #URL=https://github.com/privacy-protection-tools/anti-AD
 DOMAIN-SUFFIX,00-gov.cn
 DOMAIN-SUFFIX,kwcscdn.000dn.com
@@ -16628,7 +16628,6 @@ DOMAIN-SUFFIX,cloudservice13.kingsoft-office-service.com
 DOMAIN-SUFFIX,cloudservice27.kingsoft-office-service.com
 DOMAIN-SUFFIX,moupdate1.kingsoft-office-service.com
 DOMAIN-SUFFIX,abroad-ad.kingsoft-office-service.com
-DOMAIN-SUFFIX,kingsoft.com
 DOMAIN-SUFFIX,kingwam.com
 DOMAIN-SUFFIX,kinley.com
 DOMAIN-SUFFIX,kinoprofi.org
@@ -34524,3 +34523,5 @@ DOMAIN-SUFFIX,dd713.bj.bcebos.com
 DOMAIN-SUFFIX,tob-cms.bj.bcebos.com
 DOMAIN-SUFFIX,vv84.bj.bcebos.com
 DOMAIN-SUFFIX,wenku-cms.bj.bcebos.com
+DOMAIN-SUFFIX,counter.kingsoft.com
+DOMAIN-SUFFIX,up.wps.kingsoft.com
