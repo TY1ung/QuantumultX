@@ -162,11 +162,11 @@ DOMAIN-SUFFIX,nsclick.baidu.com,REJECT
 # > ByteDance
 DOMAIN-SUFFIX,ad.toutiao.com,REJECT
 # > BitAuto
-DOMAIN,adx.yiche.com,REJECT
-DOMAIN,log.ycapp.yiche.com,REJECT
+DOMAIN-SUFFIX,adx.yiche.com,REJECT
+DOMAIN-SUFFIX,log.ycapp.yiche.com,REJECT
 # > 百词斩
-DOMAIN,advertise.baicizhan.com,REJECT
-DOMAIN,advertise.baicizhan.org,REJECT
+DOMAIN-SUFFIX,advertise.baicizhan.com,REJECT
+DOMAIN-SUFFIX,advertise.baicizhan.org,REJECT
 # (C)
 # > CNTV
 DOMAIN,galaxy.bjcathay.com,REJECT
