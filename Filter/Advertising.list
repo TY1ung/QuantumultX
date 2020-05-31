@@ -267,6 +267,8 @@ DOMAIN-SUFFIX,nex.163.com,REJECT
 DOMAIN-SUFFIX,yt-adp.nosdn.127.net,REJECT
 DOMAIN-SUFFIX,yt-adp.ws.126.net,REJECT
 # (P)
+# > Pornhub
+DOMAIN-SUFFIX,2020mustang.com,REJECT
 # > PPTV
 DOMAIN-SUFFIX,ads.aplus.pptv.com,REJECT
 DOMAIN,ads.aplusapi.pptv.com,REJECT
