@@ -1700,6 +1700,16 @@ DOMAIN-SUFFIX,imgadpai.thepaper.cn,REJECT
 # > Thunder
 DOMAIN-SUFFIX,adsp.xunlei.com,REJECT
 DOMAIN-SUFFIX,etl.xlmc.sandai.net,REJECT
+# > Twitter
+DOMAIN-SUFFIX,ads-twitter.com,REJECT
+DOMAIN-SUFFIX,ads.twitter.com,REJECT
+DOMAIN-SUFFIX,p.twitter.com,REJECT
+DOMAIN-SUFFIX,scribe.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication.twitter.com,REJECT
+DOMAIN-SUFFIX,tellapart.com,REJECT
+DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
+DOMAIN-SUFFIX,search.twitter.com,REJECT
 # > 同花顺
 DOMAIN,adm.10jqka.com.cn,REJECT
 DOMAIN-SUFFIX,stat.10jqka.com.cn,REJECT
@@ -1748,6 +1758,9 @@ DOMAIN-SUFFIX,ehg-youtube.hitbox.com,REJECT
 DOMAIN-SUFFIX,m-78.jp,REJECT
 DOMAIN-SUFFIX,nichibenren.or.jp,REJECT
 DOMAIN-SUFFIX,nicorette.co.kr,REJECT
+DOMAIN-SUFFIX,ssl-youtube.2cnt.net,REJECT
+DOMAIN-SUFFIX,youtube.112.2o7.net,REJECT
+DOMAIN-SUFFIX,youtube.2cnt.net,REJECT
 # (Z)
 # > Zhihu
 HOST,mqtt.zhihu.com,REJECT
@@ -4544,7 +4557,6 @@ DOMAIN-SUFFIX,ads-4u.com
 DOMAIN-SUFFIX,ads-elsevier.net
 DOMAIN-SUFFIX,ads-for-free.com
 DOMAIN-SUFFIX,ads-pixiv.net
-DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads.cc
 DOMAIN-SUFFIX,ads01.com
 DOMAIN-SUFFIX,ads1-adnow.com
@@ -27754,7 +27766,6 @@ DOMAIN-SUFFIX,pwa.telephoneannuaire.fr
 DOMAIN-SUFFIX,televeniesuc.pro
 DOMAIN-SUFFIX,telize.com
 DOMAIN-SUFFIX,teljari.is
-DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tellaparts.com
 DOMAIN-SUFFIX,telllwrite.com
 DOMAIN-SUFFIX,tellvi.cn
@@ -28859,8 +28870,6 @@ DOMAIN-SUFFIX,twitcker.com
 DOMAIN-SUFFIX,twitcount.com
 DOMAIN-SUFFIX,twitstat.us
 DOMAIN-SUFFIX,twittad.com
-DOMAIN-SUFFIX,scribe.twitter.com
-DOMAIN-SUFFIX,search.twitter.com
 DOMAIN-SUFFIX,twittercounter.com
 DOMAIN-SUFFIX,twitterforweb.com
 DOMAIN-SUFFIX,twittericon.com
@@ -33873,10 +33882,6 @@ DOMAIN-SUFFIX,wl.hd.sohu.com
 DOMAIN-SUFFIX,yule.sohu.com
 DOMAIN-SUFFIX,goods.tudou.com
 DOMAIN-SUFFIX,ads.cdn.tvb.com
-DOMAIN-SUFFIX,ads.twitter.com
-DOMAIN-SUFFIX,syndication-o.twitter.com
-DOMAIN-SUFFIX,syndication.twitter.com
-DOMAIN-SUFFIX,urls.api.twitter.com
 DOMAIN-SUFFIX,adslot.uc.cn
 DOMAIN-SUFFIX,dispatcher.upmc.uc.cn
 DOMAIN-SUFFIX,uservoice.com
