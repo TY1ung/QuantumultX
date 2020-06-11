@@ -804,9 +804,25 @@ DOMAIN-SUFFIX,bc.qunar.com,REJECT
 DOMAIN-SUFFIX,log.flight.qunar.com,REJECT
 # > AutoHome
 DOMAIN-SUFFIX,adproxy.autohome.com.cn,REJECT
-DOMAIN,rd.autohome.com.cn,REJECT
-DOMAIN,al.autohome.com.cn,REJECT
-DOMAIN,applogapi.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,activity.app.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,adnewnc.app.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,clickx.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,comm.app.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,pcmx.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,public.app.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,33.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,al.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,alert.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,applogapi.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,c.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,cmx.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,dspmnt.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,pcd.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,push.app.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,pvx.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,rd.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,rdx.autohome.com.cn,REJECT
+DOMAIN-SUFFIX,stats.autohome.com.cn,REJECT
 # (B)
 # > Baidu
 DOMAIN-SUFFIX,cpro.baidu.com,REJECT
@@ -6122,21 +6138,6 @@ DOMAIN-SUFFIX,kiks.auto.ru,REJECT
 DOMAIN-SUFFIX,autoaffiliatenetwork.com,REJECT
 DOMAIN-SUFFIX,autoaudience.com,REJECT
 DOMAIN-SUFFIX,autobedo.com.cn,REJECT
-DOMAIN-SUFFIX,33.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,stats.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,activity.app.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,adnewnc.app.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,c.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,clickx.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,cmx.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,comm.app.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,dspmnt.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,pcd.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,pcmx.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,public.app.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,push.app.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,pvx.autohome.com.cn,REJECT
-DOMAIN-SUFFIX,rdx.autohome.com.cn,REJECT
 DOMAIN-SUFFIX,autoid.com,REJECT
 DOMAIN-SUFFIX,adm0.autoimg.cn,REJECT
 DOMAIN-SUFFIX,adm1.autoimg.cn,REJECT
@@ -33756,7 +33757,6 @@ DOMAIN-SUFFIX,adgeo.corp.163.com,REJECT
 DOMAIN-SUFFIX,fa.corp.163.com,REJECT
 DOMAIN-SUFFIX,e.aa985.cn,REJECT
 DOMAIN-SUFFIX,ashifen.com,REJECT
-DOMAIN-SUFFIX,alert.autohome.com.cn,REJECT
 DOMAIN-SUFFIX,baidu9635.com,REJECT
 DOMAIN-SUFFIX,baidustatic.com,REJECT
 DOMAIN-SUFFIX,logger.baofeng.com,REJECT
