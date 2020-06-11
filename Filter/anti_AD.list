@@ -2004,7 +2004,7 @@ DOMAIN-SUFFIX,zhzzx.com,REJECT
 
 
 #自用，更改自Anti-Ad
-#VER=20200610142732
+#VER=20200611014336
 #URL=https://github.com/privacy-protection-tools/anti-AD
 DOMAIN-SUFFIX,00-gov.cn,REJECT
 DOMAIN-SUFFIX,kwcscdn.000dn.com,REJECT
@@ -33761,7 +33761,6 @@ DOMAIN-SUFFIX,baidu9635.com,REJECT
 DOMAIN-SUFFIX,baidustatic.com,REJECT
 DOMAIN-SUFFIX,logger.baofeng.com,REJECT
 DOMAIN-SUFFIX,bbcoe.cn,REJECT
-DOMAIN-SUFFIX,fc-.cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,baikebcs.bdimg.com,REJECT
 DOMAIN-SUFFIX,boxshows.com,REJECT
 DOMAIN-SUFFIX,gridsum-vd.cntv.cn,REJECT
