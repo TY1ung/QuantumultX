@@ -1594,7 +1594,6 @@ DOMAIN-SUFFIX,download.sj.qq.com,REJECT
 DOMAIN-SUFFIX,dp3.qq.com,REJECT
 DOMAIN-SUFFIX,etg.qq.com,REJECT
 DOMAIN-SUFFIX,eventlog.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,ex.qq.com,REJECT
 DOMAIN-SUFFIX,fm.qzone.qq.com,REJECT
 DOMAIN-SUFFIX,fodder.qq.com,REJECT
 DOMAIN-SUFFIX,fodder.tc.qq.com,REJECT
@@ -3473,6 +3472,7 @@ DOMAIN-SUFFIX,87ac592346b5a.com,REJECT
 DOMAIN-SUFFIX,87gw0fl0rc11.com,REJECT
 DOMAIN-SUFFIX,88-baidu.com,REJECT
 DOMAIN-SUFFIX,88461059da0a12ea.com,REJECT
+DOMAIN-SUFFIX,marketeret.club,REJECT
 DOMAIN-SUFFIX,marketing.888.com,REJECT
 DOMAIN-SUFFIX,mmwebhandler.888.com,REJECT
 DOMAIN-SUFFIX,88818122.cn,REJECT
@@ -4384,7 +4384,6 @@ DOMAIN-SUFFIX,wip3.adobe.com,REJECT
 DOMAIN-SUFFIX,adobe-dns-2.adobe.com,REJECT
 DOMAIN-SUFFIX,adobe-dns-3.adobe.com,REJECT
 DOMAIN-SUFFIX,adobe-dns.adobe.com,REJECT
-DOMAIN-SUFFIX,get3.adobe.com,REJECT
 DOMAIN-SUFFIX,hl2rcv.adobe.com,REJECT
 DOMAIN-SUFFIX,practivate.adobe.com,REJECT
 DOMAIN-SUFFIX,wwis-dubc1-vip60.adobe.com,REJECT
@@ -5968,6 +5967,7 @@ DOMAIN-SUFFIX,aujaujoa.net,REJECT
 DOMAIN-SUFFIX,ea.aujourdhui.com,REJECT
 DOMAIN-SUFFIX,pub.aujourdhui.com,REJECT
 DOMAIN-SUFFIX,aukalerim.com,REJECT
+DOMAIN-SUFFIX,aulingimpora.club,REJECT
 DOMAIN-SUFFIX,aukrouwy.net,REJECT
 DOMAIN-SUFFIX,aulrains.com,REJECT
 DOMAIN-SUFFIX,tag.aumago.com,REJECT
@@ -9361,6 +9361,7 @@ DOMAIN-SUFFIX,sp.courier-journal.com,REJECT
 DOMAIN-SUFFIX,sp.courierpostonline.com,REJECT
 DOMAIN-SUFFIX,sp.courierpress.com,REJECT
 DOMAIN-SUFFIX,courselfnorter.site,REJECT
+DOMAIN-SUFFIX,courthereb.club,REJECT
 DOMAIN-SUFFIX,coveredsys.cn,REJECT
 DOMAIN-SUFFIX,covernmentasto.info,REJECT
 DOMAIN-SUFFIX,coysotown.com,REJECT
@@ -10621,6 +10622,7 @@ DOMAIN-SUFFIX,dotaki.com,REJECT
 DOMAIN-SUFFIX,dotandad.com,REJECT
 DOMAIN-SUFFIX,dotandads.com,REJECT
 DOMAIN-SUFFIX,adss.dotdo.net,REJECT
+DOMAIN-SUFFIX,adstonesik.club,REJECT
 DOMAIN-SUFFIX,dotmailer-surveys.com,REJECT
 DOMAIN-SUFFIX,leadvision.dotmailer.co.uk,REJECT
 DOMAIN-SUFFIX,dotmetrics.net,REJECT
@@ -12292,6 +12294,7 @@ DOMAIN-SUFFIX,fiaehdnnx.com,REJECT
 DOMAIN-SUFFIX,fialzlpkww.com,REJECT
 DOMAIN-SUFFIX,fibpeeode.site,REJECT
 DOMAIN-SUFFIX,fibusedie.site,REJECT
+DOMAIN-SUFFIX,fimpromote.club,REJECT
 DOMAIN-SUFFIX,ficrwcptjvfpd.com,REJECT
 DOMAIN-SUFFIX,ficusoid.xyz,REJECT
 DOMAIN-SUFFIX,x.fidelity-media.com,REJECT
@@ -12550,6 +12553,7 @@ DOMAIN-SUFFIX,fondazioneciampi.org,REJECT
 DOMAIN-SUFFIX,fonderredd.info,REJECT
 DOMAIN-SUFFIX,insight.fonecta.fi,REJECT
 DOMAIN-SUFFIX,fontainsuny.club,REJECT
+DOMAIN-SUFFIX,foowafoa.com,REJECT
 DOMAIN-SUFFIX,foocheeb.net,REJECT
 DOMAIN-SUFFIX,food5.net,REJECT
 DOMAIN-SUFFIX,foodieblogroll.com,REJECT
@@ -12875,6 +12879,7 @@ DOMAIN-SUFFIX,fusestats.com,REJECT
 DOMAIN-SUFFIX,fusionads.net,REJECT
 DOMAIN-SUFFIX,fuszkweba.com,REJECT
 DOMAIN-SUFFIX,futckgpfbgzfn.com,REJECT
+DOMAIN-SUFFIX,futurershnh.club,REJECT
 DOMAIN-SUFFIX,futengbao.com.cn,REJECT
 DOMAIN-SUFFIX,futsoksu.com,REJECT
 DOMAIN-SUFFIX,future-fie-assets.co.uk,REJECT
@@ -14686,6 +14691,7 @@ DOMAIN-SUFFIX,hoaphaiw.com,REJECT
 DOMAIN-SUFFIX,hoawhaum.net,REJECT
 DOMAIN-SUFFIX,hobbytotaalservice.nl,REJECT
 DOMAIN-SUFFIX,hoemasfat.site,REJECT
+DOMAIN-SUFFIX,holidates.club,REJECT
 DOMAIN-SUFFIX,hoerbird.net,REJECT
 DOMAIN-SUFFIX,ea.hofmann.es,REJECT
 DOMAIN-SUFFIX,ea.hofmann.pt,REJECT
@@ -21635,6 +21641,7 @@ DOMAIN-SUFFIX,oribi.io,REJECT
 DOMAIN-SUFFIX,oriel.io,REJECT
 DOMAIN-SUFFIX,origer.info,REJECT
 DOMAIN-SUFFIX,originedreting.site,REJECT
+DOMAIN-SUFFIX,ornamedev.club,REJECT
 DOMAIN-SUFFIX,c.originz.cn,REJECT
 DOMAIN-SUFFIX,v.originz.cn,REJECT
 DOMAIN-SUFFIX,outal.origo.hu,REJECT
@@ -34086,3 +34093,12 @@ DOMAIN-SUFFIX,ys1pve.site,REJECT
 DOMAIN-SUFFIX,m.z0mh0u.cn,REJECT
 DOMAIN-SUFFIX,z11yv3xpzk.com,REJECT
 DOMAIN-SUFFIX,z3dmbpl6309s.com,REJECT
+DOMAIN-SUFFIX,scientialy.club,REJECT
+DOMAIN-SUFFIX,unknowlejir.club,REJECT
+DOMAIN-SUFFIX,upheasted.club,REJECT
+DOMAIN-SUFFIX,direct-events-collector.spot.im,REJECT
+DOMAIN-SUFFIX,tags.op-palvelut.fi,REJECT
+DOMAIN-SUFFIX,3c3c3.com,REJECT
+DOMAIN-SUFFIX,abie18.top,REJECT
+DOMAIN-SUFFIX,gralfusnzpo008.top,REJECT
+DOMAIN-SUFFIX,yingjiawm.com,REJECT
