@@ -952,9 +952,6 @@ DOMAIN-SUFFIX,as.baidu.com,REJECT
 DOMAIN-SUFFIX,cbjslog.baidu.com,REJECT
 DOMAIN-SUFFIX,imageplus.baidu.com,REJECT
 DOMAIN-SUFFIX,itsdata.map.baidu.com,REJECT
-DOMAIN-SUFFIX,t10.baidu.com,REJECT
-DOMAIN-SUFFIX,t11.baidu.com,REJECT
-DOMAIN-SUFFIX,t12.baidu.com,REJECT
 DOMAIN-SUFFIX,mtj.baidu.com,REJECT
 DOMAIN-SUFFIX,pups.baidu.com,REJECT
 DOMAIN-SUFFIX,push.music.baidu.com,REJECT
@@ -33243,7 +33240,6 @@ DOMAIN-SUFFIX,pc.uf.ksosoft.com,REJECT
 DOMAIN-SUFFIX,kuaikaiapp.com,REJECT
 DOMAIN-SUFFIX,bssdl.kugou.com,REJECT
 DOMAIN-SUFFIX,downmobile.kugou.com,REJECT
-DOMAIN-SUFFIX,fanxing.kugou.com,REJECT
 DOMAIN-SUFFIX,gad.kugou.com,REJECT
 DOMAIN-SUFFIX,game.kugou.com,REJECT
 DOMAIN-SUFFIX,gcapi.sy.kugou.com,REJECT
@@ -34102,3 +34098,17 @@ DOMAIN-SUFFIX,3c3c3.com,REJECT
 DOMAIN-SUFFIX,abie18.top,REJECT
 DOMAIN-SUFFIX,gralfusnzpo008.top,REJECT
 DOMAIN-SUFFIX,yingjiawm.com,REJECT
+DOMAIN-SUFFIX,edmotherew.fun,REJECT
+DOMAIN-SUFFIX,gedcompani.fun,REJECT
+DOMAIN-SUFFIX,gencehepatie.club,REJECT
+DOMAIN-SUFFIX,haracticdag.fun,REJECT
+DOMAIN-SUFFIX,migatesbala.fun,REJECT
+DOMAIN-SUFFIX,ndlegwynetc.fun,REJECT
+DOMAIN-SUFFIX,roujaufu.net,REJECT
+DOMAIN-SUFFIX,sufferench.club,REJECT
+DOMAIN-SUFFIX,veralother.fun,REJECT
+DOMAIN-SUFFIX,wolvedfdg.club,REJECT
+DOMAIN-SUFFIX,saturalolk.club,REJECT
+DOMAIN-SUFFIX,ac56.xyz,REJECT
+DOMAIN-SUFFIX,njhj.cc,REJECT
+DOMAIN-SUFFIX,shforu.com,REJECT
