@@ -30,6 +30,11 @@ DOMAIN-SUFFIX,rocksdb.org,PROXY
 DOMAIN-SUFFIX,whatsapp.com,PROXY
 DOMAIN-SUFFIX,whatsapp.net,PROXY
 DOMAIN-KEYWORD,facebook,PROXY
+# > PayPal
+USER-AGENT,PayPal*,PROXY
+DOMAIN-KEYWORD,paypal,PROXY
+DOMAIN-SUFFIX,paypal.com,PROXY
+DOMAIN-SUFFIX,paypalobjects.com,PROXY
 # > Twitter
 DOMAIN-SUFFIX,pscp.tv,PROXY
 DOMAIN-SUFFIX,periscope.tv,PROXY
