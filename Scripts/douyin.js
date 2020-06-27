@@ -1,19 +1,15 @@
-const path1 = "/v1/feed/";
-const path2 = "/v1/aweme/post/";
-const path3 = "/v1/follow/feed/";
-const path4 = "/v1/nearby/feed/";
-const path5 = "/v1/search/item/";
-const path6 = "/v1/general/search/";
-const path7 = "/v1/hot/search/video/";
+const path1 = "/feed/";
+const path2 = "/aweme/post/";
+const path3 = "/follow/feed/";
+const path4 = "/nearby/feed/";
+const path5 = "/search/item/";
+const path6 = "/general/search/";
+const path7 = "/hot/search/video/";
 
 if ($request.url.indexOf(path1) != -1) {
-  feed();
+  feedpath();
 } else if ($request.url.indexOf(path2) != -1) {
   post();
-} else if ($request.url.indexOf(path3) != -1) {
-  follow();
-} else if ($request.url.indexOf(path4) != -1) {
-  nearby();
 } else if ($request.url.indexOf(path5) != -1) {
   item();
 } else if ($request.url.indexOf(path6) != -1) {
@@ -23,6 +19,17 @@ if ($request.url.indexOf(path1) != -1) {
 } else {
   $done({});
 }
+
+function feedpath() {
+  if ($request.url.indexOf(path3) != -1) {
+    follow();
+  } else if ($request.url.indexOf(path4) != -1) {
+    nearby();
+  }  else {
+    feed();
+  }
+}
+
 
 function feed() {
   let obj = JSON.parse($response.body);
