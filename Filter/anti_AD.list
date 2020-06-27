@@ -1142,7 +1142,7 @@ DOMAIN-SUFFIX,jcm.jd.com,REJECT
 DOMAIN-SUFFIX,x.jd.com,REJECT
 DOMAIN-SUFFIX,cm.jd.com,REJECT
 DOMAIN-SUFFIX,du.jd.com,REJECT
-DOMAIN-SUFFIX,im-x.jd.com,REJECT
+#DOMAIN-SUFFIX,im-x.jd.com,REJECT
 DOMAIN-SUFFIX,jrad.jd.com,REJECT
 DOMAIN-SUFFIX,u-x.jd.com,REJECT
 DOMAIN-SUFFIX,mercury.jd.com,REJECT
@@ -25374,7 +25374,6 @@ DOMAIN-SUFFIX,shenyun.com,REJECT
 DOMAIN-SUFFIX,shenyun.org,REJECT
 DOMAIN-SUFFIX,shenyunkeji.com,REJECT
 DOMAIN-SUFFIX,shenyunperformingarts.org,REJECT
-DOMAIN-SUFFIX,ecard.shenzhentong.com,REJECT
 DOMAIN-SUFFIX,shenzhoufilm.com,REJECT
 DOMAIN-SUFFIX,shermore.info,REJECT
 DOMAIN-SUFFIX,shesubscriptions.com,REJECT
@@ -34658,7 +34657,6 @@ DOMAIN-SUFFIX,givestment.club,REJECT
 DOMAIN-SUFFIX,gsjlfs.com,REJECT
 DOMAIN-SUFFIX,hethelcontai.fun,REJECT
 DOMAIN-SUFFIX,ithinkthereforeiam.net,REJECT
-DOMAIN-SUFFIX,dyn.ithome.com,REJECT
 DOMAIN-SUFFIX,itnuzleafan.com,REJECT
 DOMAIN-SUFFIX,k4bg1u10omks.com,REJECT
 DOMAIN-SUFFIX,keyways.pt,REJECT
