@@ -10,7 +10,6 @@ DOMAIN-SUFFIX,adinfuse.com,REJECT
 DOMAIN-SUFFIX,adjust.com,REJECT
 DOMAIN-SUFFIX,adjust.io,REJECT
 DOMAIN-SUFFIX,analysys.cn,REJECT
-DOMAIN-SUFFIX,appsflyer.com,REJECT
 DOMAIN-SUFFIX,cnzz.com,REJECT
 DOMAIN-SUFFIX,flurry.com,REJECT
 DOMAIN-SUFFIX,voicefive.com,REJECT
@@ -58,9 +57,7 @@ DOMAIN-SUFFIX,googletagmanager.com,REJECT
 DOMAIN,ssl.google-analytics.com,REJECT
 DOMAIN,www.google-analytics.com,REJECT
 # > MI
-DOMAIN-SUFFIX,tracking.miui.com,REJECT
 DOMAIN,data.mistat.xiaomi.com,REJECT
-DOMAIN,tracking.intl.miui.com,REJECT
 # > NetEase
 DOMAIN-SUFFIX,analytics.163.com,REJECT
 DOMAIN,crash.163.com,REJECT
