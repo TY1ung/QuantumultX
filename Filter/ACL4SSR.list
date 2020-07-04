@@ -1902,11 +1902,13 @@ DOMAIN-SUFFIX,br.fling.com,REJECT
 DOMAIN-SUFFIX,br.realitykings.com,REJECT
 DOMAIN-SUFFIX,brain.foresee.com,REJECT
 DOMAIN-SUFFIX,branch.io,REJECT
+DOMAIN-SUFFIX,brandnewapp.pro,REJECT
 DOMAIN-SUFFIX,brassstacker.com,REJECT
 DOMAIN-SUFFIX,bravo.israelweather.co.il,REJECT
 DOMAIN-SUFFIX,brcache.madthumbs.com,REJECT
 DOMAIN-SUFFIX,breakinginfo.pro,REJECT
 DOMAIN-SUFFIX,breatedy.club,REJECT
+DOMAIN-SUFFIX,breatmentbr.top,REJECT
 DOMAIN-SUFFIX,bright.bncnt.com,REJECT
 DOMAIN-SUFFIX,brinarynuker.site,REJECT
 DOMAIN-SUFFIX,briticatederfd.site,REJECT
@@ -3151,6 +3153,7 @@ DOMAIN-SUFFIX,earsawclearnph.site,REJECT
 DOMAIN-SUFFIX,easternpush.xyz,REJECT
 DOMAIN-SUFFIX,easy2cnjuh34jb.com,REJECT
 DOMAIN-SUFFIX,easylist-to.xyz,REJECT
+DOMAIN-SUFFIX,eatmenticha.top,REJECT
 DOMAIN-SUFFIX,ebay.northernhost.com,REJECT
 DOMAIN-SUFFIX,ebetoni.com,REJECT
 DOMAIN-SUFFIX,ebp.renren.com,REJECT
@@ -3461,7 +3464,6 @@ DOMAIN-SUFFIX,fangzhanla.cn,REJECT
 DOMAIN-SUFFIX,fanli.in,REJECT
 DOMAIN-SUFFIX,fanyi100.com.cn,REJECT
 DOMAIN-SUFFIX,fanzhuang.net.cn,REJECT
-DOMAIN-SUFFIX,faq.brandnewapp.pro,REJECT
 DOMAIN-SUFFIX,faracoon.com,REJECT
 DOMAIN-SUFFIX,farm-cn.plista.com,REJECT
 DOMAIN-SUFFIX,farpeiros.pw,REJECT
@@ -3537,6 +3539,7 @@ DOMAIN-SUFFIX,fghlmiaoqrtyfl65ha0ss22k3dqi6lng.com,REJECT
 DOMAIN-SUFFIX,fhbv.cn,REJECT
 DOMAIN-SUFFIX,fibpeeode.site,REJECT
 DOMAIN-SUFFIX,fibusedie.site,REJECT
+DOMAIN-SUFFIX,fictimruffles.space,REJECT
 DOMAIN-SUFFIX,filament-stats.herokuapp.com,REJECT
 DOMAIN-SUFFIX,filmoljupci.com,REJECT
 DOMAIN-SUFFIX,fimg-resp.seznam.cz,REJECT
@@ -3781,6 +3784,7 @@ DOMAIN-SUFFIX,gekko.spiceworks.com,REJECT
 DOMAIN-SUFFIX,gellecondcle.top,REJECT
 DOMAIN-SUFFIX,gen.etherscan.io,REJECT
 DOMAIN-SUFFIX,gencehepatie.club,REJECT
+DOMAIN-SUFFIX,genergyothe.top,REJECT
 DOMAIN-SUFFIX,gentags.net,REJECT
 DOMAIN-SUFFIX,geo.6play.fr,REJECT
 DOMAIN-SUFFIX,geo.battle.net,REJECT
@@ -5307,6 +5311,7 @@ DOMAIN-SUFFIX,lsxmg.com,REJECT
 DOMAIN-SUFFIX,lt.tritondigital.com,REJECT
 DOMAIN-SUFFIX,ltcprtc.com,REJECT
 DOMAIN-SUFFIX,ltdnc.com,REJECT
+DOMAIN-SUFFIX,ltdome.com,REJECT
 DOMAIN-SUFFIX,lu.sogoucdn.com,REJECT
 DOMAIN-SUFFIX,lucid.mjhassoc.com,REJECT
 DOMAIN-SUFFIX,lucktui.com,REJECT
@@ -5846,6 +5851,7 @@ DOMAIN-SUFFIX,neocounter.neoworx-blog-tools.net,REJECT
 DOMAIN-SUFFIX,nepohita.com,REJECT
 DOMAIN-SUFFIX,nernv.com,REJECT
 DOMAIN-SUFFIX,nesoaghu.net,REJECT
+DOMAIN-SUFFIX,nesparklines.info,REJECT
 DOMAIN-SUFFIX,nessendencec.info,REJECT
 DOMAIN-SUFFIX,nesystersp.club,REJECT
 DOMAIN-SUFFIX,net.haier.com,REJECT
@@ -6846,6 +6852,7 @@ DOMAIN-SUFFIX,redappeneticfr.info,REJECT
 DOMAIN-SUFFIX,redewdit.pro,REJECT
 DOMAIN-SUFFIX,redeye.williamhill.com,REJECT
 DOMAIN-SUFFIX,redirect2719.ws,REJECT
+DOMAIN-SUFFIX,redolymerse.top,REJECT
 DOMAIN-SUFFIX,ref.dealerinspire.com,REJECT
 DOMAIN-SUFFIX,referer.pixplug.in,REJECT
 DOMAIN-SUFFIX,referrer.disqus.com,REJECT
@@ -7157,6 +7164,7 @@ DOMAIN-SUFFIX,sdrive.skoda-auto.com,REJECT
 DOMAIN-SUFFIX,sdsqyyc.com,REJECT
 DOMAIN-SUFFIX,sdsttt.com,REJECT
 DOMAIN-SUFFIX,sdtbhbyb.com,REJECT
+DOMAIN-SUFFIX,sdxctr.com,REJECT
 DOMAIN-SUFFIX,sdxkdj.cn,REJECT
 DOMAIN-SUFFIX,sdycd.com,REJECT
 DOMAIN-SUFFIX,sdytsh.com,REJECT
@@ -8173,6 +8181,7 @@ DOMAIN-SUFFIX,ticktockhealth.com,REJECT
 DOMAIN-SUFFIX,tifybecausingp.info,REJECT
 DOMAIN-SUFFIX,tijorari.com,REJECT
 DOMAIN-SUFFIX,tikrailijorj.com,REJECT
+DOMAIN-SUFFIX,tilfb.com,REJECT
 DOMAIN-SUFFIX,tilosman.com,REJECT
 DOMAIN-SUFFIX,tim.nextinpact.com,REJECT
 DOMAIN-SUFFIX,timeslogtn.timesnow.tv,REJECT
@@ -9081,7 +9090,6 @@ DOMAIN-SUFFIX,wowjogsot.com,REJECT
 DOMAIN-SUFFIX,wowostar.cn,REJECT
 DOMAIN-SUFFIX,wowoyy.cc,REJECT
 DOMAIN-SUFFIX,wo-x.cn,REJECT
-DOMAIN-SUFFIX,wp.brandnewapp.pro,REJECT
 DOMAIN-SUFFIX,wph2.destinia.us,REJECT
 DOMAIN-SUFFIX,wq19w.cn,REJECT
 DOMAIN-SUFFIX,wqmobile.com,REJECT
