@@ -16200,6 +16200,7 @@ DOMAIN-SUFFIX,img-cdn-as.pro,REJECT
 DOMAIN-SUFFIX,img-cdn-eu.pro,REJECT
 DOMAIN-SUFFIX,img-cdn-us.pro,REJECT
 DOMAIN-SUFFIX,img-dsp.oss-cn-beijing.aliyuncs.com,REJECT
+DOMAIN-SUFFIX,img-x.jd.com,REJECT
 DOMAIN-SUFFIX,img.1whour.com,REJECT
 DOMAIN-SUFFIX,img.3sjt.com,REJECT
 DOMAIN-SUFFIX,img.adnyg.com,REJECT
@@ -34405,7 +34406,6 @@ DOMAIN-SUFFIX,xnkmmbfpyokevaxsjtky.com,REJECT
 DOMAIN-SUFFIX,xnnbvckd.com,REJECT
 DOMAIN-SUFFIX,xnrjtqmud.com,REJECT
 DOMAIN-SUFFIX,xnwndbef.com,REJECT
-DOMAIN-SUFFIX,xnxx.com,REJECT
 DOMAIN-SUFFIX,xnydasvpdqn.com,REJECT
 DOMAIN-SUFFIX,xnyemao.com,REJECT
 DOMAIN-SUFFIX,xnyiljkfdwgu.com,REJECT
