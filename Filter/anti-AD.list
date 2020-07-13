@@ -16146,6 +16146,7 @@ DOMAIN-SUFFIX,ilsuuqcab.com,REJECT
 DOMAIN-SUFFIX,ilzjjdujrgaa.com,REJECT
 DOMAIN-SUFFIX,ilzwenpgf.com,REJECT
 DOMAIN-SUFFIX,im-apps.net,REJECT
+DOMAIN-SUFFIX,im-x.jd.com,REJECT
 DOMAIN-SUFFIX,im.aol.de,REJECT
 DOMAIN-SUFFIX,im.ov.yahoo.co.jp,REJECT
 DOMAIN-SUFFIX,im2ss2ss.top,REJECT
@@ -16199,7 +16200,6 @@ DOMAIN-SUFFIX,img-cdn-as.pro,REJECT
 DOMAIN-SUFFIX,img-cdn-eu.pro,REJECT
 DOMAIN-SUFFIX,img-cdn-us.pro,REJECT
 DOMAIN-SUFFIX,img-dsp.oss-cn-beijing.aliyuncs.com,REJECT
-DOMAIN-SUFFIX,img-x.jd.com,REJECT
 DOMAIN-SUFFIX,img.1whour.com,REJECT
 DOMAIN-SUFFIX,img.3sjt.com,REJECT
 DOMAIN-SUFFIX,img.adnyg.com,REJECT
