@@ -840,6 +840,7 @@ DOMAIN-SUFFIX,adrs.sdo.com,REJECT
 DOMAIN-SUFFIX,ads.mp.mydas.mobi,REJECT
 DOMAIN-SUFFIX,ads.servebom.com,REJECT
 DOMAIN-SUFFIX,ads.tremorhub.com,REJECT
+DOMAIN-SUFFIX,ads.twitter.com,REJECT
 DOMAIN-SUFFIX,ads.uc.cn,REJECT
 DOMAIN-SUFFIX,ads.videosz.com,REJECT
 DOMAIN-SUFFIX,ads.zynga.com,REJECT
@@ -6896,6 +6897,7 @@ DOMAIN-SUFFIX,sdxkdj.cn,REJECT
 DOMAIN-SUFFIX,sdycd.com,REJECT
 DOMAIN-SUFFIX,sdytsh.com,REJECT
 DOMAIN-SUFFIX,seaboblit.com,REJECT
+DOMAIN-SUFFIX,search.twitter.com,REJECT
 DOMAIN-SUFFIX,searchmulty.com,REJECT
 DOMAIN-SUFFIX,seasonssna.fun,REJECT
 DOMAIN-SUFFIX,seawayz.com.cn,REJECT
@@ -7607,6 +7609,8 @@ DOMAIN-SUFFIX,sync.adap.tv,REJECT
 DOMAIN-SUFFIX,sync.rambler.ru,REJECT
 DOMAIN-SUFFIX,sync.shinobi.jp,REJECT
 DOMAIN-SUFFIX,syndication.jsadapi.com,REJECT
+DOMAIN-SUFFIX,syndication.twitter.com,REJECT
+DOMAIN-SUFFIX,syndication-o.twitter.com,REJECT
 DOMAIN-SUFFIX,syndicpop.com,REJECT
 DOMAIN-SUFFIX,syndopop.com,REJECT
 DOMAIN-SUFFIX,s-yoolk-banner-assets.yoolk.com,REJECT
@@ -7629,6 +7633,7 @@ DOMAIN-SUFFIX,szfaq.com,REJECT
 DOMAIN-SUFFIX,szggdw.com,REJECT
 DOMAIN-SUFFIX,szh6.xyz,REJECT
 DOMAIN-SUFFIX,szjianxin.net,REJECT
+DOMAIN-SUFFIX,szlong.weixin.qq.com,REJECT
 DOMAIN-SUFFIX,szpl0.com,REJECT
 DOMAIN-SUFFIX,szqifu.com,REJECT
 DOMAIN-SUFFIX,szrk3.com,REJECT
@@ -8350,6 +8355,7 @@ DOMAIN-SUFFIX,urifiel.pw,REJECT
 DOMAIN-SUFFIX,urimteku.com,REJECT
 DOMAIN-SUFFIX,url.rw,REJECT
 DOMAIN-SUFFIX,urlat.cn,REJECT
+DOMAIN-SUFFIX,urls.api.twitter.com,REJECT
 DOMAIN-SUFFIX,urs.zdnet.com,REJECT
 DOMAIN-SUFFIX,urtracker.q-sis.de,REJECT
 DOMAIN-SUFFIX,usalastnews.pro,REJECT
