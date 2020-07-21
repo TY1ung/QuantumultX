@@ -13,6 +13,10 @@ DOMAIN-KEYWORD,blogspot,PROXY
 DOMAIN-SUFFIX,onedrive.live.com,PROXY
 DOMAIN,az416426.vo.msecnd.net,PROXY
 DOMAIN,az668014.vo.msecnd.net,PROXY
+DOMAIN,outlook.office365.com,PROXY
+DOMAIN,smtp.office365.com,PROXY
+DOMAIN,imap-mail.outlook.com,PROXY
+DOMAIN,smtp-mail.outlook.com,PROXY
 # > Facebook
 DOMAIN-SUFFIX,cdninstagram.com,PROXY
 DOMAIN-SUFFIX,fb.com,PROXY
