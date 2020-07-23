@@ -4247,7 +4247,6 @@ DOMAIN-SUFFIX,ambulanciaslazaro.com,REJECT
 DOMAIN-SUFFIX,amcdn.vn,REJECT
 DOMAIN-SUFFIX,amcpusvcit.com,REJECT
 DOMAIN-SUFFIX,amdc.alipay.com,REJECT
-DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
 DOMAIN-SUFFIX,amdcopen.m.taobao.com,REJECT
 DOMAIN-SUFFIX,am-display.com,REJECT
 DOMAIN-SUFFIX,amensh.cn,REJECT
