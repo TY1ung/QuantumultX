@@ -5268,6 +5268,7 @@ DOMAIN-SUFFIX,averaladmi.info,REJECT
 DOMAIN-SUFFIX,averallasew.club,REJECT
 DOMAIN-SUFFIX,avercarto.com,REJECT
 DOMAIN-SUFFIX,avero.xyz,REJECT
+DOMAIN-SUFFIX,avideo.ifengcdn.com,REJECT
 DOMAIN-SUFFIX,avis-verifies.com,REJECT
 DOMAIN-SUFFIX,avmftuama.com,REJECT
 DOMAIN-SUFFIX,avmws.com,REJECT
@@ -9294,6 +9295,7 @@ DOMAIN-SUFFIX,cws.conviva.com,REJECT
 DOMAIN-SUFFIX,cws-cctv.conviva.com,REJECT
 DOMAIN-SUFFIX,cwsgwqbcdhtk.com,REJECT
 DOMAIN-SUFFIX,cwyvnvukvkxqv.com,REJECT
+DOMAIN-SUFFIX,cx.ifengbi.com,REJECT
 DOMAIN-SUFFIX,cx.v5cam.com,REJECT
 DOMAIN-SUFFIX,cxad.cn,REJECT
 DOMAIN-SUFFIX,cxaerp.com,REJECT
@@ -15891,6 +15893,7 @@ DOMAIN-SUFFIX,i99i.org,REJECT
 DOMAIN-SUFFIX,ia.ekstrabladet.dk,REJECT
 DOMAIN-SUFFIX,ia22.com,REJECT
 DOMAIN-SUFFIX,iabusprivacy.pmc.com,REJECT
+DOMAIN-SUFFIX,iaclick.ifeng.com,REJECT
 DOMAIN-SUFFIX,iacpromotion.s3.amazonaws.com,REJECT
 DOMAIN-SUFFIX,iad.apple.com,REJECT
 DOMAIN-SUFFIX,iad.e.360.cn,REJECT
