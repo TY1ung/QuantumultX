@@ -13996,12 +13996,10 @@ DOMAIN-SUFFIX,geo.battle.net,REJECT
 DOMAIN-SUFFIX,geo.cliphunter.com,REJECT
 DOMAIN-SUFFIX,geo.connexionsecure.com,REJECT
 DOMAIN-SUFFIX,geo.ertya.com,REJECT
-DOMAIN-SUFFIX,geo.frtya.com,REJECT
 DOMAIN-SUFFIX,geo.frtyd.com,REJECT
 DOMAIN-SUFFIX,geo.gorillanation.com,REJECT
 DOMAIN-SUFFIX,geo.homepage-web.com,REJECT
 DOMAIN-SUFFIX,geo.kaloo.ga,REJECT
-DOMAIN-SUFFIX,geo.kontagent.net,REJECT
 DOMAIN-SUFFIX,geo.metronews.ca,REJECT
 DOMAIN-SUFFIX,geo.mezr.com,REJECT
 DOMAIN-SUFFIX,geo.mtvnn.com,REJECT
@@ -14014,7 +14012,6 @@ DOMAIN-SUFFIX,geo.xcel.io,REJECT
 DOMAIN-SUFFIX,geo.yahoo.com,REJECT
 DOMAIN-SUFFIX,geo2.adobe.com,REJECT
 DOMAIN-SUFFIX,geoaddicted.net,REJECT
-DOMAIN-SUFFIX,geobanner.adultfriendfinder.com,REJECT
 DOMAIN-SUFFIX,geobanner.alt.com,REJECT
 DOMAIN-SUFFIX,geobanner.blacksexmatch.com,REJECT
 DOMAIN-SUFFIX,geobanner.fuckbookhookups.com,REJECT
@@ -18771,7 +18768,6 @@ DOMAIN-SUFFIX,l.fancyapi.com,REJECT
 DOMAIN-SUFFIX,l.m.naver.com,REJECT
 DOMAIN-SUFFIX,l.ooyala.com,REJECT
 DOMAIN-SUFFIX,l.player.ooyala.com,REJECT
-DOMAIN-SUFFIX,l.popin.cc,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,l.sharethis.com,REJECT
 DOMAIN-SUFFIX,l.yidianzixun.com,REJECT
