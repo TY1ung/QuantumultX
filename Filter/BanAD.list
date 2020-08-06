@@ -25223,6 +25223,7 @@ DOMAIN-SUFFIX,pubexchange.com,REJECT
 DOMAIN-SUFFIX,pub-fit.com,REJECT
 DOMAIN-SUFFIX,pubgears.com,REJECT
 DOMAIN-SUFFIX,pubgenius.io,REJECT
+DOMAIN-SUFFIX,pubghio.fun,REJECT
 DOMAIN-SUFFIX,pubguru.com,REJECT
 DOMAIN-SUFFIX,public.app.autohome.com.cn,REJECT
 DOMAIN-SUFFIX,public.porn.fr,REJECT
