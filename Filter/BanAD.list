@@ -2491,7 +2491,6 @@ DOMAIN-SUFFIX,ad.pickple.net,REJECT
 DOMAIN-SUFFIX,ad.pixnet.in,REJECT
 DOMAIN-SUFFIX,ad.pixnet.net,REJECT
 DOMAIN-SUFFIX,ad.player.baidu.com,REJECT
-DOMAIN-SUFFIX,ad.qingting.fm,REJECT
 DOMAIN-SUFFIX,ad.qn.img-space.com,REJECT
 DOMAIN-SUFFIX,ad.qq.com,REJECT
 DOMAIN-SUFFIX,ad.qun.qq.com,REJECT
@@ -3352,7 +3351,6 @@ DOMAIN-SUFFIX,adsparc.net,REJECT
 DOMAIN-SUFFIX,adspdbl.com,REJECT
 DOMAIN-SUFFIX,adspeed.com,REJECT
 DOMAIN-SUFFIX,adspirit.de,REJECT
-DOMAIN-SUFFIX,ads-pixiv.net,REJECT
 DOMAIN-SUFFIX,adsplex.com,REJECT
 DOMAIN-SUFFIX,ad-sponsor.com,REJECT
 DOMAIN-SUFFIX,adspruce.com,REJECT
@@ -3418,7 +3416,6 @@ DOMAIN-SUFFIX,adtag.cc,REJECT
 DOMAIN-SUFFIX,adtags.mobi,REJECT
 DOMAIN-SUFFIX,adtaily.com,REJECT
 DOMAIN-SUFFIX,adtaily.pl,REJECT
-DOMAIN-SUFFIX,adtdp.com,REJECT
 DOMAIN-SUFFIX,adtear.com,REJECT
 DOMAIN-SUFFIX,adtecc.com,REJECT
 DOMAIN-SUFFIX,adtech.de,REJECT
@@ -3578,7 +3575,6 @@ DOMAIN-SUFFIX,adways.com,REJECT
 DOMAIN-SUFFIX,adwebster.com,REJECT
 DOMAIN-SUFFIX,ad-wheel.com,REJECT
 DOMAIN-SUFFIX,adwires.com,REJECT
-DOMAIN-SUFFIX,adwo.com,REJECT
 DOMAIN-SUFFIX,adworkmedia.com,REJECT
 DOMAIN-SUFFIX,adworkmedia.net,REJECT
 DOMAIN-SUFFIX,adworldmedia.com,REJECT
@@ -4863,7 +4859,6 @@ DOMAIN-SUFFIX,approped.club,REJECT
 DOMAIN-SUFFIX,appropolyfunt.site,REJECT
 DOMAIN-SUFFIX,apprupt.com,REJECT
 DOMAIN-SUFFIX,appsdk.tanv.com,REJECT
-DOMAIN-SUFFIX,appsflyer.com,REJECT
 DOMAIN-SUFFIX,appsmall.mobi,REJECT
 DOMAIN-SUFFIX,appsupdate.sinaapp.com,REJECT
 DOMAIN-SUFFIX,appsupport.qq.com,REJECT
@@ -12340,7 +12335,6 @@ DOMAIN-SUFFIX,exclusiveclicks.com,REJECT
 DOMAIN-SUFFIX,exclusivepussy.com,REJECT
 DOMAIN-SUFFIX,excqjoor.com,REJECT
 DOMAIN-SUFFIX,exd4.destinia.com.au,REJECT
-DOMAIN-SUFFIX,exdynsrv.com,REJECT
 DOMAIN-SUFFIX,exe.bid,REJECT
 DOMAIN-SUFFIX,execution-ci360.rai.it,REJECT
 DOMAIN-SUFFIX,exelator.com,REJECT
@@ -26711,7 +26705,6 @@ DOMAIN-SUFFIX,rummyaffiliates.com,REJECT
 DOMAIN-SUFFIX,rumpelstiltskinhead.com,REJECT
 DOMAIN-SUFFIX,runadtag.com,REJECT
 DOMAIN-SUFFIX,runative.com,REJECT
-DOMAIN-SUFFIX,runative-syndicate.com,REJECT
 DOMAIN-SUFFIX,runcornandwidnesworld-gb.runcornandwidnesworld.co.uk,REJECT
 DOMAIN-SUFFIX,runetki.co,REJECT
 DOMAIN-SUFFIX,runetki.com,REJECT
@@ -30002,7 +29995,6 @@ DOMAIN-SUFFIX,te.supportfreecontent.com,REJECT
 DOMAIN-SUFFIX,te37w.cn,REJECT
 DOMAIN-SUFFIX,teachiefislate.space,REJECT
 DOMAIN-SUFFIX,teachievedim.site,REJECT
-DOMAIN-SUFFIX,teads.tv,REJECT
 DOMAIN-SUFFIX,tealiumiq.com,REJECT
 DOMAIN-SUFFIX,teambetaffiliates.com,REJECT
 DOMAIN-SUFFIX,team-rec.jp,REJECT
