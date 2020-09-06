@@ -1,5 +1,5 @@
 /** 
-☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2020-09-01 22:59⟧
+☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2020-09-06 18:49⟧
 ----------------------------------------------------------
 🛠 发现 𝐁𝐔𝐆 请反馈: @Shawn_KOP_bot
 ⛳️ 关注 🆃🅶 相关频道: https://t.me/QuanX_API
@@ -172,7 +172,7 @@ function SubFlow() {
 //flag=1,2,3分别为 server、rewrite、rule 类型
 var flag = 1
 if (type0 == "Subs-B64Encode") {
-    total = SubsEd2QX(content0, Pudp0, Ptfo0, Pcert0, PTls13);
+    total = Subs2QX(Base64.decode(content0), Pudp0, Ptfo0, Pcert0, PTls13);
 } else if (type0 == "Subs") {
     total = Subs2QX(content0, Pudp0, Ptfo0, Pcert0, PTls13);
 } else if (type0 == "QuanX" || type0 == "Clash") {
@@ -238,10 +238,10 @@ if (flag == 1) { //server 类型统一处理
     if (Psort0) {
         total = QXSort(total, Psort0);
     }
-    if (Pcnt == 1) {$notify("final content" , "Nodes", total)}
     if (total.length > 0){
-      total = TagCheck_QX(total) //节点名检查
-      total = Base64.encode(total.join("\n")) //强制节点类型 base64 加密后再导入 Quantumult X
+      if (Pcnt == 1) {$notify("Final Content" , "Nodes: " +total.length, total)}
+      total = TagCheck_QX(total).join("\n") //节点名检查
+      total = Base64.encode(total) //强制节点类型 base64 加密后再导入 Quantumult X
       $done({ content: total });
     } else {
       $notify("❓❓ 友情提示", "⚠️⚠️ 解析后无有效内容", "🚥🚥 请自行检查, 或者点击通知跳转反馈", bug_link)
@@ -281,7 +281,7 @@ function RegCheck(total, typen, regpara) {
 //判断订阅类型
 function Type_Check(subs) {
     var type = "unknown"
-    var RuleK = ["host,", "-suffix,", "domain,", "ip-cidr,", "ip-cidr6,",  "geoip,", "user-agent,", "ip6-cidr,"];
+    var RuleK = ["host,", "-suffix,", "domain,", "-keyword,", "ip-cidr,", "ip-cidr6,",  "geoip,", "user-agent,", "ip6-cidr,"];
     var DomainK = ["domain-set,"]
     var QuanXK = ["shadowsocks=", "trojan=", "vmess=", "http="];
     var SurgeK = ["=ss,", "=vmess,", "=trojan,", "=http,", "=custom,", "=https,", "=shadowsocks", "=shadowsocksr"];
@@ -308,7 +308,7 @@ function Type_Check(subs) {
       type = "rewrite" //Quantumult X 类型 rewrite
     } else if (RuleK.some(RuleCheck) && subs.indexOf(html) == -1 && subs.indexOf("[Proxy]") == -1 && subs.indexOf("[server_local]") == -1) {
       type = "Rule";
-    } else if (DomainK.some(RuleCheck) && subs.indexOf("[Proxy]") == -1) {
+    } else if (DomainK.some(RuleCheck) && subs.indexOf("[Proxy]") == -1 ) {
       type = "Rule";
       content0 = Domain2Rule(content0) // 转换 domain-set
     } else if (subsn.length >= 1 && SubK2.some(NodeCheck) && subs.indexOf("[Proxy]") == -1 && subs.indexOf("[filter_local]") == -1) { //未b64加密的多行URI 组合订阅
@@ -695,59 +695,6 @@ function ReplaceReg(cnt, para) {
     return cnt0.split("\n")
 }
 
-//混合订阅类型，用于整体进行了 base64 encode 后的类型
-function SubsEd2QX(subs, Pudp, Ptfo, Pcert, Ptls13) {
-    var list0 = Base64.decode(subs).split("\n");
-    var QuanXK = ["shadowsocks=", "trojan=", "vmess=", "http="];
-    var SurgeK = ["=ss", "=vmess", "=trojan", "=http", "=custom"];
-    var LoonK = ["=shadowsocks", "=shadowsocksr"]
-    var QXlist = [];
-    for (var i = 0; i < list0.length; i++) {
-        var node = ""
-        if (list0[i].trim().length > 3) {
-            var type = list0[i].split("://")[0].trim()
-            var listi = list0[i].replace(/ /g, "")
-            const NodeCheck = (item) => listi.toLowerCase().indexOf(item) != -1;
-            if (type == "vmess" && list0[i].indexOf("remarks=") == -1) {
-                var bnode = Base64.decode(list0[i].split("vmess://")[1])
-                if (bnode.indexOf("over-tls=") == -1) { //v2rayN
-                    node = V2QX(list0[i], Pudp, Ptfo, Pcert, Ptls13)
-                } else { //quantumult 类型
-                    node = VQ2QX(list0[i], Pudp, Ptfo, Pcert, Ptls13)
-                }
-            } else if (type == "vmess" && list0[i].indexOf("remarks=") != -1) { //shadowrocket 类型
-                node = VR2QX(list0[i], Pudp, Ptfo, Pcert, Ptls13)
-            } else if (type == "ssr") {
-                node = SSR2QX(list0[i], Pudp, Ptfo)
-            } else if (type == "ss") {
-                node = SS2QX(list0[i], Pudp, Ptfo)
-            } else if (type == "trojan") {
-                node = TJ2QX(list0[i], Pudp, Ptfo, Pcert, Ptls13)
-            } else if (type == "https") { //subs,Ptfo,Pcert,Ptls13
-              if (listi.indexOf("@") != -1) {
-                node = HPS2QX(list0[i], Ptfo, Pcert, Ptls13)
-              } else {
-                var listh = Base64.decode(listi.split("https://")[1].split("#")[0])
-                listh = "https://" + listh + "#" + listi.split("https://")[1].split("#")[1]
-                node = HPS2QX(listh, Ptfo, Pcert, Ptls13)
-              }
-            } else if (QuanXK.some(NodeCheck)) {
-                node = isQuanX(list0[i])[0]
-            } else if (SurgeK.some(NodeCheck)) {
-                node = Surge2QX(list0[i])[0]
-            } else if (LoonK.some(NodeCheck)) {
-                node = Loon2QX(list0[i])
-            }
-            node = Pudp != 0 ? XUDP(node,Pudp) : node
-            node = Ptfo != 0 ? XTFO(node,Ptfo) : node
-            if (node != "") {
-                QXlist.push(node)
-            }
-        }
-    }
-    return QXlist
-}
-
 //混合订阅类型，用于未整体进行 base64 encode 的类型
 function Subs2QX(subs, Pudp, Ptfo, Pcert, Ptls13) {
     var list0 = subs.split("\n");
@@ -871,7 +818,8 @@ function VR2QX(subs, Pudp, Ptfo, Pcert, Ptls13) {
         obfs = subs.indexOf("tls=1") != -1 ? "obfs=over-tls, " : "" //over-tls
     } else if (obfs == "websocket") {
         obfs = subs.indexOf("tls=1") != -1 ? "obfs=wss, " : "obfs=ws," //ws,wss 类型
-        obfs = obfs + "obfs-uri=" + subs.split("&path=")[1].split("&")[0] + ", "
+        var ouri = subs.indexOf("&path=") != -1 ? subs.split("&path=")[1].split("&")[0] : "/" //ws,wss 类型
+        obfs = obfs + "obfs-uri=" + ouri + ", "
         var host = subs.indexOf("&obfsParam=") != -1 ? "obfs-host=" + subs.split("&obfsParam=")[1].split("&")[0] + ", " : ""
         obfs = obfs + host
     }
@@ -918,13 +866,13 @@ function Pobfs(jsonl, Pcert, Ptls13) {
     if (jsonl.net == "ws" && jsonl.tls == "tls") {
         obfs0 = "obfs=wss, " + tcert + ", " + tls13 + ", ";
         uri0 = jsonl.path && jsonl.path != "" ? "obfs-uri=" + jsonl.path : "obfs-uri=/";
-        host0 = jsonl.host && jsonl.host != "" ? "obfs-host=" + jsonl.host + "," : "";
+        host0 = jsonl.host && jsonl.host != "" ? "obfs-host=" + jsonl.host + ", " : "";
         obfsi.push(obfs0 + host0 + uri0)
         return obfsi.join(", ")
     } else if (jsonl.net == "ws") {
         obfs0 = "obfs=ws";
         uri0 = jsonl.path && jsonl.path != "" ? "obfs-uri=" + jsonl.path : "obfs-uri=/";
-        host0 = jsonl.host && jsonl.host != "" ? "obfs-host=" + jsonl.host + "," : "";
+        host0 = jsonl.host && jsonl.host != "" ? "obfs-host=" + jsonl.host + ", " : "";
         obfsi.push(obfs0, host0 + uri0);
         return obfsi.join(", ")
     } else if (jsonl.tls == "tls" && jsonl.net == "tcp") { // 过滤掉 h2/http 等类型 
@@ -1139,7 +1087,17 @@ function SSD2QX(subs, Pudp, Ptfo) {
     return QX;
 }
 
-// 用于过滤非节点部分（比如整份配置中其它内容）
+// 纠正部分不规范的写法(没有把 tag 写在最后)
+function QXFix(cntf) {
+  var cnti = cntf.replace(/tag\s+\=/,"tag=").replace("chacha20-poly","chacha20-ietf-poly")
+  var hd = cnti.split("tag=")[0]
+  var tag = "tag="+cnti.split("tag=")[1].split(",")[0]
+  var tail = cnti.split(tag+",")
+  cnti = tail.length<=1?  cntf : cntf //String(hd + tail[1] +"," + tag)
+  return cnti
+}
+
+// 用于过滤非节点部分（比如整份配置中其它内容）,同时纠正部分不规范的写法(没有把 tag 写在最后)
 function isQuanX(content) {
     var cnts = content.split("\n");
     var nlist = []
@@ -1148,7 +1106,7 @@ function isQuanX(content) {
         if (cnti.indexOf("=") != -1 && cnti.indexOf("tag") != -1) {
             var cnt = cnti.split("=")[0].trim()
             if (cnt == "http" || cnt == "shadowsocks" || cnt == "trojan" || cnt == "vmess") {
-                nlist.push(cnti)
+                nlist.push(QXFix(cnti))
             }
         }
     }
@@ -1208,7 +1166,8 @@ function Rename(str) {
     var server = str;
     if (server.indexOf("tag=") != -1) {
         hd = server.split("tag=")[0]
-        name = server.split("tag=")[1].trim()
+        name = server.split("tag=")[1].split(",")[0].trim()
+        tail = server.split("tag=")[1].split(",").length <=1 ? "" : server.split("tag=")[1].split(name)[1]
         for (var i = 0; i < Prn.length; i++) {
             nname = Prn[i].split("@")[1] ? decodeURIComponent(Prn[i].split("@")[1]) : Prn[i].split("@")[1];
             oname = Prn[i].split("@")[0] ? decodeURIComponent(Prn[i].split("@")[0]) : Prn[i].split("@")[0];
@@ -1234,7 +1193,7 @@ function Rename(str) {
             } else {
                 name = name
             }
-            nserver = hd + "tag=" + name
+            nserver = hd + "tag=" + name + tail
         }
     } return nserver
 }
@@ -1287,7 +1246,7 @@ function emoji_handle(servers, Pemoji) {
             var oname = ser0[i].split("tag=")[1].trim();
             var hd = ser0[i].split("tag=")[0];
             var nname = oname;//emoji_del(oname);
-            var Lmoji = { "🏳️‍🌈": ["流量", "时间", "应急", "过期", "Bandwidth", "expire"], "🇦🇨": ["AC"], "🇦🇹": ["奥地利", "维也纳"], "🇦🇺": ["AU", "Australia", "Sydney", "澳大利亚", "澳洲", "墨尔本", "悉尼"], "🇧🇪": ["BE", "比利时"], "🇧🇬": ["保加利亚", "Bulgaria"], "🇧🇷": ["BR", "Brazil", "巴西", "圣保罗"], "🇨🇦": ["Canada", "Waterloo", "加拿大", "蒙特利尔", "温哥华", "楓葉", "枫叶", "滑铁卢", "多伦多"], "🇨🇭": ["瑞士", "苏黎世", "Switzerland"], "🇩🇪": ["DE", "German", "GERMAN", "德国", "德國", "法兰克福"], "🇩🇰": ["丹麦"], "🇪🇸": ["ES", "西班牙", "Spain"], "🇪🇺": ["EU", "欧盟", "欧罗巴"], "🇫🇮": ["Finland", "芬兰", "赫尔辛基"], "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"], "🇬🇧": ["UK", "GB", "England", "United Kingdom", "英国", "伦敦", "英"], "🇲🇴": ["MO", "Macao", "澳门", "澳", "CTM"], "🇭🇺": ["匈牙利", "Hungary"], "🇭🇰": ["HK", "Hongkong", "Hong Kong", "香港", "深港", "沪港", "呼港", "HKT", "HKBN", "HGC", "WTT", "CMI", "穗港", "京港", "港"], "🇮🇩": ["Indonesia", "印尼", "印度尼西亚", "雅加达"], "🇮🇪": ["Ireland", "爱尔兰", "都柏林"], "🇮🇳": ["India", "印度", "孟买", "Mumbai"], "🇰🇵": ["KP", "朝鲜"], "🇰🇷": ["KR", "Korea", "KOR", "韩国", "首尔", "韩", "韓"], "🇱🇻": ["Latvia", "Latvija", "拉脱维亚"], "🇲🇽️": ["MEX", "MX", "墨西哥"], "🇲🇾": ["MY", "Malaysia", "马来西亚", "吉隆坡"], "🇳🇱": ["NL", "Netherlands", "荷兰", "荷蘭", "尼德蘭", "阿姆斯特丹"], "🇵🇭": ["PH", "Philippines", "菲律宾"], "🇷🇴": ["RO", "罗马尼亚"], "🇷🇺": ["RU", "Russia", "俄罗斯", "俄羅斯", "伯力", "莫斯科", "圣彼得堡", "西伯利亚", "新西伯利亚", "京俄", "杭俄"], "🇸🇦": ["沙特", "迪拜"], "🇸🇪": ["SE", "Sweden"], "🇸🇬": ["SG", "Singapore", "新加坡", "狮城", "沪新", "京新", "泉新", "穗新", "深新", "杭新", "广新"], "🇹🇭": ["TH", "Thailand", "泰国", "泰國", "曼谷"], "🇹🇷": ["TR", "Turkey", "土耳其", "伊斯坦布尔"], "🇹🇼": ["TW", "Taiwan", "台湾", "台北", "台中", "新北", "彰化", "CHT", "台", "HINET"], "🇺🇸": ["US", "USA", "America", "United States", "美国", "美", "京美", "波特兰", "达拉斯", "俄勒冈", "凤凰城", "费利蒙", "硅谷", "矽谷", "拉斯维加斯", "洛杉矶", "圣何塞", "圣克拉拉", "西雅图", "芝加哥", "沪美", "哥伦布", "纽约"], "🇻🇳": ["VN", "越南", "胡志明市"], "🇮🇹": ["Italy", "IT", "Nachash", "意大利", "米兰", "義大利"], "🇿🇦": ["South Africa", "南非"], "🇦🇪": ["United Arab Emirates", "阿联酋"], "🇯🇵": ["JP", "Japan", "日", "日本", "东京", "大阪", "埼玉", "沪日", "穗日", "川日", "中日", "泉日", "杭日", "深日", "辽日", "广日"], "🇦🇷": ["AR", "阿根廷"], "🇳🇴": ["Norway", "挪威", "NO"], "🇨🇳": ["CN", "China", "回国", "中国", "江苏", "北京", "上海", "广州", "深圳", "杭州", "徐州", "青岛", "宁波", "镇江", "back"] }
+            var Lmoji = { "🏳️‍🌈": ["流量", "时间", "应急", "过期", "Bandwidth", "expire"], "🇦🇨": ["AC"], "🇦🇹": ["奥地利", "维也纳"], "🇦🇺": ["AU", "Australia", "Sydney", "澳大利亚", "澳洲", "墨尔本", "悉尼"], "🇧🇪": ["BE", "比利时"], "🇧🇬": ["保加利亚", "Bulgaria"], "🇧🇷": ["BR", "Brazil", "巴西", "圣保罗"], "🇨🇦": ["Canada", "Waterloo", "加拿大", "蒙特利尔", "温哥华", "楓葉", "枫叶", "滑铁卢", "多伦多"], "🇨🇭": ["瑞士", "苏黎世", "Switzerland"], "🇩🇪": ["DE", "German", "GERMAN", "德国", "德國", "法兰克福"], "🇩🇰": ["丹麦"], "🇪🇸": ["ES", "西班牙", "Spain"], "🇪🇺": ["EU", "欧盟", "欧罗巴"], "🇫🇮": ["Finland", "芬兰", "赫尔辛基"], "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"], "🇬🇧": ["UK", "GB", "England", "United Kingdom", "英国", "伦敦", "英"], "🇲🇴": ["MO", "Macao", "澳门", "澳", "CTM"], "🇰🇿": ["哈萨克斯坦"], "🇭🇺": ["匈牙利", "Hungary"], "🇭🇰": ["HK", "Hongkong", "Hong Kong", "香港", "深港", "沪港", "呼港", "HKT", "HKBN", "HGC", "WTT", "CMI", "穗港", "京港", "港"], "🇮🇩": ["Indonesia", "印尼", "印度尼西亚", "雅加达"], "🇮🇪": ["Ireland", "爱尔兰", "都柏林"], "🇮🇳": ["India", "印度", "孟买", "Mumbai"], "🇰🇵": ["KP", "朝鲜"], "🇰🇷": ["KR", "Korea", "KOR", "韩国", "首尔", "韩", "韓"], "🇱🇻": ["Latvia", "Latvija", "拉脱维亚"], "🇲🇽️": ["MEX", "MX", "墨西哥"], "🇲🇾": ["MY", "Malaysia", "马来西亚", "吉隆坡"], "🇳🇱": ["NL", "Netherlands", "荷兰", "荷蘭", "尼德蘭", "阿姆斯特丹"], "🇵🇭": ["PH", "Philippines", "菲律宾"], "🇷🇴": ["RO", "罗马尼亚"], "🇷🇺": ["RU", "Russia", "俄罗斯", "俄羅斯", "伯力", "莫斯科", "圣彼得堡", "西伯利亚", "新西伯利亚", "京俄", "杭俄"], "🇸🇦": ["沙特", "迪拜"], "🇸🇪": ["SE", "Sweden"], "🇸🇬": ["SG", "Singapore", "新加坡", "狮城", "沪新", "京新", "泉新", "穗新", "深新", "杭新", "广新"], "🇹🇭": ["TH", "Thailand", "泰国", "泰國", "曼谷"], "🇹🇷": ["TR", "Turkey", "土耳其", "伊斯坦布尔"], "🇹🇼": ["TW", "Taiwan", "台湾", "台北", "台中", "新北", "彰化", "CHT", "台", "HINET"], "🇺🇸": ["US", "USA", "America", "United States", "美国", "美", "京美", "波特兰", "达拉斯", "俄勒冈", "凤凰城", "费利蒙", "硅谷", "矽谷", "拉斯维加斯", "洛杉矶", "圣何塞", "圣克拉拉", "西雅图", "芝加哥", "沪美", "哥伦布", "纽约"], "🇻🇳": ["VN", "越南", "胡志明市"], "🇮🇹": ["Italy", "IT", "Nachash", "意大利", "米兰", "義大利"], "🇿🇦": ["South Africa", "南非"], "🇦🇪": ["United Arab Emirates", "阿联酋"], "🇯🇵": ["JP", "Japan", "日", "日本", "东京", "大阪", "埼玉", "沪日", "穗日", "川日", "中日", "泉日", "杭日", "深日", "辽日", "广日"], "🇦🇷": ["AR", "阿根廷"], "🇳🇴": ["Norway", "挪威", "NO"], "🇨🇳": ["CN", "China", "回国", "中国", "江苏", "北京", "上海", "广州", "深圳", "杭州", "徐州", "青岛", "宁波", "镇江", "back"] }
             if (Pemoji == 1) {
                 str1 = JSON.stringify(Lmoji)
                 aa = JSON.parse(str1)
@@ -1492,12 +1451,11 @@ function LoonSSR2QX(cnt) {
 // fix yaml parse mistakes
 function YAMLFix(cnt){
   if (cnt.indexOf("{") != -1){
-    cnt = cnt.replace(/: {/g, ": {,     ").replace(/, (host|path|tls|mux|skip)/g,",     $1")
+    cnt = cnt.replace(/    - /g,"  - ").replace(/:(?!\s)/g,": ").replace(/\,\"/g,", \"").replace(/: {/g, ": {,     ").replace(/, (host|path|tls|mux|skip)/g,",     $1")
     cnt = cnt.replace(/{name: /g,"{name: \"").replace(/, server:/g,"\", server:")
     cnt = cnt.replace(/{|}/g,"").replace(/,/g,"\n   ")
   }
-  cnt = cnt.replace(/  -\n.*name/g,"  - name").replace(/\$|\`/g,"").split("proxy-providers:")[0].split("proxy-groups:")[0]
-  //console.log(cnt)
+  cnt = cnt.replace(/  -\n.*name/g,"  - name").replace(/\$|\`/g,"").split("proxy-providers:")[0].split("proxy-groups:")[0].replace(/\"(name|type|server|port|cipher|password|)\"/g,"$1")
   return cnt
 }
 
@@ -1538,14 +1496,14 @@ function CSS2QX(cnt) {
   mtd = "method="+ cnt.cipher
   udp = cnt.udp ? "udp-relay=true" : "udp-relay=false"
   tfo = cnt.tfo ? "fast-open=true" : "fast-open=false"
-  obfs = cnt.plugin == "obfs"? "obfs=" + cnt["plugin-opts"].mode : ""
-  ohost = cnt.plugin == "obfs"? "obfs-host=" + cnt["plugin-opts"].host : ""
+  obfs = cnt["plugin-opts"] ? "obfs=" + cnt["plugin-opts"].mode : ""
+  ohost = cnt["plugin-opts"] ? "obfs-host=" + cnt["plugin-opts"].host : ""
   ouri = ""
   cert = ""
-  if (cnt.plugin == "v2ray-plugin") {
-    obfs = cnt["plugin-opts"].tls? "obfs=wss" : "obfs=ws"
-    ohost = cnt["plugin-opts"].host? "obfs-host=" + cnt["plugin-opts"].host:""
-    ouri = cnt["plugin-opts"].path? "obfs-uri=" + cnt["plugin-opts"].path: ""
+  if (obfs.indexOf("websocket") != -1) {
+      obfs = cnt["plugin-opts"].tls? "obfs=wss" : "obfs=ws"
+      ohost = cnt["plugin-opts"].host? "obfs-host=" + cnt["plugin-opts"].host:""
+      ouri = cnt["plugin-opts"].path? "obfs-uri=" + cnt["plugin-opts"].path: ""
     if (obfs == "obfs=wss") { // tls verification
       cert = Pcert0 == 1? "" : "tls-verification =false"}
   }
