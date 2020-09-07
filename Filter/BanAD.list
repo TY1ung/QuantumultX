@@ -7149,7 +7149,6 @@ DOMAIN-SUFFIX,cache-ssl.celtra.com,REJECT
 DOMAIN-SUFFIX,caclick.baidu.com,REJECT
 DOMAIN-SUFFIX,cactusglobal.io,REJECT
 DOMAIN-SUFFIX,cad.chosun.com,REJECT
-DOMAIN-SUFFIX,cad.donga.com,REJECT
 DOMAIN-SUFFIX,c-adash.m.taobao.com,REJECT
 DOMAIN-SUFFIX,cadfixbig.site,REJECT
 DOMAIN-SUFFIX,cadreon.com,REJECT
@@ -8395,7 +8394,6 @@ DOMAIN-SUFFIX,cnzz.mmstat.com,REJECT
 DOMAIN-SUFFIX,cnzz.net,REJECT
 DOMAIN-SUFFIX,cnzzlink.com,REJECT
 DOMAIN-SUFFIX,co.dtech.baofeng.com,REJECT
-DOMAIN-SUFFIX,co.hltv.org,REJECT
 DOMAIN-SUFFIX,coatobpljh.com,REJECT
 DOMAIN-SUFFIX,coazuthu.net,REJECT
 DOMAIN-SUFFIX,cobaltgroup.com,REJECT
@@ -9957,7 +9955,6 @@ DOMAIN-SUFFIX,darwarvid.com,REJECT
 DOMAIN-SUFFIX,das.biquge3.com,REJECT
 DOMAIN-SUFFIX,das5ku9q.com,REJECT
 DOMAIN-SUFFIX,dasfdasfasdf.no-ip.info,REJECT
-DOMAIN-SUFFIX,dash.tmearn.com,REJECT
 DOMAIN-SUFFIX,dashantechan.cn,REJECT
 DOMAIN-SUFFIX,dashaowu.com,REJECT
 DOMAIN-SUFFIX,dashbida.com,REJECT
@@ -33519,7 +33516,6 @@ DOMAIN-SUFFIX,wgaoe.com,REJECT
 DOMAIN-SUFFIX,wghjq.cn,REJECT
 DOMAIN-SUFFIX,wghmgbjpxmlxa.com,REJECT
 DOMAIN-SUFFIX,wgimuuqvlumvyy.com,REJECT
-DOMAIN-SUFFIX,wgmgmg.biqugeso.com,REJECT
 DOMAIN-SUFFIX,wgnlz.com,REJECT
 DOMAIN-SUFFIX,wgnmp.com,REJECT
 DOMAIN-SUFFIX,wgnpq.com,REJECT
