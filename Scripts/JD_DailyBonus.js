@@ -2,7 +2,7 @@
 
 京东多合一签到脚本
 
-更新时间: 2020.9.6 21:30 v1.49 (Beta)
+更新时间: 2020.9.11 19:50 v1.53 (Beta)
 有效接口: 28+
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 电报频道: @NobyDa 
@@ -24,6 +24,7 @@ var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账�
    注3: 如果复制的Cookie开头为"Cookie: "请把它删除后填入.
    注4: 如果使用QX,Surge,Loon并获取Cookie后, 再重复填写以上选项, 则签到优先读取以上Cookie.
    注5: 如果使用Node.js, 需自行安装'request'模块. 例: npm install request -g
+   注6: Node.js或JSbox环境下已配置数据持久化, 填写Cookie运行一次后, 后续更新脚本无需再次填写, 待Cookie失效后重新抓取填写即可.
 
 *************************
 【 QX, Surge, Loon 说明 】 :
@@ -91,7 +92,7 @@ var LogDetails = false; //是否开启响应日志, true则开启
 
 var stop = 0; //自定义延迟签到,单位毫秒. 默认分批并发无延迟. 延迟作用于每个签到接口, 如填入延迟则切换顺序签到(耗时较长), VPN重启或越狱用户建议填写1, Surge用户请注意在SurgeUI界面调整脚本超时
 
-var DeleteCookie = false; //是否清除Cookie, true则开启. (该选项仅适用于QX,Surge,Loon,JsBox)
+var DeleteCookie = false; //是否清除Cookie, true则开启.
 
 var boxdis = true; //是否开启自动禁用, false则关闭. 脚本运行崩溃时(如VPN断连), 下次运行时将自动禁用相关崩溃接口(仅部分接口启用), 崩溃时可能会误禁用正常接口. (该选项仅适用于QX,Surge,Loon)
 
@@ -246,19 +247,12 @@ function notify() {
 function ReadCookie() {
   initial()
   DualAccount = true;
+  const EnvInfo = $nobyda.isJSBox ? "JD_Cookie" : "CookieJD"
+  const EnvInfo2 = $nobyda.isJSBox ? "JD_Cookie2" : "CookieJD2"
   if (DeleteCookie) {
-    if ($nobyda.isJSBox) {
-      if ($file.exists("shared://JD_Cookie.txt")) {
-        if ($file.exists("shared://JD_Cookie2.txt")) {
-          $file.delete("shared://JD_Cookie2.txt")
-        }
-        $file.delete("shared://JD_Cookie.txt")
-        $nobyda.notify("京东Cookie清除成功 !", "", '请手动关闭脚本内"DeleteCookie"选项')
-        return
-      }
-    } else if ($nobyda.read("CookieJD")) {
-      $nobyda.write("", "CookieJD")
-      $nobyda.write("", "CookieJD2")
+    if ($nobyda.read(EnvInfo) || $nobyda.read(EnvInfo2)) {
+      $nobyda.write("", EnvInfo)
+      $nobyda.write("", EnvInfo2)
       $nobyda.notify("京东Cookie清除成功 !", "", '请手动关闭脚本内"DeleteCookie"选项')
       $nobyda.done()
       return
@@ -270,38 +264,17 @@ function ReadCookie() {
     GetCookie()
     return
   }
-  if ($nobyda.isJSBox) {
-    add = DualKey || $file.exists("shared://JD_Cookie2.txt") ? true : false
-    if (DualKey) {
-      $file.write({
-        data: $data({
-          string: DualKey
-        }),
-        path: "shared://JD_Cookie2.txt"
-      })
+  if (Key || $nobyda.read(EnvInfo)) {
+    if ($nobyda.isJSBox || $nobyda.isNode) {
+      if (Key) $nobyda.write(Key, EnvInfo);
+      if (DualKey) $nobyda.write(DualKey, EnvInfo2);
     }
-    if (Key) {
-      $file.write({
-        data: $data({
-          string: Key
-        }),
-        path: "shared://JD_Cookie.txt"
-      })
-      KEY = Key
-      all()
-    } else if ($file.exists("shared://JD_Cookie.txt")) {
-      KEY = $file.read("shared://JD_Cookie.txt").string
-      all()
-    } else {
-      $nobyda.notify("京东签到", "", "脚本终止, 未填写Cookie ‼️")
-    }
-  } else if (Key || $nobyda.read("CookieJD")) {
-    add = DualKey || $nobyda.read("CookieJD2") ? true : false
-    KEY = Key ? Key : $nobyda.read("CookieJD")
+    add = DualKey || $nobyda.read(EnvInfo2) ? true : false
+    KEY = Key ? Key : $nobyda.read(EnvInfo)
     out = parseInt($nobyda.read("JD_DailyBonusTimeOut")) || out
     stop = parseInt($nobyda.read("JD_DailyBonusDelay")) || stop
-    boxdis = $nobyda.read("JD_Crash_disable") === "false" ? false : boxdis
-    LogDetails = $nobyda.read("JD_DailyBonusLog") === "true" ? true : LogDetails
+    boxdis = $nobyda.read("JD_Crash_disable") === "false" || $nobyda.isNode || $nobyda.isJSBox ? false : boxdis
+    LogDetails = $nobyda.read("JD_DailyBonusLog") === "true" || LogDetails
     ReDis = ReDis ? $nobyda.write("", "JD_DailyBonusDisables") : ""
     all()
   } else {
@@ -314,15 +287,8 @@ function double() {
   initial()
   add = true
   DualAccount = false
-  if ($nobyda.isJSBox) {
-    if (DualKey || $file.exists("shared://JD_Cookie2.txt")) {
-      KEY = DualKey ? DualKey : $file.read("shared://JD_Cookie2.txt").string
-      all()
-    } else {
-      $nobyda.time();
-    }
-  } else if (DualKey || $nobyda.read("CookieJD2")) {
-    KEY = DualKey ? DualKey : $nobyda.read("CookieJD2")
+  if (DualKey || $nobyda.read($nobyda.isJSBox ? "JD_Cookie2" : "CookieJD2")) {
+    KEY = DualKey ? DualKey : $nobyda.read($nobyda.isJSBox ? "JD_Cookie2" : "CookieJD2")
     all()
   } else {
     $nobyda.time();
@@ -950,25 +916,20 @@ function JDUserSign1(s, key, title, body) {
             throw new Error(error)
           } else {
             const Details = LogDetails ? `response:\n${data}` : '';
-            const cc = JSON.parse(data)
             if (data.match(/签到成功/)) {
               console.log(`\n${title}签到成功(1)${Details}`)
-              if (data.match(/(\"text\":\"\d+京豆\")/)) {
-                let beanQuantity = cc.awardList[0].text.match(/\d+/)
-                merge[key].notify = `${title}: 成功, 明细: ${beanQuantity}京豆 🐶`
-                merge[key].bean = beanQuantity
-                merge[key].success = 1
-              } else {
-                merge[key].notify = `${title}: 成功, 明细: 无京豆 🐶`
-                merge[key].success = 1
+              if (data.match(/\"text\":\"\d+京豆\"/)) {
+                merge[key].bean = data.match(/\"text\":\"(\d+)京豆\"/)[1]
               }
+              merge[key].notify = `${title}: 成功, 明细: ${merge[key].bean || '无'}京豆 🐶`
+              merge[key].success = 1
             } else {
               console.log(`\n${title}签到失败(1)${Details}`)
               if (data.match(/(已签到|已领取)/)) {
                 merge[key].notify = `${title}: 失败, 原因: 已签过 ⚠️`
               } else if (data.match(/(不存在|已结束|未开始)/)) {
                 merge[key].notify = `${title}: 失败, 原因: 活动已结束 ⚠️`
-              } else if (cc.code == 3) {
+              } else if (data.match(/\"code\":\"?3\"?/)) {
                 merge[key].notify = `${title}: 失败, 原因: Cookie失效‼️`
               } else {
                 merge[key].notify = `${title}: 失败, 原因: 未知 ⚠️`
@@ -1015,15 +976,12 @@ async function JDUserSign2(s, key, title, tid) {
             throw new Error(error)
           } else {
             const Details = LogDetails ? `response:\n${data}` : '';
-            const cc = JSON.parse(data)
-            if (cc.success == true) {
+            if (data.match(/\"success\":true/)) {
               console.log(`\n${title}签到成功(2)${Details}`)
               if (data.match(/\"jdBeanQuantity\":\d+/)) {
-                merge[key].notify = `${title}: 成功, 明细: ${cc.data.jdBeanQuantity}京豆 🐶`
-                merge[key].bean = cc.data.jdBeanQuantity
-              } else {
-                merge[key].notify = `${title}: 成功, 明细: 无京豆 🐶`
+                merge[key].bean = data.match(/\"jdBeanQuantity\":(\d+)/)[1]
               }
+              merge[key].notify = `${title}: 成功, 明细: ${merge[key].bean || '无'}京豆 🐶`
               merge[key].success = 1
             } else {
               console.log(`\n${title}签到失败(2)${Details}`)
@@ -1045,8 +1003,8 @@ async function JDUserSign2(s, key, title, tid) {
           resolve()
         }
       })
-    }, s)
-    if (out) setTimeout(resolve, out + s)
+    }, 200 + s)
+    if (out) setTimeout(resolve, out + s + 200)
   });
 }
 
@@ -1085,7 +1043,8 @@ function JDFlashSale(s) {
               } else if (data.match(/(\"code\":\"3\"|\"1003\")/)) {
                 merge.JDFSale.notify = "京东商城-闪购: 失败, 原因: Cookie失效‼️"
               } else {
-                merge.JDFSale.notify = "京东商城-闪购: 失败, 原因: 未知 ⚠️"
+                const msg = data.match(/\"msg\":\"([\u4e00-\u9fa5].+?)\"/)
+                merge.JDFSale.notify = `京东商城-闪购: 失败, ${msg ? msg[1] : `原因: 未知`} ⚠️`
               }
             }
           }
@@ -1133,7 +1092,8 @@ function FlashSaleDivide(s) {
               } else if (data.match(/\"code\":\"1003\"|未获取/)) {
                 merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: Cookie失效‼️"
               } else {
-                merge.JDFSale.notify = "京东闪购-瓜分: 失败, 原因: 未知 ⚠️"
+                const msg = data.match(/\"msg\":\"([\u4e00-\u9fa5].+?)\"/)
+                merge.JDFSale.notify = `京东闪购-瓜分: 失败, ${msg ? msg[1] : `原因: 未知`} ⚠️`
               }
             }
           }
@@ -1213,7 +1173,7 @@ function JDMagicCube(s) {
   return new Promise((resolve, reject) => {
     if (disable("JDCube")) return reject()
     const JDUrl = {
-      url: 'https://api.m.jd.com/client.action?functionId=getNewsInteractionInfo&appid=smfe',
+      url: 'https://api.m.jd.com/client.action?functionId=getNewsInteractionInfo&body=%7B%22sign%22%3A2%7D&appid=smfe',
       headers: {
         Cookie: KEY,
       }
@@ -1221,12 +1181,12 @@ function JDMagicCube(s) {
     $nobyda.get(JDUrl, function(error, response, data) {
       try {
         if (error) throw new Error(error)
+        const Details = LogDetails ? "response:\n" + data : '';
         if (data.match(/\"interactionId\":\d+/)) {
-          const Details = LogDetails ? "response:\n" + data : '';
           merge.JDCube.key = data.match(/\"interactionId\":(\d+)/)[1]
           console.log("\n京东魔方-查询活动成功 " + Details)
         } else {
-          console.log("\n京东魔方-查询活动失败 ")
+          console.log("\n京东魔方-暂无有效活动 " + Details)
         }
       } catch (eor) {
         $nobyda.AnError("京东魔方-查询", "JDCube", eor)
@@ -1429,10 +1389,10 @@ function JingDongSpeedUp(s, id) {
             const Details = LogDetails ? "response:\n" + data : '';
             var cc = JSON.parse(data)
             if (!id) {
-              var status = merge.SpeedUp.success ? "本次" : ""
-              console.log("\n" + "天天加速-查询" + status + "任务中 " + Details)
+              var status = $nobyda.ItemIsUsed ? "再次检查" : merge.SpeedUp.notify ? "查询本次" : "查询上次"
+              console.log(`\n天天加速-${status}任务 ${Details}`)
             } else {
-              console.log("\n" + "天天加速-开始本次任务 " + Details)
+              console.log(`\n天天加速-开始${$nobyda.ItemIsUsed?`下轮`:`本次`}任务 ${Details}`)
             }
             if (cc.message == "not login") {
               merge.SpeedUp.fail = 1
@@ -1440,24 +1400,29 @@ function JingDongSpeedUp(s, id) {
               console.log("\n天天加速-Cookie失效")
             } else if (cc.message == "success") {
               if (cc.data.task_status == 0 && cc.data.source_id) {
-                const taskID = cc.data.source_id
-                await JingDongSpeedUp(s, taskID)
+                if ($nobyda.ItemIsUsed) { //如果使用道具后再次开始任务, 则收到奖励
+                  console.log("\n天天加速-领取本次奖励成功")
+                  merge.SpeedUp.bean = cc.data.beans_num || 0
+                  merge.SpeedUp.success = 1
+                  merge.SpeedUp.notify = `京东天天-加速: 成功, 明细: ${merge.SpeedUp.bean || `无`}京豆 🐶`
+                }
+                await JingDongSpeedUp(s, cc.data.source_id)
               } else if (cc.data.task_status == 1) {
-                if (!merge.SpeedUp.notify) merge.SpeedUp.fail = 1;
-                if (!merge.SpeedUp.notify) merge.SpeedUp.notify = "京东天天-加速: 失败, 原因: 加速中 ⚠️";
-                const EndTime = cc.data.end_time ? cc.data.end_time : ""
-                console.log("\n天天加速-目前结束时间: \n" + EndTime)
+                console.log(`\n天天加速-目前结束时间: \n${cc.data.end_time || ``}`)
+                $nobyda.ItemIsUsed = false
                 var step1 = await JDQueryTask(s)
                 var step2 = await JDReceiveTask(s, step1)
-                var step3 = await JDQueryTaskID(s, step2)
+                var step3 = await JDQueryTaskID(s)
                 var step4 = await JDUseProps(s, step3)
-              } else if (cc.data.task_status == 2) {
-                if (data.match(/\"beans_num\":\d+/)) {
-                  merge.SpeedUp.notify = "京东天天-加速: 成功, 明细: " + data.match(/\"beans_num\":(\d+)/)[1] + "京豆 🐶"
-                  merge.SpeedUp.bean = data.match(/\"beans_num\":(\d+)/)[1]
-                } else {
-                  merge.SpeedUp.notify = "京东天天-加速: 成功, 明细: 无京豆 🐶"
+                if (step4 && $nobyda.ItemIsUsed) { //如果使用了道具, 则再次检查任务
+                  await JingDongSpeedUp(s)
+                } else if (!merge.SpeedUp.notify) {
+                  merge.SpeedUp.fail = 1
+                  merge.SpeedUp.notify = "京东天天-加速: 失败, 原因: 加速中 ⚠️";
                 }
+              } else if (cc.data.task_status == 2) {
+                merge.SpeedUp.bean = cc.data.beans_num || 0
+                merge.SpeedUp.notify = `京东天天-加速: 成功, 明细: ${merge.SpeedUp.bean || `无`}京豆 🐶`
                 merge.SpeedUp.success = 1
                 console.log("\n天天加速-领取上次奖励成功")
                 await JingDongSpeedUp(s, null)
@@ -1574,52 +1539,48 @@ function JDReceiveTask(s, CID) {
   });
 }
 
-function JDQueryTaskID(s, EID) {
+function JDQueryTaskID(s) {
   return new Promise(resolve => {
     var TaskCID = ""
-    if (EID) {
-      setTimeout(() => {
-        const EUrl = {
-          url: 'https://api.m.jd.com/?appid=memberTaskCenter&functionId=energyProp_usalbeList&body=%7B%22source%22%3A%22game%22%7D',
-          headers: {
-            Referer: 'https://h5.m.jd.com/babelDiy/Zeus/6yCQo2eDJPbyPXrC3eMCtMWZ9ey/index.html',
-            Cookie: KEY
-          }
-        };
-        $nobyda.get(EUrl, function(error, response, data) {
-          try {
-            if (error) {
-              throw new Error(error)
-            } else {
-              const cc = JSON.parse(data)
-              const Details = LogDetails ? "response:\n" + data : '';
-              if (cc.data.length > 0) {
-                for (var i = 0; i < cc.data.length; i++) {
-                  if (cc.data[i].id) {
-                    TaskCID += cc.data[i].id + ",";
-                  }
+    setTimeout(() => {
+      const EUrl = {
+        url: 'https://api.m.jd.com/?appid=memberTaskCenter&functionId=energyProp_usalbeList&body=%7B%22source%22%3A%22game%22%7D',
+        headers: {
+          Referer: 'https://h5.m.jd.com/babelDiy/Zeus/6yCQo2eDJPbyPXrC3eMCtMWZ9ey/index.html',
+          Cookie: KEY
+        }
+      };
+      $nobyda.get(EUrl, function(error, response, data) {
+        try {
+          if (error) {
+            throw new Error(error)
+          } else {
+            const cc = JSON.parse(data)
+            const Details = LogDetails ? "response:\n" + data : '';
+            if (cc.data.length > 0) {
+              for (var i = 0; i < cc.data.length; i++) {
+                if (cc.data[i].id) {
+                  TaskCID += cc.data[i].id + ",";
                 }
-                if (TaskCID.length > 0) {
-                  TaskCID = TaskCID.substr(0, TaskCID.length - 1).split(",")
-                  console.log("\n天天加速-查询成功" + TaskCID.length + "个道具ID" + Details)
-                } else {
-                  console.log("\n天天加速-暂无有效道具ID" + Details)
-                }
-              } else {
-                console.log("\n天天加速-查询无道具ID" + Details)
               }
+              if (TaskCID.length > 0) {
+                TaskCID = TaskCID.substr(0, TaskCID.length - 1).split(",")
+                console.log(`\n天天加速-查询成功${TaskCID.length}个道具ID ${Details}`)
+              } else {
+                console.log(`\n天天加速-暂无有效道具ID ${Details}`)
+              }
+            } else {
+              console.log(`\n天天加速-查询无道具ID ${Details}`)
             }
-          } catch (eor) {
-            $nobyda.AnError("查询号码-加速", "SpeedUp", eor)
-          } finally {
-            resolve(TaskCID)
           }
-        })
-      }, s + 200)
-      if (out) setTimeout(resolve, out + s)
-    } else {
-      resolve(TaskCID)
-    }
+        } catch (eor) {
+          $nobyda.AnError("查询号码-加速", "SpeedUp", eor)
+        } finally {
+          resolve(TaskCID)
+        }
+      })
+    }, s + 200)
+    if (out) setTimeout(resolve, out + s)
   });
 }
 
@@ -1650,13 +1611,13 @@ function JDUseProps(s, PropID) {
                   PropNumTask += 1
                 }
               }
-
             } catch (eor) {
               $nobyda.AnError("使用道具-加速", "SpeedUp", eor)
             } finally {
               if (PropID.length == PropCount) {
                 console.log("\n天天加速-已成功使用" + PropNumTask + "个道具")
-                resolve()
+                if (PropNumTask) $nobyda.ItemIsUsed = true;
+                resolve(PropNumTask)
               }
             }
           })
@@ -2181,11 +2142,14 @@ function nobyda() {
   const isLoon = typeof $loon != "undefined"
   const isJSBox = typeof $app != "undefined" && typeof $http != "undefined"
   const isNode = typeof require == "function" && !isJSBox;
+  const NodeSet = 'CookieSet.json'
   const node = (() => {
     if (isNode) {
       const request = require('request');
+      const fs = require("fs");
       return ({
-        request
+        request,
+        fs
       })
     } else {
       return (null)
@@ -2194,7 +2158,7 @@ function nobyda() {
   const notify = (title, subtitle, message) => {
     if (isQuanX) $notify(title, subtitle, message)
     if (isSurge) $notification.post(title, subtitle, message)
-    if (isNode) log(title + subtitle + message)
+    if (isNode) console.log(`${title}\n${subtitle}\n${message}`)
     if (isJSBox) $push.schedule({
       title: title,
       body: subtitle ? subtitle + "\n" + message : message
@@ -2203,10 +2167,43 @@ function nobyda() {
   const write = (value, key) => {
     if (isQuanX) return $prefs.setValueForKey(value, key)
     if (isSurge) return $persistentStore.write(value, key)
+    if (isNode) {
+      try {
+        if (!node.fs.existsSync(NodeSet)) node.fs.writeFileSync(NodeSet, JSON.stringify({}));
+        const dataValue = JSON.parse(node.fs.readFileSync(NodeSet));
+        if (value) dataValue[key] = value;
+        if (!value) delete dataValue[key];
+        return node.fs.writeFileSync(NodeSet, JSON.stringify(dataValue));
+      } catch (er) {
+        return AnError('Node.js持久化写入', null, er);
+      }
+    }
+    if (isJSBox) {
+      if (!value) return $file.delete(`shared://${key}.txt`);
+      return $file.write({
+        data: $data({
+          string: value
+        }),
+        path: `shared://${key}.txt`
+      })
+    }
   }
   const read = (key) => {
     if (isQuanX) return $prefs.valueForKey(key)
     if (isSurge) return $persistentStore.read(key)
+    if (isNode) {
+      try {
+        if (!node.fs.existsSync(NodeSet)) return null;
+        const dataValue = JSON.parse(node.fs.readFileSync(NodeSet))
+        return dataValue[key]
+      } catch (er) {
+        return AnError('Node.js持久化读取', null, er)
+      }
+    }
+    if (isJSBox) {
+      if (!$file.exists(`shared://${key}.txt`)) return null;
+      return $file.read(`shared://${key}.txt`).string
+    }
   }
   const adapterStatus = (response) => {
     if (response) {
@@ -2298,14 +2295,15 @@ function nobyda() {
       $http.post(options);
     }
   }
-  const log = (message) => console.log(message)
-  const AnError = (name, key, er) => {
-    if (!merge[key].notify) {
-      merge[key].notify = `${name}: 异常, 已输出日志 ‼️`
-    } else {
-      merge[key].notify += `\n${name}: 异常, 已输出日志 ‼️ (2)`
+  const AnError = (name, keyname, er) => {
+    if (typeof(merge) != "undefined" && keyname) {
+      if (!merge[keyname].notify) {
+        merge[keyname].notify = `${name}: 异常, 已输出日志 ‼️`
+      } else {
+        merge[keyname].notify += `\n${name}: 异常, 已输出日志 ‼️ (2)`
+      }
+      merge[keyname].error = 1
     }
-    merge[key].error = 1
     return console.log(`\n‼️${name}发生错误\n‼️名称: ${er.name}\n‼️描述: ${er.message}${JSON.stringify(er).match(/\"line\"/) ? `\n‼️行列: ${JSON.stringify(er)}` : ``}`)
   }
   const time = () => {
@@ -2329,7 +2327,6 @@ function nobyda() {
     read,
     get,
     post,
-    log,
     time,
     done
   }
