@@ -1,3 +1,4 @@
+//Modified from Choler by eHpo
 const path1 = "/feed/";
 const path2 = "/aweme/post/";
 const path3 = "/follow/feed/";
@@ -59,9 +60,9 @@ function feed() {
   }
   $done({ body: JSON.stringify(obj) });
 }
-  }
-  $done({ body: JSON.stringify(obj) });
-}
+
+function post() {
+  let obj = JSON.parse($response.body);
   let arr = obj.aweme_list;
   if (arr != null) {
     for (var i = arr.length - 1; i >= 0; i--) {
@@ -77,15 +78,15 @@ function feed() {
         let download = arr[i].video.download_addr;
         arr[i].video.download_suffix_logo_addr = download;
       }
-function nearby() {
+    }
+  }
+  $done({ body: JSON.stringify(obj) });
+}
+
+function follow() {
   let obj = JSON.parse($response.body);
-  if (obj.aweme_list) {
-    for (var i = obj.aweme_list.length - 1; i >= 0; i--) {
-      if (obj.aweme_list[i].video) {
-        if (obj.aweme_list[i].status.reviewed != 1) {
-          obj.aweme_list[i].status.reviewed = 1;
-          obj.aweme_list[i].video_control.allow_download = true;
-        }
+  let arr = obj.data;
+  for (var i = arr.length - 1; i >= 0; i--) {
     if (arr[i].aweme.status.reviewed != 1) {
       arr[i].aweme.status.reviewed = 1;
       arr[i].aweme.video_control.allow_download = true;
@@ -112,6 +113,9 @@ function nearby() {
       if (obj.aweme_list[i].video) {
         if (obj.aweme_list[i].status.reviewed != 1) {
           obj.aweme_list[i].status.reviewed = 1;
+          obj.aweme_list[i].video_control.allow_download = true;
+        }
+        if (obj.aweme_list[i].video.download_addr) {
           let play = obj.aweme_list[i].video.play_addr.url_list;
           obj.aweme_list[i].video.download_addr.url_list = play;
         }
@@ -119,15 +123,12 @@ function nearby() {
           let download = obj.aweme_list[i].video.download_addr;
           obj.aweme_list[i].video.download_suffix_logo_addr = download;
         }
-          let download = obj.aweme_list[i].video.download_addr;
-          obj.aweme_list[i].video.download_suffix_logo_addr = download;
-        }
       }
     }
   }
-function search() {
-  let obj = JSON.parse($response.body);
-  let arr = obj.data;
+  $done({ body: JSON.stringify(obj) });
+}
+
 function item() {
   let obj = JSON.parse($response.body);
   if (obj.aweme_list) {
@@ -135,23 +136,23 @@ function item() {
       if (obj.aweme_list[i].video) {
         if (obj.aweme_list[i].status.reviewed != 1) {
           obj.aweme_list[i].status.reviewed = 1;
-        arr[i].aweme_info.video.download_addr.url_list = play;
-        let download = arr[i].aweme_info.video.download_addr;
-        arr[i].aweme_info.video.download_suffix_logo_addr = download;
-        arr[i].aweme_info.status.reviewed = 1;
-        arr[i].aweme_info.video_control.allow_download = true;
+          obj.aweme_list[i].video_control.allow_download = true;
+        }
+        if (obj.aweme_list[i].video.download_addr) {
+          let play = obj.aweme_list[i].video.play_addr.url_list;
+          obj.aweme_list[i].video.download_addr.url_list = play;
+        }
+        if (obj.aweme_list[i].video.download_suffix_logo_addr) {
+          let download = obj.aweme_list[i].video.download_addr;
+          obj.aweme_list[i].video.download_suffix_logo_addr = download;
+        }
       }
     }
   }
   $done({ body: JSON.stringify(obj) });
 }
 
-function hot() {
-  let obj = JSON.parse($response.body);
-  if (obj.aweme_list) {
-    for (var i = obj.aweme_list.length - 1; i >= 0; i--) {
-      if (obj.aweme_list[i].video.download_addr) {
-        let play = obj.aweme_list[i].video.play_addr.url_list;
+function search() {
   let obj = JSON.parse($response.body);
   let arr = obj.data;
   for (var i = arr.length - 1; i >= 0; i--) {
