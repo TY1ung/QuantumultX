@@ -1,7 +1,9 @@
 /*
 Lensa人像修图解锁
+
 [MITM]
 hostname = subscription-service.neuralprisma.com
+
 [Script]
 http-response ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Xu1o/Surge/master/Script/Lensa.js,script-update-interval=0
 */
