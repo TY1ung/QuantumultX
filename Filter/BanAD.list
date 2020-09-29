@@ -4739,7 +4739,6 @@ DOMAIN-SUFFIX,api.groupon.com,REJECT
 DOMAIN-SUFFIX,api.iapps.ifeng.com,REJECT
 DOMAIN-SUFFIX,api.iimedia.cn,REJECT
 DOMAIN-SUFFIX,api.ijunhai.com,REJECT
-DOMAIN-SUFFIX,api.iplay.163.com,REJECT
 DOMAIN-SUFFIX,api.jsfc8.cn,REJECT
 DOMAIN-SUFFIX,api.koudaikj.com,REJECT
 DOMAIN-SUFFIX,api.ktplay.com,REJECT
