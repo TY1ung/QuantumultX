@@ -3537,7 +3537,6 @@ DOMAIN-SUFFIX,adversaldisplay.com,REJECT
 DOMAIN-SUFFIX,adversalservers.com,REJECT
 DOMAIN-SUFFIX,adverserve.net,REJECT
 DOMAIN-SUFFIX,adversolutions.com,REJECT
-DOMAIN-SUFFIX,advertpay-vip-ssl.xunlei.com,REJECT
 DOMAIN-SUFFIX,advfeeds.com,REJECT
 DOMAIN-SUFFIX,advg.jp,REJECT
 DOMAIN-SUFFIX,advgoogle.com,REJECT
@@ -21341,7 +21340,6 @@ DOMAIN-SUFFIX,mongoosemetrics.com,REJECT
 DOMAIN-SUFFIX,monijorb.com,REJECT
 DOMAIN-SUFFIX,monimoni.top,REJECT
 DOMAIN-SUFFIX,monitis.com,REJECT
-DOMAIN-SUFFIX,monitor.ebay.com,REJECT
 DOMAIN-SUFFIX,monitus.net,REJECT
 DOMAIN-SUFFIX,monkeybroker.net,REJECT
 DOMAIN-SUFFIX,monkeyminer.net,REJECT
@@ -33309,7 +33307,6 @@ DOMAIN-SUFFIX,wasm.stream,REJECT
 DOMAIN-SUFFIX,wastedcooperate.com,REJECT
 DOMAIN-SUFFIX,wastesshimssat.world,REJECT
 DOMAIN-SUFFIX,watakaw133.xyz,REJECT
-DOMAIN-SUFFIX,watch.advertising.speed.cdn.vip.xunlei.com,REJECT
 DOMAIN-SUFFIX,watchfree.flv.in,REJECT
 DOMAIN-SUFFIX,watchingssui.info,REJECT
 DOMAIN-SUFFIX,watchingthat.com,REJECT
@@ -34384,7 +34381,6 @@ DOMAIN-SUFFIX,xdcqcyp.com,REJECT
 DOMAIN-SUFFIX,xdcs-collector.ximalaya.com,REJECT
 DOMAIN-SUFFIX,xdev.info,REJECT
 DOMAIN-SUFFIX,xdirectx.com,REJECT
-DOMAIN-SUFFIX,xdisctracking.pw,REJECT
 DOMAIN-SUFFIX,xdjdwpwwbky.com,REJECT
 DOMAIN-SUFFIX,xdkje.com,REJECT
 DOMAIN-SUFFIX,xdltrwavzxn.com,REJECT
