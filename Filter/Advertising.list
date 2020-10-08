@@ -107,8 +107,6 @@ DOMAIN-SUFFIX,adfalcon.com,REJECT
 DOMAIN-SUFFIX,adflow.ru,REJECT
 DOMAIN-SUFFIX,adinall.com,REJECT
 DOMAIN-SUFFIX,ad-locus.com,REJECT
-DOMAIN-SUFFIX,adlooxtracking.com,REJECT
-DOMAIN-SUFFIX,admaster.com.cn,REJECT
 DOMAIN-SUFFIX,ad-maven.com,REJECT
 DOMAIN-SUFFIX,admob.com,REJECT
 DOMAIN-SUFFIX,ad-move.jp,REJECT
@@ -116,10 +114,7 @@ DOMAIN-SUFFIX,adnxs.com,REJECT
 DOMAIN-SUFFIX,adnyg.com,REJECT
 DOMAIN-SUFFIX,ad-plus.cn,REJECT
 DOMAIN-SUFFIX,adsafeprotected.com,REJECT
-DOMAIN-SUFFIX,adsage.cn,REJECT
-DOMAIN-SUFFIX,adsage.com,REJECT
 DOMAIN-SUFFIX,ad-score.com,REJECT
-DOMAIN-SUFFIX,adsensor.org,REJECT
 DOMAIN-SUFFIX,adsmediabox.com,REJECT
 DOMAIN-SUFFIX,ads-pixiv.net,REJECT
 DOMAIN-SUFFIX,ad-srv.co,REJECT
@@ -139,18 +134,14 @@ DOMAIN-SUFFIX,adwhirl.com,REJECT
 DOMAIN-SUFFIX,adwo.com,REJECT
 DOMAIN-SUFFIX,adxadserv.com,REJECT
 DOMAIN-SUFFIX,aiclk.com,REJECT
-DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
 DOMAIN-SUFFIX,amobee.com,REJECT
 DOMAIN-SUFFIX,app-adforce.jp,REJECT
 DOMAIN-SUFFIX,appads.com,REJECT
 DOMAIN-SUFFIX,appcpi.net,REJECT
 DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,applift.com,REJECT
-DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
-DOMAIN-SUFFIX,appsflyer.com,REJECT
 DOMAIN-SUFFIX,apsalar.com,REJECT
-DOMAIN-SUFFIX,apxadtracking.net,REJECT
 DOMAIN-SUFFIX,atomhike.com,REJECT
 DOMAIN-SUFFIX,axonix.com,REJECT
 DOMAIN-SUFFIX,b2pk.com,REJECT
@@ -165,7 +156,6 @@ DOMAIN-SUFFIX,clotfun.online,REJECT
 DOMAIN-SUFFIX,cloudmobi.net,REJECT
 DOMAIN-SUFFIX,crwdcntrl.net,REJECT
 DOMAIN-SUFFIX,ctrmi.com,REJECT
-DOMAIN-SUFFIX,domob.cn,REJECT
 DOMAIN-SUFFIX,eroadvertising.com,REJECT
 DOMAIN-SUFFIX,ero-advertising.com,REJECT
 DOMAIN-SUFFIX,exdynsrv.com,REJECT
@@ -206,7 +196,6 @@ DOMAIN-SUFFIX,mobclix.com,REJECT
 DOMAIN-SUFFIX,mopub.com,REJECT
 DOMAIN-SUFFIX,okjhb.xyz,REJECT
 DOMAIN-SUFFIX,open-adx.com,REJECT
-DOMAIN-SUFFIX,openx.net,REJECT
 DOMAIN-SUFFIX,outbrain.com,REJECT
 DOMAIN-SUFFIX,pubmatic.com,REJECT
 DOMAIN-SUFFIX,qchannel01.cn,REJECT
@@ -221,7 +210,6 @@ DOMAIN-SUFFIX,smaato.net,REJECT
 DOMAIN-SUFFIX,smartadserver.com,REJECT
 DOMAIN-SUFFIX,smartnews-ads.com,REJECT
 DOMAIN-SUFFIX,supersonic.com,REJECT
-DOMAIN-SUFFIX,supersonicads.com,REJECT
 DOMAIN-SUFFIX,tagtic.cn,REJECT
 DOMAIN-SUFFIX,tanv.com,REJECT
 DOMAIN-SUFFIX,tanx.com,REJECT
@@ -249,7 +237,6 @@ DOMAIN-SUFFIX,yhdichan.com,REJECT
 DOMAIN-SUFFIX,yicha.jp,REJECT
 DOMAIN-SUFFIX,yllix.com,REJECT
 DOMAIN-SUFFIX,ymtrack6.co,REJECT
-DOMAIN-SUFFIX,ymtracking.com,REJECT
 DOMAIN-SUFFIX,yoc.com,REJECT
 DOMAIN-SUFFIX,yoc-performance.com,REJECT
 DOMAIN-SUFFIX,yomob.com.cn,REJECT
@@ -288,7 +275,6 @@ DOMAIN,ads.weilitoutiao.net,REJECT
 DOMAIN,adsapi.manhuaren.com,REJECT
 DOMAIN,adsdk.dmzj.com,REJECT
 DOMAIN,adserver.pandora.com,REJECT
-DOMAIN,adshow.58.com,REJECT
 DOMAIN,adui.tg.meitu.com,REJECT
 DOMAIN,adv.bandi.so,REJECT
 DOMAIN,adv.ettoday.net,REJECT
@@ -377,7 +363,6 @@ DOMAIN,vdapprecv.app.cntvwb.cn,REJECT
 DOMAIN,ad.21cn.com,REJECT
 DOMAIN,ad.k.21cn.com,REJECT
 DOMAIN,admarket.21cn.com,REJECT
-DOMAIN,adshows.21cn.com,REJECT
 # > Chelaile
 DOMAIN,atrace.chelaile.net.cn,REJECT
 DOMAIN,logs.chelaile.net.cn,REJECT
@@ -389,8 +374,6 @@ DOMAIN,exp.360in.com,REJECT
 # (G)
 # > Google
 DOMAIN-SUFFIX,doubleclick.net,REJECT
-DOMAIN-SUFFIX,googleadservices.com,REJECT
-DOMAIN-SUFFIX,googleadsserving.cn,REJECT
 DOMAIN-SUFFIX,googlesyndication.com,REJECT
 DOMAIN-SUFFIX,googletagservices.com,REJECT
 DOMAIN,ads.youtube.com,REJECT
@@ -481,7 +464,6 @@ DOMAIN,cdn.adapi.fotoable.com,REJECT
 DOMAIN,adnew.wifi8.com,REJECT
 DOMAIN,adfile.wifi8.com,REJECT
 # > PConline
-DOMAIN,ad-analysis.pconline.com.cn,REJECT
 DOMAIN,iad0ssl.pcauto.com.cn,REJECT
 DOMAIN,iad0ssl.pconline.com.cn,REJECT
 DOMAIN,imgad0.pcauto.com.cn,REJECT
@@ -532,7 +514,6 @@ DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 # > Tencent Music (TME)
 DOMAIN,ad.tencentmusic.com,REJECT
-DOMAIN,adserviceretry.kugou.com,REJECT
 DOMAIN,ads.service.kugou.com,REJECT
 DOMAIN,adsfile.bssdlbig.kugou.com,REJECT
 DOMAIN,g.koowo.com,REJECT
@@ -546,7 +527,6 @@ DOMAIN,rich.kuwo.cn,REJECT
 DOMAIN,adm.10jqka.com.cn,REJECT
 DOMAIN,stat.10jqka.com.cn,REJECT
 # > The Paper
-DOMAIN,admonitor.thepaper.cn,REJECT
 DOMAIN,adpai.thepaper.cn,REJECT
 DOMAIN,imgadpai.thepaper.cn,REJECT
 # > Thunder
