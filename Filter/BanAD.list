@@ -7294,6 +7294,7 @@ DOMAIN-SUFFIX,c3tag.com,REJECT
 DOMAIN-SUFFIX,c3t-system-err.club,REJECT
 DOMAIN-SUFFIX,c4698cd6aed0dcef367.com,REJECT
 DOMAIN-SUFFIX,c4dv.copinesdevoyage.com,REJECT
+DOMAIN-SUFFIX,c4frc.info,REJECT
 DOMAIN-SUFFIX,c50021876c67fd14.com,REJECT
 DOMAIN-SUFFIX,c5b39ff13b3259df.com,REJECT
 DOMAIN-SUFFIX,c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com,REJECT
@@ -16027,7 +16028,6 @@ DOMAIN-SUFFIX,host-host-ads.com,REJECT
 DOMAIN-SUFFIX,hosticanaffiliate.com,REJECT
 DOMAIN-SUFFIX,hosting.conduit.com,REJECT
 DOMAIN-SUFFIX,hosting.miarroba.info,REJECT
-DOMAIN-SUFFIX,hosting24.com,REJECT
 DOMAIN-SUFFIX,hostingcloud.ac,REJECT
 DOMAIN-SUFFIX,hostingcloud.bi,REJECT
 DOMAIN-SUFFIX,hostingcloud.li,REJECT
