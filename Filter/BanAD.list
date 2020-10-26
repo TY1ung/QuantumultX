@@ -4975,8 +4975,6 @@ DOMAIN-SUFFIX,appc.baidu.cn,REJECT
 DOMAIN-SUFFIX,appc.baidu.com,REJECT
 DOMAIN-SUFFIX,appcast.io,REJECT
 DOMAIN-SUFFIX,appchannel.html5.qq.com,REJECT
-DOMAIN-SUFFIX,appcloud2.in.zhihu.com,REJECT
-DOMAIN-SUFFIX,appcloud2.zhihu.com,REJECT
 DOMAIN-SUFFIX,appconsent.io,REJECT
 DOMAIN-SUFFIX,appcpa.net,REJECT
 DOMAIN-SUFFIX,appdownload.alicdn.com,REJECT
