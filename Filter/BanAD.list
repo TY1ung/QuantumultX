@@ -8610,9 +8610,6 @@ DOMAIN-SUFFIX,cnlink8.com,REJECT
 DOMAIN-SUFFIX,cnmmei.com,REJECT
 DOMAIN-SUFFIX,cnn.dyn.cnn.com,REJECT
 DOMAIN-SUFFIX,cnnbps.com,REJECT
-DOMAIN-SUFFIX,cnnic.cn,REJECT
-DOMAIN-SUFFIX,cnnic.net,REJECT
-DOMAIN-SUFFIX,cnnic.net.cn,REJECT
 DOMAIN-SUFFIX,cnossxqkdoupxw.com,REJECT
 DOMAIN-SUFFIX,cnpc.infzm.com,REJECT
 DOMAIN-SUFFIX,cnpinzhuo.com,REJECT
@@ -25535,7 +25532,6 @@ DOMAIN-SUFFIX,primechoice.ru,REJECT
 DOMAIN-SUFFIX,primetag.net,REJECT
 DOMAIN-SUFFIX,primusu.com,REJECT
 DOMAIN-SUFFIX,princided.club,REJECT
-DOMAIN-SUFFIX,printfriendly.com,REJECT
 DOMAIN-SUFFIX,prioritybeforehand.com,REJECT
 DOMAIN-SUFFIX,priorityinvaderinflation.com,REJECT
 DOMAIN-SUFFIX,prism.app-us1.com,REJECT
