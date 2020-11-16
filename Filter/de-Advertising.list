@@ -1395,7 +1395,6 @@ DOMAIN-SUFFIX,adm.sina.com.cn,REJECT
 DOMAIN-SUFFIX,adm.xmfish.com,REJECT
 DOMAIN-SUFFIX,admaji.com,REJECT
 DOMAIN-SUFFIX,admarket.mobi,REJECT
-DOMAIN-SUFFIX,admarvel.com,REJECT
 DOMAIN-SUFFIX,admd.housefun.com.tw,REJECT
 DOMAIN-SUFFIX,admd.yam.com,REJECT
 DOMAIN-SUFFIX,admddc.com,REJECT
@@ -1462,17 +1461,11 @@ DOMAIN-SUFFIX,adsclick.yx.js.cn,REJECT
 DOMAIN-SUFFIX,adsco.re,REJECT
 DOMAIN-SUFFIX,adsense.html5.qq.com,REJECT
 DOMAIN-SUFFIX,adservi.com,REJECT
-DOMAIN-SUFFIX,adservice.com,REJECT
-DOMAIN-SUFFIX,adservice.google.com,REJECT
 DOMAIN-SUFFIX,adsfile.qq.com,REJECT
 DOMAIN-SUFFIX,adsgroup.qq.com,REJECT
-DOMAIN-SUFFIX,adshmct.qq.com,REJECT
-DOMAIN-SUFFIX,adshmmsg.qq.com,REJECT
 DOMAIN-SUFFIX,adslvfile.qq.com,REJECT
 DOMAIN-SUFFIX,adslvseed.qq.com,REJECT
 DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com,REJECT
-DOMAIN-SUFFIX,adsmogo.com,REJECT
-DOMAIN-SUFFIX,adsmogo.org,REJECT
 DOMAIN-SUFFIX,adsolution.imtt.qq.com,REJECT
 DOMAIN-SUFFIX,adspop.me,REJECT
 DOMAIN-SUFFIX,adsqqclick.qq.com,REJECT
@@ -1817,7 +1810,6 @@ DOMAIN-SUFFIX,amaqvmfd.com,REJECT
 DOMAIN-SUFFIX,amaumomt.com,REJECT
 DOMAIN-SUFFIX,amavirgin.pro,REJECT
 DOMAIN-SUFFIX,amazing-dating.com,REJECT
-DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
 DOMAIN-SUFFIX,amcpusvcit.com,REJECT
 DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
 DOMAIN-SUFFIX,amdcopen.m.taobao.com,REJECT
@@ -2142,7 +2134,6 @@ DOMAIN-SUFFIX,appresentikv.club,REJECT
 DOMAIN-SUFFIX,appropeanes.club,REJECT
 DOMAIN-SUFFIX,approped.club,REJECT
 DOMAIN-SUFFIX,appropolyfunt.site,REJECT
-DOMAIN-SUFFIX,appsflyer.com,REJECT
 DOMAIN-SUFFIX,appstoore.online,REJECT
 DOMAIN-SUFFIX,appsupport.qq.com,REJECT
 DOMAIN-SUFFIX,appuu.cn,REJECT
@@ -3911,9 +3902,6 @@ DOMAIN-SUFFIX,cnxad.net,REJECT
 DOMAIN-SUFFIX,cnxmyb.cn,REJECT
 DOMAIN-SUFFIX,cnyibs.com,REJECT
 DOMAIN-SUFFIX,cnzhqs.com,REJECT
-DOMAIN-SUFFIX,cnzz.com,REJECT
-DOMAIN-SUFFIX,cnzz.com.so,REJECT
-DOMAIN-SUFFIX,cnzzlink.com,REJECT
 DOMAIN-SUFFIX,coatobpljh.com,REJECT
 DOMAIN-SUFFIX,cobdieink.com,REJECT
 DOMAIN-SUFFIX,coccccc.cc,REJECT
@@ -5000,9 +4988,6 @@ DOMAIN-SUFFIX,dolphincdn.xyz,REJECT
 DOMAIN-SUFFIX,dolsoste.com,REJECT
 DOMAIN-SUFFIX,dombnrs.com,REJECT
 DOMAIN-SUFFIX,domisesvivin.info,REJECT
-DOMAIN-SUFFIX,domob.cn,REJECT
-DOMAIN-SUFFIX,domob.com.cn,REJECT
-DOMAIN-SUFFIX,domob.org,REJECT
 DOMAIN-SUFFIX,domparce.pro,REJECT
 DOMAIN-SUFFIX,donconferen.site,REJECT
 DOMAIN-SUFFIX,dontaxoaf.com,REJECT
@@ -5148,7 +5133,6 @@ DOMAIN-SUFFIX,dunderaffiliates.com,REJECT
 DOMAIN-SUFFIX,dungeonavenge.com,REJECT
 DOMAIN-SUFFIX,duobaoqj.com,REJECT
 DOMAIN-SUFFIX,duoduo.icu,REJECT
-DOMAIN-SUFFIX,duomeng.cn,REJECT
 DOMAIN-SUFFIX,duoqumanhua.com,REJECT
 DOMAIN-SUFFIX,dup.baidustatic.com,REJECT
 DOMAIN-SUFFIX,dupinpu.com,REJECT
@@ -5215,7 +5199,6 @@ DOMAIN-SUFFIX,dzrenju2.cn,REJECT
 DOMAIN-SUFFIX,dzxwnews.com,REJECT
 DOMAIN-SUFFIX,dzznyesmwj.com,REJECT
 DOMAIN-SUFFIX,e.baidu.com,REJECT
-DOMAIN-SUFFIX,e.duomeng.org,REJECT
 DOMAIN-SUFFIX,e.hpcat.cn,REJECT
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,e.tbenc.com,REJECT
@@ -7056,8 +7039,6 @@ DOMAIN-SUFFIX,gongfanglong.cn,REJECT
 DOMAIN-SUFFIX,goodgz.cn,REJECT
 DOMAIN-SUFFIX,goodkee.cn,REJECT
 DOMAIN-SUFFIX,goodwold.top,REJECT
-DOMAIN-SUFFIX,googleadservices.com,REJECT
-DOMAIN-SUFFIX,googleadsserving.cn,REJECT
 DOMAIN-SUFFIX,googlealiyun.cn,REJECT
 DOMAIN-SUFFIX,google-analytics.com/batch,REJECT
 DOMAIN-SUFFIX,google-analytics.com/internal/collect,REJECT
@@ -7677,7 +7658,6 @@ DOMAIN-SUFFIX,hktv10.com,REJECT
 DOMAIN-SUFFIX,hkv06j2p7pof.com,REJECT
 DOMAIN-SUFFIX,h-l.icu,REJECT
 DOMAIN-SUFFIX,h-l.xyz,REJECT
-DOMAIN-SUFFIX,hlcnzz.com,REJECT
 DOMAIN-SUFFIX,hldsogaxfq.com,REJECT
 DOMAIN-SUFFIX,hldwmly.com,REJECT
 DOMAIN-SUFFIX,hlfjvpcpkynqco.com,REJECT
@@ -10753,7 +10733,6 @@ DOMAIN-SUFFIX,moneyzenith.com,REJECT
 DOMAIN-SUFFIX,mongdaughc.fun,REJECT
 DOMAIN-SUFFIX,monijorb.com,REJECT
 DOMAIN-SUFFIX,monimoni.top,REJECT
-DOMAIN-SUFFIX,monitor.qq.com,REJECT
 DOMAIN-SUFFIX,monotonoussurveytoxic.com,REJECT
 DOMAIN-SUFFIX,montkpl.top,REJECT
 DOMAIN-SUFFIX,montwam.top,REJECT
@@ -11782,9 +11761,6 @@ DOMAIN-SUFFIX,omatri.info,REJECT
 DOMAIN-SUFFIX,omchanseyr.com,REJECT
 DOMAIN-SUFFIX,omfortsex.club,REJECT
 DOMAIN-SUFFIX,omgid.qq.com,REJECT
-DOMAIN-SUFFIX,omgmta.play.ott.video.qq.com,REJECT
-DOMAIN-SUFFIX,omgmta.qq.com,REJECT
-DOMAIN-SUFFIX,omgmta1.qq.com,REJECT
 DOMAIN-SUFFIX,omgnjvrjgpeg.com,REJECT
 DOMAIN-SUFFIX,omitbailey.com,REJECT
 DOMAIN-SUFFIX,ommodatesjoin.info,REJECT
@@ -12385,7 +12361,6 @@ DOMAIN-SUFFIX,pingdishonest.com,REJECT
 DOMAIN-SUFFIX,pingdom.net,REJECT
 DOMAIN-SUFFIX,ping-dot-acp-magento.appspot.com,REJECT
 DOMAIN-SUFFIX,pingeds.cn,REJECT
-DOMAIN-SUFFIX,pingfore.qq.com,REJECT
 DOMAIN-SUFFIX,pinghot.qq.com,REJECT
 DOMAIN-SUFFIX,pingjs.qq.com,REJECT
 DOMAIN-SUFFIX,pingma.qq.com,REJECT
@@ -18383,7 +18358,6 @@ DOMAIN-SUFFIX,xyadtlyya.com,REJECT
 DOMAIN-SUFFIX,xyadtlyya.vip,REJECT
 DOMAIN-SUFFIX,xyadyzpsb.com,REJECT
 DOMAIN-SUFFIX,xycnz.com,REJECT
-DOMAIN-SUFFIX,xycnzz.com,REJECT
 DOMAIN-SUFFIX,xylmdm.top,REJECT
 DOMAIN-SUFFIX,xymtglljft.com,REJECT
 DOMAIN-SUFFIX,xyssp.com,REJECT
