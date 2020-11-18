@@ -1477,7 +1477,6 @@ DOMAIN-SUFFIX,ads-sg.tiktok.com,REJECT
 DOMAIN-SUFFIX,adstarget.net,REJECT
 DOMAIN-SUFFIX,adstellar.icu,REJECT
 DOMAIN-SUFFIX,adstextview.qq.com,REJECT
-DOMAIN-SUFFIX,ad-stir.com,REJECT
 DOMAIN-SUFFIX,adstonesik.club,REJECT
 DOMAIN-SUFFIX,ads-trk.vidible.tv,REJECT
 DOMAIN-SUFFIX,adsunflower.com,REJECT
@@ -2706,7 +2705,6 @@ DOMAIN-SUFFIX,beacon.rum.dynapis.com,REJECT
 DOMAIN-SUFFIX,beacon.searchspring.io,REJECT
 DOMAIN-SUFFIX,beacon.securestudies.com,REJECT
 DOMAIN-SUFFIX,beacon.shazam.com,REJECT
-DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN-SUFFIX,beacon.sojern.com,REJECT
 DOMAIN-SUFFIX,beacon.squixa.net,REJECT
 DOMAIN-SUFFIX,beacon.statful.com,REJECT
@@ -4177,7 +4175,6 @@ DOMAIN-SUFFIX,cpmprofitablenetwork.com,REJECT
 DOMAIN-SUFFIX,cpmrevenuenetwork.com,REJECT
 DOMAIN-SUFFIX,cpms.cc,REJECT
 DOMAIN-SUFFIX,cppnznmorh.com,REJECT
-DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,cpro.tieba.baidu.com,REJECT
 DOMAIN-SUFFIX,cpro.xixiliya.cn,REJECT
 DOMAIN-SUFFIX,cpro.zhidao.baidu.com,REJECT
@@ -5200,7 +5197,6 @@ DOMAIN-SUFFIX,dzxwnews.com,REJECT
 DOMAIN-SUFFIX,dzznyesmwj.com,REJECT
 DOMAIN-SUFFIX,e.baidu.com,REJECT
 DOMAIN-SUFFIX,e.hpcat.cn,REJECT
-DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,e.tbenc.com,REJECT
 DOMAIN-SUFFIX,e.yycqc.com,REJECT
 DOMAIN-SUFFIX,e0663490cca0296f7.com,REJECT
@@ -6759,7 +6755,6 @@ DOMAIN-SUFFIX,gdmconvtrck.com,REJECT
 DOMAIN-SUFFIX,gdskywings.com,REJECT
 DOMAIN-SUFFIX,gdsoq.com,REJECT
 DOMAIN-SUFFIX,gdsqwy.org,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,gdunt.com,REJECT
 DOMAIN-SUFFIX,gdxisixdrk.com,REJECT
 DOMAIN-SUFFIX,gdyjs.com,REJECT
@@ -12578,7 +12573,6 @@ DOMAIN-SUFFIX,porchiteds.club,REJECT
 DOMAIN-SUFFIX,poredii.com,REJECT
 DOMAIN-SUFFIX,portedlysarcatc.info,REJECT
 DOMAIN-SUFFIX,portlytinytimeout.com,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
 DOMAIN-SUFFIX,pos68.cn,REJECT
 DOMAIN-SUFFIX,positious.club,REJECT
 DOMAIN-SUFFIX,possepairsad.com,REJECT
