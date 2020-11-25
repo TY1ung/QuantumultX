@@ -1910,7 +1910,7 @@ DOMAIN-SUFFIX,ape-tagit.timeinc.net,REJECT
 DOMAIN-SUFFIX,aphicbouncil.club,REJECT
 DOMAIN-SUFFIX,api.557400.com,REJECT
 DOMAIN-SUFFIX,api.nobeta.com.br,REJECT
-DOMAIN-SUFFIX,api.union.vip.com
+DOMAIN-SUFFIX,api.union.vip.com,REJECT
 DOMAIN-SUFFIX,api.waptest.taobao.com,REJECT
 DOMAIN-SUFFIX,api.wipmania.com,REJECT
 DOMAIN-SUFFIX,api.youtu.qq.com,REJECT
@@ -3583,7 +3583,7 @@ DOMAIN-SUFFIX,click.sinx.com,REJECT
 DOMAIN-SUFFIX,click.suning.cn,REJECT
 DOMAIN-SUFFIX,click.tz.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,click.udimg.com,REJECT
-DOMAIN-SUFFIX,click.union.vip.com
+DOMAIN-SUFFIX,click.union.vip.com,REJECT
 DOMAIN-SUFFIX,click.uol.com.br,REJECT
 DOMAIN-SUFFIX,click.uve.weibo.com,REJECT
 DOMAIN-SUFFIX,click.vgnett.no,REJECT
@@ -9997,7 +9997,6 @@ DOMAIN-SUFFIX,maobujie.com,REJECT
 DOMAIN-SUFFIX,maoyumao.net,REJECT
 DOMAIN-SUFFIX,mapcrayonmiss.com,REJECT
 DOMAIN-SUFFIX,mapp.qzone.qq.com,REJECT
-DOMAIN-SUFFIX,mar.vip.com
 DOMAIN-SUFFIX,mar.vip.com,REJECT
 DOMAIN-SUFFIX,marchedcredulity.com,REJECT
 DOMAIN-SUFFIX,marchites.club,REJECT
@@ -11185,7 +11184,7 @@ DOMAIN-SUFFIX,nsomfammrmhbc.com,REJECT
 DOMAIN-SUFFIX,nsoncandred.site,REJECT
 DOMAIN-SUFFIX,nsonoursewit.fun,REJECT
 DOMAIN-SUFFIX,nsserviewssti.club,REJECT
-DOMAIN-SUFFIX,n-st.vip.com
+DOMAIN-SUFFIX,n-st.vip.com,REJECT
 DOMAIN-SUFFIX,nstjenxcpvm.com,REJECT
 DOMAIN-SUFFIX,nstlnjtrufu.com,REJECT
 DOMAIN-SUFFIX,nstructhow.top,REJECT
