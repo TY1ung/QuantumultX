@@ -1382,7 +1382,6 @@ DOMAIN-SUFFIX,adm.sina.com.cn,REJECT
 DOMAIN-SUFFIX,adm.xmfish.com,REJECT
 DOMAIN-SUFFIX,admaji.com,REJECT
 DOMAIN-SUFFIX,admarket.mobi,REJECT
-DOMAIN-SUFFIX,admaster.net,REJECT
 DOMAIN-SUFFIX,admd.housefun.com.tw,REJECT
 DOMAIN-SUFFIX,admd.yam.com,REJECT
 DOMAIN-SUFFIX,admddc.com,REJECT
@@ -1482,7 +1481,6 @@ DOMAIN-SUFFIX,adtech.de,REJECT
 DOMAIN-SUFFIX,adtechjp.com,REJECT
 DOMAIN-SUFFIX,adtechus.com,REJECT
 DOMAIN-SUFFIX,adtm.chip.de,REJECT
-DOMAIN-SUFFIX,adtrackingflow.pro,REJECT
 DOMAIN-SUFFIX,adtrk.me,REJECT
 DOMAIN-SUFFIX,aduic.com,REJECT
 DOMAIN-SUFFIX,adultterritory.net,REJECT
@@ -2647,7 +2645,6 @@ DOMAIN-SUFFIX,bestvideo2019.xyz,REJECT
 DOMAIN-SUFFIX,betahit.click,REJECT
 DOMAIN-SUFFIX,betohomeall.com,REJECT
 DOMAIN-SUFFIX,betrayedregretdeadline.com,REJECT
-DOMAIN-SUFFIX,betteradsystem.com,REJECT
 DOMAIN-SUFFIX,bettercontentservice.top,REJECT
 DOMAIN-SUFFIX,betternoon.club,REJECT
 DOMAIN-SUFFIX,beucsyzvwdzqu.com,REJECT
@@ -3321,7 +3318,6 @@ DOMAIN-SUFFIX,cdn1.tvzhe.com,REJECT
 DOMAIN-SUFFIX,cdn4ads.com,REJECT
 DOMAIN-SUFFIX,cdnads.com,REJECT
 DOMAIN-SUFFIX,cdn-alliancegravity.s3.amazonaws.com,REJECT
-DOMAIN-SUFFIX,cdn-analytics.ladmedia.fr,REJECT
 DOMAIN-SUFFIX,cdn-haokanapk.baidu.com,REJECT
 DOMAIN-SUFFIX,cdnjsp.wang,REJECT
 DOMAIN-SUFFIX,cdnmaster.com,REJECT
@@ -3421,7 +3417,6 @@ DOMAIN-SUFFIX,chairwaydenew.site,REJECT
 DOMAIN-SUFFIX,chaiseviscountsturgeon.com,REJECT
 DOMAIN-SUFFIX,challengedeprave.com,REJECT
 DOMAIN-SUFFIX,championmachinery-cn.com,REJECT
-DOMAIN-SUFFIX,chanalytics.merchantadvantage.com,REJECT
 DOMAIN-SUFFIX,chance-ad.com,REJECT
 DOMAIN-SUFFIX,chandlerimageproduct.com,REJECT
 DOMAIN-SUFFIX,chanelets-aurning.com,REJECT
@@ -3659,7 +3654,6 @@ DOMAIN-SUFFIX,clickunfit.com,REJECT
 DOMAIN-SUFFIX,clickzs.com,REJECT
 DOMAIN-SUFFIX,client.88tours.com,REJECT
 DOMAIN-SUFFIX,client.show.qq.com,REJECT
-DOMAIN-SUFFIX,client-analytics.braintreegateway.com,REJECT
 DOMAIN-SUFFIX,client-event-reporter.twitch.tv,REJECT
 DOMAIN-SUFFIX,clientlog.music.163.com,REJECT
 DOMAIN-SUFFIX,clientlog3.music.163.com,REJECT
@@ -4121,7 +4115,6 @@ DOMAIN-SUFFIX,crimentasaju.site,REJECT
 DOMAIN-SUFFIX,criminglynuk.pro,REJECT
 DOMAIN-SUFFIX,criteo.com,REJECT
 DOMAIN-SUFFIX,criteo.net,REJECT
-DOMAIN-SUFFIX,crm-analytics.imweb.ru,REJECT
 DOMAIN-SUFFIX,crocopop.com,REJECT
 DOMAIN-SUFFIX,crokacpwjtf.com,REJECT
 DOMAIN-SUFFIX,croomskosmos.site,REJECT
@@ -4611,7 +4604,6 @@ DOMAIN-SUFFIX,df77.com,REJECT
 DOMAIN-SUFFIX,df888.eastday.com,REJECT
 DOMAIN-SUFFIX,df8c5028a1fad1.com,REJECT
 DOMAIN-SUFFIX,df931f2841ac729.com,REJECT
-DOMAIN-SUFFIX,dfanalytics.dealerfire.com,REJECT
 DOMAIN-SUFFIX,dfapvmql-q.global.ssl.fastly.net,REJECT
 DOMAIN-SUFFIX,dfb79196408612f1.com,REJECT
 DOMAIN-SUFFIX,dfcwecvmjtdj.com,REJECT
@@ -5704,7 +5696,6 @@ DOMAIN-SUFFIX,event.api.drift.com,REJECT
 DOMAIN-SUFFIX,event.dkb.de,REJECT
 DOMAIN-SUFFIX,event.getblue.io,REJECT
 DOMAIN-SUFFIX,event.syndigo.cloud,REJECT
-DOMAIN-SUFFIX,event-analytics.yesware.com,REJECT
 DOMAIN-SUFFIX,event-api.contactatonce.co.uk,REJECT
 DOMAIN-SUFFIX,event-api.contactatonce.com,REJECT
 DOMAIN-SUFFIX,event-api.contactatonce.com.au,REJECT
@@ -6907,9 +6898,6 @@ DOMAIN-SUFFIX,goodgz.cn,REJECT
 DOMAIN-SUFFIX,goodkee.cn,REJECT
 DOMAIN-SUFFIX,goodwold.top,REJECT
 DOMAIN-SUFFIX,googlealiyun.cn,REJECT
-DOMAIN-SUFFIX,google-analytics.com/batch,REJECT
-DOMAIN-SUFFIX,google-analytics.com/internal/collect,REJECT
-DOMAIN-SUFFIX,google-analytics.com/r/collect,REJECT
 DOMAIN-SUFFIX,googlecommerce.com,REJECT
 DOMAIN-SUFFIX,googlesierai.xyz,REJECT
 DOMAIN-SUFFIX,googlespider1.cn,REJECT
@@ -9518,7 +9506,6 @@ DOMAIN-SUFFIX,lishuanghao.com,REJECT
 DOMAIN-SUFFIX,lisqvfrr.com,REJECT
 DOMAIN-SUFFIX,listenother.com,REJECT
 DOMAIN-SUFFIX,listeraislatory.site,REJECT
-DOMAIN-SUFFIX,literally-analytics.appspot.com,REJECT
 DOMAIN-SUFFIX,lithingbre.top,REJECT
 DOMAIN-SUFFIX,litleeemo.com,REJECT
 DOMAIN-SUFFIX,litourge.com,REJECT
@@ -9759,7 +9746,6 @@ DOMAIN-SUFFIX,loweredabhorrenceproposed.com,REJECT
 DOMAIN-SUFFIX,lownguw.top,REJECT
 DOMAIN-SUFFIX,lowtyroguer.com,REJECT
 DOMAIN-SUFFIX,loxbeelid.com,REJECT
-DOMAIN-SUFFIX,loxodo-analytics.ext.nile.works,REJECT
 DOMAIN-SUFFIX,lpbyadpvf.com,REJECT
 DOMAIN-SUFFIX,lpiwenesruwn.com,REJECT
 DOMAIN-SUFFIX,lpjxzs.com,REJECT
@@ -12958,7 +12944,6 @@ DOMAIN-SUFFIX,quandangdang.net,REJECT
 DOMAIN-SUFFIX,quansj.cn,REJECT
 DOMAIN-SUFFIX,quantcount.com,REJECT
 DOMAIN-SUFFIX,quantserve.com,REJECT
-DOMAIN-SUFFIX,qubitanalytics.appspot.com,REJECT
 DOMAIN-SUFFIX,qubo94.com,REJECT
 DOMAIN-SUFFIX,qucaigg.com,REJECT
 DOMAIN-SUFFIX,qucco.cn,REJECT
@@ -15917,7 +15902,6 @@ DOMAIN-SUFFIX,tracker-id.cdiscount.com,REJECT
 DOMAIN-SUFFIX,trackerislive.com,REJECT
 DOMAIN-SUFFIX,trackerstatistik.init-ag.de,REJECT
 DOMAIN-SUFFIX,tracker-tds.info,REJECT
-DOMAIN-SUFFIX,tracking.smartmeapp.com,REJECT
 DOMAIN-SUFFIX,trackjay.cool3c.com,REJECT
 DOMAIN-SUFFIX,trackla.stackla.com,REJECT
 DOMAIN-SUFFIX,trackpm.shop2market.com,REJECT
@@ -18469,7 +18453,6 @@ DOMAIN-SUFFIX,zhidian3g.cn,REJECT
 DOMAIN-SUFFIX,zhifinwgpwakue.com,REJECT
 DOMAIN-SUFFIX,zhihei.com,REJECT
 DOMAIN-SUFFIX,zhihu.xmcimg.com,REJECT
-DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
 DOMAIN-SUFFIX,zhinengap.com,REJECT
 DOMAIN-SUFFIX,zhiong.net,REJECT
 DOMAIN-SUFFIX,zhivalley.cn,REJECT
