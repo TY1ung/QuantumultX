@@ -12004,6 +12004,7 @@ DOMAIN-SUFFIX,pingdom.net,REJECT
 DOMAIN-SUFFIX,ping-dot-acp-magento.appspot.com,REJECT
 DOMAIN-SUFFIX,pingeds.cn,REJECT
 DOMAIN-SUFFIX,pinghot.qq.com,REJECT
+DOMAIN-SUFFIX,pingjs.qq.com,REJECT
 DOMAIN-SUFFIX,pingma.qq.com,REJECT
 DOMAIN-SUFFIX,pingoli.info,REJECT
 DOMAIN-SUFFIX,pingping888.com,REJECT
