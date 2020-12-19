@@ -1,4 +1,7 @@
 # > Google
+USER-AGENT,com.google.ios.youtube*,Google
+USER-AGENT,YouTube*,Google
+DOMAIN,youtubei.googleapis.com,Google
 DOMAIN-KEYWORD,blogspot,Google
 DOMAIN-KEYWORD,gmail,Google
 DOMAIN-KEYWORD,google,Google
@@ -35,6 +38,7 @@ DOMAIN-SUFFIX,golang.org,Google
 DOMAIN-SUFFIX,goo.gl,Google
 DOMAIN-SUFFIX,googleapis.cn,Google
 DOMAIN-SUFFIX,googleapis.com,Google
+DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gstatic.cn,Google
 DOMAIN-SUFFIX,gstatic.com,Google
 DOMAIN-SUFFIX,gv.com,Google
@@ -63,6 +67,7 @@ DOMAIN-SUFFIX,widevine.com,Google
 DOMAIN-SUFFIX,x.company,Google
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Google
 DOMAIN-SUFFIX,youtu.be,Google
+DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtube.com,Google
 DOMAIN-SUFFIX,youtube-nocookie.com,Google
 DOMAIN-SUFFIX,yt.be,Google
