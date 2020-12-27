@@ -1,4 +1,7 @@
 # > Google
+# > YouTubeMusic
+USER-AGENT,com.google.ios.youtubemusic*,Google
+USER-AGENT,YouTubeMusic*,Google
 USER-AGENT,com.google.ios.youtube*,Google
 USER-AGENT,YouTube*,Google
 DOMAIN,youtubei.googleapis.com,Google
