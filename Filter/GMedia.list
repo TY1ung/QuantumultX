@@ -31,9 +31,6 @@ DOMAIN-KEYWORD,-spotify-com,PROXY
 # > TIDAL
 USER-AGENT,TIDAL*,PROXY
 DOMAIN-SUFFIX,tidal.com,PROXY
-# > YouTubeMusic
-USER-AGENT,com.google.ios.youtubemusic*,PROXY
-USER-AGENT,YouTubeMusic*,PROXY
 # (Video)
 # > All4
 USER-AGENT,All4*,PROXY
