@@ -111,7 +111,7 @@ function roundHours(time, method) {
 }
 
 $task.fetch({
-  url: `https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`,
+  url: `https://api.waqi.info/feed/geo:${lat};${lng}/?token=${d5c94b7521f1423603d149b4c60f0970718aa88d}`,
   headers: $request.headers
 }).then((response) => {
   let body = modifyWeatherResp($response.body, response.body)
