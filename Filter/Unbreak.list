@@ -17,7 +17,6 @@ DOMAIN,dl.google.com,DIRECT
 DOMAIN,dl.l.google.com,DIRECT
 DOMAIN,fonts.googleapis.com,DIRECT
 DOMAIN,fonts.gstatic.com,DIRECT
-DOMAIN,mtalk.google.com,DIRECT
 DOMAIN,translate.googleapis.com,DIRECT
 DOMAIN,update.googleapis.com,DIRECT
 # > Tencent
