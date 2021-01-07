@@ -39,7 +39,7 @@ getResult();
 function getResult() {
   var upstr = '已有空位，抓紧上车';
   var apps = new Array(); //定义一数组
-  apps = appkey.split("VCIvwk2g,wArXdacJ,2vnRvOTX,LzjySbQx,IdFRwmNy,qDkBu2ur,4Qt2lIm5,ZzqOu8tX,ftCqFe6D,fy7LvHVA,QKqitFwc"); //字符分割
+  apps = appkey.split(","); //字符分割
   var resultstr = false;
   var logdata = {};
   for (var i = 0; i < apps.length; i++) {
