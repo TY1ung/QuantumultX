@@ -15511,7 +15511,6 @@ DOMAIN-SUFFIX,tags.op-palvelut.fi,REJECT
 DOMAIN-SUFFIX,tags.refinery89.com,REJECT
 DOMAIN-SUFFIX,tags.sprizzy.com,REJECT
 DOMAIN-SUFFIX,tags2.adshell.net,REJECT
-DOMAIN-SUFFIX,tagtracking.vibescm.com,REJECT
 DOMAIN-SUFFIX,tagx.nytimes.com,REJECT
 DOMAIN-SUFFIX,tahbmbqhvvi.com,REJECT
 DOMAIN-SUFFIX,tahkezux.com,REJECT
@@ -16152,7 +16151,6 @@ DOMAIN-SUFFIX,tracker-id.cdiscount.com,REJECT
 DOMAIN-SUFFIX,trackerislive.com,REJECT
 DOMAIN-SUFFIX,trackerstatistik.init-ag.de,REJECT
 DOMAIN-SUFFIX,tracker-tds.info,REJECT
-DOMAIN-SUFFIX,tracking.sezzle.com,REJECT
 DOMAIN-SUFFIX,trackjay.cool3c.com,REJECT
 DOMAIN-SUFFIX,trackla.stackla.com,REJECT
 DOMAIN-SUFFIX,trackpm.shop2market.com,REJECT
