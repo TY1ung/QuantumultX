@@ -1,30 +1,30 @@
-user-agent, NeteaseMusic*, 🎸网易云音乐
-user-agent, NeteaseMusic**, 🎸网易云音乐
-user-agent, 网易云音乐*, 🎸网易云音乐
-user-agent, 网易云音乐**, 🎸网易云音乐
-user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*, 🎸网易云音乐
-user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**, 🎸网易云音乐
+user-agent, NeteaseMusic*,NeteaseMusic
+user-agent, NeteaseMusic**,NeteaseMusic
+user-agent, 网易云音乐*,NeteaseMusic
+user-agent, 网易云音乐**,NeteaseMusic
+user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,NeteaseMusic
+user-agent, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**,NeteaseMusic
 
-host-suffix,music.163.com,🎸网易云音乐
-host-suffix,interface.music.163.com,🎸网易云音乐
-host-suffix,interface3.music.163.com,🎸网易云音乐
-host-suffix,apm.music.163.com,🎸网易云音乐
-host-suffix,apm3.music.163.com,🎸网易云音乐
-IP-CIDR,59.111.181.38/32,🎸网易云音乐
-IP-CIDR,59.111.181.60/32,🎸网易云音乐
-IP-CIDR,223.252.199.66/32,🎸网易云音乐
-IP-CIDR,223.252.199.67/32,🎸网易云音乐
-IP-CIDR,59.111.160.195/32,🎸网易云音乐
-IP-CIDR,59.111.160.197/32,🎸网易云音乐
-IP-CIDR,47.100.127.239/32,🎸网易云音乐
-IP-CIDR,118.24.63.156/32,🎸网易云音乐
-IP-CIDR,193.112.159.225/32,🎸网易云音乐
-IP-CIDR,39.105.63.80/32,🎸网易云音乐
-IP-CIDR,59.111.181.35/32,🎸网易云音乐
-IP-CIDR,115.236.118.33/32,🎸网易云音乐
-IP-CIDR,115.236.121.1/32,🎸网易云音乐
-IP-CIDR,112.13.122.1/32,🎸网易云音乐
-IP-CIDR,112.13.119.17/32,🎸网易云音乐
-IP-CIDR,103.126.92.132/32,🎸网易云音乐
-IP-CIDR,103.126.92.13/32,🎸网易云音乐
-IP-CIDR,45.254.48.1/32,🎸网易云音乐
+host-suffix,music.163.com,NeteaseMusic
+host-suffix,interface.music.163.com,NeteaseMusic
+host-suffix,interface3.music.163.com,NeteaseMusic
+host-suffix,apm.music.163.com,NeteaseMusic
+host-suffix,apm3.music.163.com,NeteaseMusic
+IP-CIDR,59.111.181.38/32,NeteaseMusic
+IP-CIDR,59.111.181.60/32,NeteaseMusic
+IP-CIDR,223.252.199.66/32,NeteaseMusic
+IP-CIDR,223.252.199.67/32,NeteaseMusic
+IP-CIDR,59.111.160.195/32,NeteaseMusic
+IP-CIDR,59.111.160.197/32,NeteaseMusic
+IP-CIDR,47.100.127.239/32,NeteaseMusic
+IP-CIDR,118.24.63.156/32,NeteaseMusic
+IP-CIDR,193.112.159.225/32,NeteaseMusic
+IP-CIDR,39.105.63.80/32,NeteaseMusic
+IP-CIDR,59.111.181.35/32,NeteaseMusic
+IP-CIDR,115.236.118.33/32,NeteaseMusic
+IP-CIDR,115.236.121.1/32,NeteaseMusic
+IP-CIDR,112.13.122.1/32,NeteaseMusic
+IP-CIDR,112.13.119.17/32,NeteaseMusic
+IP-CIDR,103.126.92.132/32,NeteaseMusic
+IP-CIDR,103.126.92.13/32,NeteaseMusic
+IP-CIDR,45.254.48.1/32,NeteaseMusic
