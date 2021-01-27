@@ -1,7 +1,6 @@
 DOMAIN,2785.dlads.cn,REJECT
 DOMAIN,dagonghuzhu.com,REJECT
 DOMAIN-KEYWORD,asewlfjqwlflkew,REJECT
-DOMAIN-KEYWORD,exosrv,REJECT
 DOMAIN-SUFFIX,0024aaaa.com,REJECT
 DOMAIN-SUFFIX,003store.com,REJECT
 DOMAIN-SUFFIX,006a039c957c142bb.com,REJECT
@@ -1466,7 +1465,6 @@ DOMAIN-SUFFIX,adrevenuerescue.com,REJECT
 DOMAIN-SUFFIX,adriver.ru,REJECT
 DOMAIN-SUFFIX,adroll.com,REJECT
 DOMAIN-SUFFIX,adrs.sdo.com,REJECT
-DOMAIN-SUFFIX,ads.exosrv.com,REJECT
 DOMAIN-SUFFIX,ads.gmodules.com,REJECT
 DOMAIN-SUFFIX,ads.google.com,REJECT
 DOMAIN-SUFFIX,ads.mp.mydas.mobi,REJECT
@@ -1485,7 +1483,6 @@ DOMAIN-SUFFIX,adscarrot.com,REJECT
 DOMAIN-SUFFIX,adsclick.qq.com,REJECT
 DOMAIN-SUFFIX,adsense.html5.qq.com,REJECT
 DOMAIN-SUFFIX,adserve.work,REJECT
-DOMAIN-SUFFIX,adserver.juicyads.com,REJECT
 DOMAIN-SUFFIX,adservi.com,REJECT
 DOMAIN-SUFFIX,adsfile.qq.com,REJECT
 DOMAIN-SUFFIX,adsgroup.qq.com,REJECT
@@ -1563,7 +1560,6 @@ DOMAIN-SUFFIX,adv-sv-show.focus.cn,REJECT
 DOMAIN-SUFFIX,adv-sv-stat.focus.cn,REJECT
 DOMAIN-SUFFIX,adwalte.info,REJECT
 DOMAIN-SUFFIX,adwetec.com,REJECT
-DOMAIN-SUFFIX,adxadserv.com,REJECT
 DOMAIN-SUFFIX,adxite.com,REJECT
 DOMAIN-SUFFIX,adxmi.com,REJECT
 DOMAIN-SUFFIX,adxnexus.com,REJECT
@@ -1906,7 +1902,6 @@ DOMAIN-SUFFIX,analyse.weather.com.cn,REJECT
 DOMAIN-SUFFIX,analysys.cn,REJECT
 DOMAIN-SUFFIX,analytic.imlive.com,REJECT
 DOMAIN-SUFFIX,analyticcdn.globalmailer.com,REJECT
-DOMAIN-SUFFIX,analytics.livehindustan.com,REJECT
 DOMAIN-SUFFIX,analyze.full-marke.com,REJECT
 DOMAIN-SUFFIX,analyzer.fc2.com,REJECT
 DOMAIN-SUFFIX,analyzer2.fc2.com,REJECT
@@ -2630,7 +2625,6 @@ DOMAIN-SUFFIX,beacon.rum.dynapis.com,REJECT
 DOMAIN-SUFFIX,beacon.searchspring.io,REJECT
 DOMAIN-SUFFIX,beacon.securestudies.com,REJECT
 DOMAIN-SUFFIX,beacon.shazam.com,REJECT
-DOMAIN-SUFFIX,beacon.sina.com.cn,REJECT
 DOMAIN-SUFFIX,beacon.sojern.com,REJECT
 DOMAIN-SUFFIX,beacon.squixa.net,REJECT
 DOMAIN-SUFFIX,beacon.statful.com,REJECT
@@ -5112,7 +5106,6 @@ DOMAIN-SUFFIX,dzletao.com,REJECT
 DOMAIN-SUFFIX,dzooo.cn,REJECT
 DOMAIN-SUFFIX,dzrenju2.cn,REJECT
 DOMAIN-SUFFIX,dzxwnews.com,REJECT
-DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,e.yycqc.com,REJECT
 DOMAIN-SUFFIX,e0663490cca0296f7.com,REJECT
 DOMAIN-SUFFIX,e0a42e1a21669b.com,REJECT
@@ -5808,7 +5801,6 @@ DOMAIN-SUFFIX,exchangepresumeethel.com,REJECT
 DOMAIN-SUFFIX,excludeneighbourlyattempting.com,REJECT
 DOMAIN-SUFFIX,excqjoor.com,REJECT
 DOMAIN-SUFFIX,exd4.destinia.com.au,REJECT
-DOMAIN-SUFFIX,exdynsrv.com,REJECT
 DOMAIN-SUFFIX,execution-ci360.rai.it,REJECT
 DOMAIN-SUFFIX,exercially.mobi,REJECT
 DOMAIN-SUFFIX,exercisely.club,REJECT
@@ -5820,7 +5812,6 @@ DOMAIN-SUFFIX,exobafrgdf.com,REJECT
 DOMAIN-SUFFIX,exoclick.com,REJECT
 DOMAIN-SUFFIX,exofrwe.com,REJECT
 DOMAIN-SUFFIX,exoprsdds.com,REJECT
-DOMAIN-SUFFIX,exosrv.com,REJECT
 DOMAIN-SUFFIX,expansionwrinkle.com,REJECT
 DOMAIN-SUFFIX,expansity.club,REJECT
 DOMAIN-SUFFIX,expbl2ro.xbox.com,REJECT
@@ -6633,7 +6624,6 @@ DOMAIN-SUFFIX,gdmconvtrck.com,REJECT
 DOMAIN-SUFFIX,gdskywings.com,REJECT
 DOMAIN-SUFFIX,gdsoq.com,REJECT
 DOMAIN-SUFFIX,gdsqwy.org,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,gdxisixdrk.com,REJECT
 DOMAIN-SUFFIX,gdyjs.com,REJECT
 DOMAIN-SUFFIX,ge95.com,REJECT
@@ -8697,7 +8687,6 @@ DOMAIN-SUFFIX,jucaishequ.com,REJECT
 DOMAIN-SUFFIX,judaisydfs.club,REJECT
 DOMAIN-SUFFIX,judgementinvincible.com,REJECT
 DOMAIN-SUFFIX,juggrounds.com,REJECT
-DOMAIN-SUFFIX,juicyads.com,REJECT
 DOMAIN-SUFFIX,juicyads.in,REJECT
 DOMAIN-SUFFIX,jujumuqu123.com,REJECT
 DOMAIN-SUFFIX,jukfpojq.com,REJECT
@@ -10402,7 +10391,6 @@ DOMAIN-SUFFIX,mo.moonpig.com,REJECT
 DOMAIN-SUFFIX,moad.cn,REJECT
 DOMAIN-SUFFIX,moapteeg.net,REJECT
 DOMAIN-SUFFIX,moapuwhe.com,REJECT
-DOMAIN-SUFFIX,moatads.com,REJECT
 DOMAIN-SUFFIX,mob1ledev1ces.com,REJECT
 DOMAIN-SUFFIX,mobaders.com,REJECT
 DOMAIN-SUFFIX,mobadme.jp,REJECT
@@ -15549,7 +15537,6 @@ DOMAIN-SUFFIX,tr.webantenna.info,REJECT
 DOMAIN-SUFFIX,tr.werkenntwen.de,REJECT
 DOMAIN-SUFFIX,tr1.mailperformance.com,REJECT
 DOMAIN-SUFFIX,traccoon.intellectsoft.net,REJECT
-DOMAIN-SUFFIX,trace.qq.com,REJECT
 DOMAIN-SUFFIX,traceaccounc.club,REJECT
 DOMAIN-SUFFIX,tracelog.www.alibaba.com,REJECT
 DOMAIN-SUFFIX,track.24heures.ch,REJECT
