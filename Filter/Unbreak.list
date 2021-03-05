@@ -19,6 +19,8 @@ DOMAIN,fonts.googleapis.com,DIRECT
 DOMAIN,fonts.gstatic.com,DIRECT
 DOMAIN,translate.googleapis.com,DIRECT
 DOMAIN,update.googleapis.com,DIRECT
+# > Paramount+
+DOMAIN,pubads.g.doubleclick.net,DIRECT
 # > Tencent
 DOMAIN,livew.l.qq.com,DIRECT
 DOMAIN,vd.l.qq.com,DIRECT
