@@ -1,15 +1,15 @@
 // Developed by Hackl0us (https://github.com/hackl0us)
+// Adopted to Quantumult X Rewrite Script by laosb (https://lao.sb/gh)
 
 // STEP 1: 前往 https://aqicn.org/data-platform/token/ 注册账户，将申请的 API Token 填入下方
 const aqicnToken = 'd5c94b7521f1423603d149b4c60f0970718aa88d'
 
-// STEP 2: 参考下方配置片段，在代理工具的配置文件中添加对应的配置。注意：script-path 后应该替换为添加 apicnToken 值后的脚本路径
+// STEP 2: 参考下方配置片段，在代理工具的配置文件中添加对应的配置。注意：script-response-body 后应该替换为添加 apicnToken 值后的脚本路径
 /*
-	[Script]
-	AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=/path/to/iOS_Weather_AQI_Standard.js
-
-	[MITM]
-	hostname = weather-data.apple.com
+[rewrite_local]
+https://weather-data.apple.com/v1/weather/[\w-_]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+ url script-response-body aqicn.js
+[mitm]
+hostname = weather-data.apple.com
 */
 
 const AirQualityStandard = {
@@ -40,7 +40,7 @@ function classifyAirQualityLevel(aqiIndex) {
 		return AirQualityLevel.UNHEALTHY;
 	} else if (aqiIndex >= 201 && aqiIndex <= 300) {
 		return AirQualityLevel.VERY_UNHEALTHY;
-	} else if (aqiIndex >= 301) {
+	} else if (aqiIndex >= 301 && aqiIndex <= 500) {
 		return AirQualityLevel.HAZARDOUS;
 	}
 }
@@ -67,7 +67,7 @@ function getPrimaryPollutant(pollutant) {
 		case 'o3':
 			return 'OZONE';
 		default:
-			console.log('Unknown pollutant ' + pollutant);
+			return "OTHER";
 	}
 }
 
@@ -75,16 +75,16 @@ function constructAirQuailityNode(aqicnData) {
 	let airQualityNode = { "source": "", "learnMoreURL": "", "isSignificant": true, "airQualityCategoryIndex": 1, "airQualityScale": "", "airQualityIndex": 0, "pollutants": { "CO": { "name": "CO", "amount": 0, "unit": "μg/m3" }, "SO2": { "name": "SO2", "amount": 0, "unit": "μg/m3" }, "NO2": { "name": "NO2", "amount": 0, "unit": "μg/m3" }, "PM2.5": { "name": "PM2.5", "amount": 0, "unit": "μg/m3" }, "OZONE": { "name": "OZONE", "amount": 0, "unit": "μg/m3" }, "PM10": { "name": "PM10", "amount": 0, "unit": "μg/m3" } }, "metadata": { "reported_time": 0, "longitude": 0, "provider_name": "aqicn.org", "expire_time": 2, "provider_logo": "https://i.loli.net/2020/12/27/UqW23eZLFAIbxGV.png", "read_time": 2, "latitude": 0, "v": 1, "language": "", "data_source": 0 }, "name": "AirQuality", "primaryPollutant": "" }
 	const aqicnIndex = aqicnData.aqi
 	airQualityNode.source = aqicnData.city.name
-	airQualityNode.learnMoreURL = aqicnData.city.url + '/cn/m'
+	airQualityNode.learnMoreURL = aqicnData.city.url + '/cn'
 	airQualityNode.airQualityCategoryIndex = classifyAirQualityLevel(aqicnIndex)
 	airQualityNode.airQualityScale = AirQualityStandard.US
 	airQualityNode.airQualityIndex = aqicnIndex
 	airQualityNode.pollutants.CO.amount = aqicnData.iaqi.co?.v || -1
-	airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2?.v || -1
-	airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2?.v || -1
-	airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25?.v || -1
-	airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3?.v || -1
-	airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10?.v || -1
+ 	airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2?.v || -1
+ 	airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2?.v || -1
+ 	airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25?.v || -1
+ 	airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3?.v || -1
+ 	airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10?.v || -1
 	airQualityNode.metadata.latitude = aqicnData.city.geo[0]
 	airQualityNode.metadata.longitude = aqicnData.city.geo[1]
 	airQualityNode.metadata.read_time = roundHours(new Date(), 'down')
@@ -110,12 +110,10 @@ function roundHours(time, method) {
 	return time;
 }
 
-$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function (error, _response, data) {
-	if (error) {
-		let body = $response.body
-		$done({ body })
-	} else {
-		let body = modifyWeatherResp($response.body, data)
-		$done({ body })
-	}
-});
+$task.fetch({
+  url: `https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`,
+  headers: $request.headers
+}).then((response) => {
+  let body = modifyWeatherResp($response.body, response.body)
+  $done({ body })
+}, () => $done());
