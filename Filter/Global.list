@@ -374,6 +374,7 @@ DOMAIN-SUFFIX,steemitwallet.com,PROXY
 DOMAIN-SUFFIX,straitstimes.com,PROXY
 DOMAIN-SUFFIX,streamable.com,PROXY
 DOMAIN-SUFFIX,streema.com,PROXY
+DOMAIN-SUFFIX,substack.com,PROXY
 DOMAIN-SUFFIX,t66y.com,PROXY
 DOMAIN-SUFFIX,tapatalk.com,PROXY
 DOMAIN-SUFFIX,teco-hk.org,PROXY
@@ -426,6 +427,7 @@ DOMAIN-SUFFIX,xn--90wwvt03e.com,PROXY
 DOMAIN-SUFFIX,xn--i2ru8q2qg.com,PROXY
 DOMAIN-SUFFIX,xnxx.com,PROXY
 DOMAIN-SUFFIX,xvideos.com,PROXY
+DOMAIN-SUFFIX,yadi.sk,PROXY
 DOMAIN-SUFFIX,yahoo.com,PROXY
 DOMAIN-SUFFIX,yandex.ru,PROXY
 DOMAIN-SUFFIX,ycombinator.com,PROXY
@@ -436,6 +438,7 @@ DOMAIN-SUFFIX,you-get.org,PROXY
 DOMAIN-SUFFIX,zaobao.com,PROXY
 DOMAIN-SUFFIX,zello.com,PROXY
 DOMAIN-SUFFIX,zeronet.io,PROXY
+DOMAIN-SUFFIX,z-lib.org,PROXY
 DOMAIN-SUFFIX,zoom.us,PROXY
 
 DOMAIN,cc.tvbs.com.tw,PROXY
@@ -494,20 +497,17 @@ DOMAIN-SUFFIX,twitter.jp,PROXY
 
 # (Region-Restricted Access Denied)
 # ---(Apple)---
-# > Apple URL Shortener
 DOMAIN-SUFFIX,appsto.re,PROXY
-# > iBooks Store download
 DOMAIN,books.itunes.apple.com,PROXY
-# > App Store Preview
+DOMAIN,api-glb-sea.smoot.apple.com,PROXY
+DOMAIN,beta.music.apple.com,PROXY
+DOMAIN,tv.apple.com,PROXY
+# > App Store Web Preview
 DOMAIN,apps.apple.com,PROXY
 DOMAIN,itunes.apple.com,PROXY
-# > Spotlight
-DOMAIN,api-glb-sea.smoot.apple.com,PROXY
 # > Look Up
 DOMAIN-SUFFIX,smoot.apple.com,PROXY
 DOMAIN,lookup-api.apple.com,PROXY
-# > Apple Music Web
-DOMAIN,beta.music.apple.com,PROXY
 # ------
 # > Others
 DOMAIN-SUFFIX,bing.com,PROXY
@@ -517,6 +517,8 @@ DOMAIN-SUFFIX,duboxcdn.com,PROXY
 DOMAIN-SUFFIX,ifixit.com,PROXY
 DOMAIN-SUFFIX,mangakakalot.com,PROXY
 DOMAIN-SUFFIX,shopeemobile.com,PROXY
+DOMAIN-SUFFIX,sushi.com,PROXY
+# URL-REGEX,http:\/\/img\.sina\.com\/usweibo\/
 
 # (Network Jitter)
 # > Apple
@@ -537,4 +539,3 @@ DOMAIN-SUFFIX,metapix.net,PROXY
 DOMAIN-SUFFIX,s3.amazonaws.com,PROXY
 DOMAIN-SUFFIX,zaobao.com.sg,PROXY
 DOMAIN,international-gfe.download.nvidia.com,PROXY
-DOMAIN,store-images.s-microsoft.com,PROXY
