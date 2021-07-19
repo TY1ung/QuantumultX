@@ -121,9 +121,10 @@ DOMAIN-SUFFIX,outlook.com,DIRECT
 DOMAIN,outlook.office365.com,DIRECT
 DOMAIN,smtp.office365.com,DIRECT
 # >> Windows Server Update Services
-DOMAIN-SUFFIX,windowsupdate.microsoft.com,DIRECT
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com,DIRECT
 DOMAIN-SUFFIX,update.microsoft.com,DIRECT
 DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+DOMAIN-SUFFIX,windowsupdate.microsoft.com,DIRECT
 DOMAIN,download.microsoft.com,DIRECT
 DOMAIN,wustat.windows.com,DIRECT
 DOMAIN,ntservicepack.microsoft.com,DIRECT
