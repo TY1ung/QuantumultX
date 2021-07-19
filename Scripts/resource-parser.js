@@ -1,5 +1,5 @@
 /** 
-☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2021-07-01 12:25⟧
+☑️ 资源解析器 ©𝐒𝐡𝐚𝐰𝐧  ⟦2021-07-18 22:25⟧
 ----------------------------------------------------------
 🛠 发现 𝐁𝐔𝐆 请反馈: @Shawn_KOP_bot
 ⛳️ 关注 🆃🅶 相关频道: https://t.me/QuanX_API
@@ -63,6 +63,7 @@
   ❖ 可与 in(hn)/out(hn) 一起使用，in(hn)/out(hn) 会优先执行;
   ❖ 对 𝒉𝒐𝒔𝒕𝒏𝒂𝒎𝒆 & 𝐫𝐞𝐰𝐫𝐢𝐭𝐞/𝐟𝐢𝐥𝐭𝐞𝐫 同时生效(⚠️ 慎用)
 ⦿ policy 参数, 用于直接指定策略组，或为 𝐒𝐮𝐫𝐠𝐞 类型 𝗿𝘂𝗹𝗲-𝘀𝗲𝘁 生成策略组(默认"𝐒𝐡𝐚𝐰𝐧"策略组);
+⦿ pset=regex1@policy1+regex2@policy2, 为同一分流规则中不同关键词(允许正则表达式)指定不同策略组;
 ⦿ replace 参数, 正则替换 𝐟𝐢𝐥𝐭𝐞𝐫/𝐫𝐞𝐰𝐫𝐢𝐭𝐞 内容, regex@newregex;
   ❖ 将淘宝比价中脚本替换成 lite 版本, tiktok 中 JP 换成 KR
     ∎ replace=(price)(.*)@$1_lite$2+jp@kr 
@@ -145,6 +146,7 @@ var Psrename = mark0 && para1.indexOf("srename=") != -1 ? Base64.decode(para1.sp
 var Prrname = mark0 && para1.indexOf("rrname=") != -1 ? para1.split("rrname=")[1].split("&")[0].split("+") : null;
 var Psuffix = mark0 && para1.indexOf("suffix=") != -1 ? para1.split("suffix=")[1].split("&")[0] : 0;
 var Ppolicy = mark0 && para1.indexOf("policy=") != -1 ? decodeURIComponent(para1.split("policy=")[1].split("&")[0]) : "Shawn";
+var Ppolicyset = mark0 && para1.indexOf("pset=") != -1 ? decodeURIComponent(para1.split("pset=")[1].split("&")[0]) : "";
 var Pcert0 = mark0 && para1.indexOf("cert=") != -1 ? para1.split("cert=")[1].split("&")[0] : 0;
 var Psort0 = mark0 && para1.indexOf("sort=") != -1 ? para1.split("sort=")[1].split("&")[0] : 0;
 var PsortX = mark0 && para1.indexOf("sortx=") != -1 ? para1.split("sortx=")[1].split("&")[0] : 0;
@@ -256,6 +258,7 @@ function ResourceParse() {
     total = total.map(Regex).filter(Boolean).join("\n") 
     RegCheck(total, "分流引用", Preg)} 
     if (Preplace) { total = ReplaceReg(total, Preplace) }
+    if (Ppolicyset) {total = policy_sets(total, Ppolicyset)}
     total = total.join("\n")
   } else if (content0.trim() == "") {
     $notify("‼️ 引用" + "⟦" + subtag + "⟧" + " 返回內容为空", "⁉️ 点通知跳转以确认链接是否失效", para.split("#")[0], nan_link);
@@ -979,6 +982,37 @@ function Domain2Rule(content) {
     }
     return nlist.join("\n")
 }
+// filter 正则指定替换 regex1@policy1+regex2@policy2
+function policy_sets(cnt,para) {
+  pcnt = para.split("+")
+  cnt=cnt//.split("\n")
+  for (i=0;i<pcnt.length;i++){
+    console.log(pcnt[i])
+    if (pcnt[i].indexOf("@")!=-1){
+      cnt = cnt.map(item => filter_set(item, pcnt[i]))
+    }
+  }
+  cnt=cnt.filter(Boolean)//.join("\n")
+  return cnt
+  console.log(cnt)
+}
+
+function filter_set(cnt,para){
+  if (cnt){
+    paras=[para.split("@")[0],para.slice(para.split("@")[0].length+"@".length)]
+    console.log(para.split("@")[0].length+"@".length,paras)
+    cnt = cnt.split(",")
+    reg = RegExp(paras[0])
+    console.log(paras,cnt)
+    if(cnt.length == 3){
+      if (reg.test(cnt[1]) || reg.test(cnt[2])) {
+        cnt[2] = paras[1]
+      }
+    }
+    return cnt.join(",")
+  }
+}
+
 
 // 正则替换 filter/rewrite 的部分
 // 用途：如 tiktok 换区: JP -> KR ，如淘宝比价脚本 -> lite 横幅通知版本
@@ -1916,25 +1950,42 @@ function YAMLFix(cnt){
   
   if (cnt.indexOf("{") != -1){
     cnt = cnt.replace(/\[/g,"yaml@bug1")
-    cnt = cnt.replace(/(^|\n)- /g, "$1  - ").replace(/    - /g,"  - ").replace(/:(?!\s)/g,": ").replace(/\,\"/g,", \"").replace(/: {/g, ": {,     ")
-    //.replace(/, (host|path|tls|mux|skip)/g,",     $1")
+    cnt = cnt.replace(/(^|\n)- /g, "$1  - ").replace(/    - /g,"  - ").replace(/:(?!\s)/g,": ").replace(/\,\"/g,", \"").replace(/: {/g, ": {,     ").replace(/, (Host|host|path|tls|mux|skip)/g,", $1")
     //console.log(cnt)
     cnt = cnt.replace(/{\s*name: /g,"{name: \"").replace(/, server:/g,"\", server:")
     cnt = cnt.replace(/{|}/g,"").replace(/,/g,"\n   ")
-    console.log(cnt)
   }
   cnt = cnt.replace(/  -\n.*name/g,"  - name").replace(/\$|\`/g,"").split("proxy-providers:")[0].split("proxy-groups:")[0].replace(/\"(name|type|server|port|cipher|password|)(\"*)/g,"$1")
-  //console.log(cnt)
+  console.log(cnt)
   cnt = cnt.indexOf("proxies:") == -1? "proxies:\n" + cnt :"proxies:"+cnt.split("proxies:")[1]
-  cnt = cnt.replace(/name\:(.*?)\:(.*?)\n/gmi,"name:$1冒号$2\n") //罕见bug情况 修复
+  cnt = cnt.replace(/name\:(.*?)\:(.*?)\n/gmi,"name:$1冒号$2\n").replace(/\s{6}Host\:/g,"    Host:") //罕见bug情况 修复
+  items=cnt.split("\n").map(yamlcheck)
+  cnt=items.join("\n")
   //console.log(cnt.replace(/name\:(.*?)\:(.*?)\n/gmi,"name:$1冒号$2"))
+  console.log("after-fix"+cnt)
   return cnt
+}
+
+
+function yamlcheck(cnt){
+  if (cnt.indexOf("name") !=-1){ //名字以某些数字结尾时，解析有 bug
+    for (var i=0;i<10;i++) {
+      cnt = cnt.replace(new RegExp(patn[0][i], "gmi"),patn[4][i])
+    }
+    
+  }
+  if (cnt.indexOf(":")!=-1) {
+    return cnt
+  }
 }
 
 // Clash parser
 function Clash2QX(cnt) {
   const yaml = new YAML()
   var aa = JSON.stringify(yaml.parse(YAMLFix(cnt))).replace(/yaml@bug1/g,"[").replace(/冒号/gmi,":")
+  for (var i=0;i<10;i++) {
+    aa = aa.replace(new RegExp(patn[4][i], "gmi"),patn[0][i])
+  }
   var bb = JSON.parse(aa).proxies
   //$notify("YAML Parse", "content", JSON.stringify(bb))
   //console.log(bb)
