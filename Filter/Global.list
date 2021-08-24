@@ -509,6 +509,9 @@ DOMAIN,itunes.apple.com,PROXY
 DOMAIN-SUFFIX,smoot.apple.com,PROXY
 DOMAIN,lookup-api.apple.com,PROXY
 # ------
+# Google
+DOMAIN-SUFFIX,go.dev,PROXY
+DOMAIN-SUFFIX,golang.org,PROXY
 # > Others
 DOMAIN-SUFFIX,bing.com,PROXY
 DOMAIN-SUFFIX,cccat.io,PROXY
