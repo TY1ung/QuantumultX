@@ -513,6 +513,7 @@ DOMAIN,lookup-api.apple.com,PROXY
 DOMAIN-SUFFIX,go.dev,PROXY
 DOMAIN-SUFFIX,golang.org,PROXY
 # > Others
+DOMAIN-SUFFIX,aicoin.com,PROXY
 DOMAIN-SUFFIX,bing.com,PROXY
 DOMAIN-SUFFIX,cccat.io,PROXY
 DOMAIN-SUFFIX,dubox.com,PROXY
