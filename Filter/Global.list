@@ -393,6 +393,7 @@ DOMAIN-SUFFIX,tineye.com,PROXY
 DOMAIN-SUFFIX,tiny.cc,PROXY
 DOMAIN-SUFFIX,tinyurl.com,PROXY
 DOMAIN-SUFFIX,torproject.org,PROXY
+DOMAIN-SUFFIX,tradingview.com,PROXY
 DOMAIN-SUFFIX,tumblr.com,PROXY
 DOMAIN-SUFFIX,turbobit.net,PROXY
 DOMAIN-SUFFIX,tutanota.com,PROXY
@@ -445,6 +446,7 @@ DOMAIN-SUFFIX,z-lib.org,PROXY
 DOMAIN-SUFFIX,zoom.us,PROXY
 
 DOMAIN,cc.tvbs.com.tw,PROXY
+DOMAIN,clubhouse.pubnubapi.com,PROXY
 DOMAIN,ocsp.int-x3.letsencrypt.org,PROXY
 DOMAIN,search.avira.com,PROXY
 DOMAIN,us.weibo.com,PROXY
@@ -517,6 +519,7 @@ DOMAIN-SUFFIX,go.dev,PROXY
 DOMAIN-SUFFIX,golang.org,PROXY
 # > Others
 DOMAIN-SUFFIX,aicoin.com,PROXY
+DOMAIN-SUFFIX,aimoon.com,PROXY
 DOMAIN-SUFFIX,bing.com,PROXY
 DOMAIN-SUFFIX,cccat.io,PROXY
 DOMAIN-SUFFIX,dubox.com,PROXY
