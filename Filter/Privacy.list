@@ -43,6 +43,7 @@ DOMAIN,tracklog.58.com,REJECT
 DOMAIN,hm.baidu.com,REJECT
 DOMAIN,hmma.baidu.com,REJECT
 # > Google
+DOMAIN-SUFFIX,googletagmanager.com,REJECT
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN,safebrowsing.googleapis.com,REJECT
 # > MI
