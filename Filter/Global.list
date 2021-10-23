@@ -504,15 +504,13 @@ DOMAIN-SUFFIX,twitter.jp,PROXY
 # ---(Apple)---
 DOMAIN-SUFFIX,appsto.re,PROXY
 DOMAIN,books.itunes.apple.com,PROXY
-DOMAIN,api-glb-sea.smoot.apple.com,PROXY
+DOMAIN-SUFFIX,smoot.apple.com,PROXY
 DOMAIN,beta.music.apple.com,PROXY
-DOMAIN,tv.apple.com,PROXY
-# > App Store Web Preview
+DOMAIN,lookup-api.apple.com,PROXY
+# > Web Preview
 DOMAIN,apps.apple.com,PROXY
 DOMAIN,itunes.apple.com,PROXY
-# > Look Up
-DOMAIN-SUFFIX,smoot.apple.com,PROXY
-DOMAIN,lookup-api.apple.com,PROXY
+DOMAIN,tv.apple.com,PROXY
 # ------
 # Google
 DOMAIN-SUFFIX,go.dev,PROXY
@@ -536,7 +534,6 @@ DOMAIN,appleid.apple.com,PROXY
 DOMAIN,developer.apple.com,PROXY
 DOMAIN,www.icloud.com,PROXY
 DOMAIN,ocsp.apple.com,PROXY
-DOMAIN,xp.apple.com,PROXY
 # > DigiCert
 DOMAIN,cacerts.digicert.com,PROXY
 DOMAIN,crl3.digicert.com,PROXY
