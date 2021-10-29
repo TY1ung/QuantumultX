@@ -1,4 +1,8 @@
-# Binance
+# Forum
+DOMAIN-SUFFIX,bitcointalk.org,Crypto
+
+# Exchange
+# > Binance
 DOMAIN-SUFFIX,binance.cc,Crypto
 DOMAIN-SUFFIX,binance.cloud,Crypto
 DOMAIN-SUFFIX,binance.com,Crypto
@@ -11,3 +15,23 @@ DOMAIN-SUFFIX,bnbstatic.com,Crypto
 DOMAIN-SUFFIX,bntrace.com,Crypto
 DOMAIN-SUFFIX,online-metrix.net,Crypto
 DOMAIN-SUFFIX,siftscience.com,Crypto
+
+DOMAIN-SUFFIX,aex.com,Crypto
+DOMAIN-SUFFIX,bibox.com,Crypto
+DOMAIN-SUFFIX,bitfinex.com,Crypto
+DOMAIN-SUFFIX,bitmex.com,Crypto
+DOMAIN-SUFFIX,ftx.com,Crypto
+DOMAIN-SUFFIX,gate.io,Crypto
+DOMAIN-SUFFIX,huobi.com,Crypto
+DOMAIN-SUFFIX,okex.com,Crypto
+DOMAIN-SUFFIX,poloniex.com,Crypto
+DOMAIN-SUFFIX,sushi.com,Crypto
+DOMAIN-SUFFIX,uniswap.org,Crypto
+DOMAIN-SUFFIX,zb.com,Crypto
+
+# Analysis
+DOMAIN-SUFFIX,aicoin.com,Crypto
+DOMAIN-SUFFIX,aimoon.com,Crypto
+DOMAIN-SUFFIX,coingecko.com,Crypto
+DOMAIN-SUFFIX,coinmarketcap.com,Crypto
+DOMAIN-SUFFIX,tradingview.com,Crypto
