@@ -31,4 +31,5 @@ DOMAIN,msg.umeng.com,DIRECT
 DOMAIN,msg.umengcloud.com,DIRECT
 # > DoH
 DOMAIN,doh.sb,DIRECT
+DOMAIN,dns.sh,DIRECT
 DOMAIN,doh.dns.sb,DIRECT
