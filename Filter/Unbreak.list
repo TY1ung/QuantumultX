@@ -33,3 +33,4 @@ DOMAIN,msg.umengcloud.com,DIRECT
 DOMAIN,doh.sb,DIRECT
 DOMAIN,dns.sh,DIRECT
 DOMAIN,doh.dns.sb,DIRECT
+DOMAIN,dns.google,DIRECT
