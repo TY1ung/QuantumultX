@@ -117,8 +117,6 @@ DOMAIN-SUFFIX,visualstudio.com,DIRECT
 # DOMAIN-SUFFIX,1drv.com,DIRECT
 # DOMAIN-SUFFIX,storage.live.com,DIRECT
 # >> Outlook
-DOMAIN-SUFFIX,hotmail.com,DIRECT
-DOMAIN-SUFFIX,outlook.com,DIRECT
 DOMAIN,outlook.office365.com,DIRECT
 DOMAIN,smtp.office365.com,DIRECT
 # >> Windows Server Update Services
