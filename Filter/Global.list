@@ -61,6 +61,8 @@ IP-CIDR,147.92.128.0/17,PROXY
 IP-CIDR,203.104.144.0/21,PROXY
 # > Microsoft
 DOMAIN-SUFFIX,aka.ms,PROXY
+DOMAIN-SUFFIX,hotmail.com,PROXY
+DOMAIN-SUFFIX,outlook.com,PROXY
 DOMAIN-SUFFIX,onedrive.live.com,PROXY
 DOMAIN-SUFFIX,streaming.mediaservices.windows.net,PROXY
 DOMAIN,assets1.xboxlive.com,PROXY
