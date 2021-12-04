@@ -1,38 +1,38 @@
 # Forum
-DOMAIN-SUFFIX,bitcointalk.org,Crypto
+HOST-SUFFIX,bitcointalk.org,Crypto
 
 # Exchange
 # > Binance
-DOMAIN-SUFFIX,binance.cc,Crypto
-DOMAIN-SUFFIX,binance.cloud,Crypto
-DOMAIN-SUFFIX,binance.com,Crypto
-DOMAIN-SUFFIX,binance.gg,Crypto
-DOMAIN-SUFFIX,binance.im,Crypto
-DOMAIN-SUFFIX,binance.me,Crypto
-DOMAIN-SUFFIX,binancezh.cc,Crypto
-DOMAIN-SUFFIX,bnappzh.com,Crypto
-DOMAIN-SUFFIX,bnbstatic.com,Crypto
-DOMAIN-SUFFIX,bntrace.com,Crypto
+HOST-SUFFIX,binance.cc,Crypto
+HOST-SUFFIX,binance.cloud,Crypto
+HOST-SUFFIX,binance.com,Crypto
+HOST-SUFFIX,binance.gg,Crypto
+HOST-SUFFIX,binance.im,Crypto
+HOST-SUFFIX,binance.me,Crypto
+HOST-SUFFIX,binancezh.cc,Crypto
+HOST-SUFFIX,bnappzh.com,Crypto
+HOST-SUFFIX,bnbstatic.com,Crypto
+HOST-SUFFIX,bntrace.com,Crypto
 
-DOMAIN-SUFFIX,aex.com,Crypto
-DOMAIN-SUFFIX,bibox.com,Crypto
-DOMAIN-SUFFIX,bitfinex.com,Crypto
-DOMAIN-SUFFIX,bitmex.com,Crypto
-DOMAIN-SUFFIX,ftx.com,Crypto
-DOMAIN-SUFFIX,gate.io,Crypto
-DOMAIN-SUFFIX,huobi.com,Crypto
-DOMAIN-SUFFIX,okex.com,Crypto
-DOMAIN-SUFFIX,poloniex.com,Crypto
-DOMAIN-SUFFIX,sushi.com,Crypto
-DOMAIN-SUFFIX,uniswap.org,Crypto
-DOMAIN-SUFFIX,zb.com,Crypto
+HOST-SUFFIX,aex.com,Crypto
+HOST-SUFFIX,bibox.com,Crypto
+HOST-SUFFIX,bitfinex.com,Crypto
+HOST-SUFFIX,bitmex.com,Crypto
+HOST-SUFFIX,ftx.com,Crypto
+HOST-SUFFIX,gate.io,Crypto
+HOST-SUFFIX,huobi.com,Crypto
+HOST-SUFFIX,okex.com,Crypto
+HOST-SUFFIX,poloniex.com,Crypto
+HOST-SUFFIX,sushi.com,Crypto
+HOST-SUFFIX,uniswap.org,Crypto
+HOST-SUFFIX,zb.com,Crypto
 
 # Analysis
-DOMAIN-SUFFIX,aicoin.com,Crypto
-DOMAIN-SUFFIX,aimoon.com,Crypto
-DOMAIN-SUFFIX,coingecko.com,Crypto
-DOMAIN-SUFFIX,coinmarketcap.com,Crypto
-DOMAIN-SUFFIX,tradingview.com,Crypto
+HOST-SUFFIX,aicoin.com,Crypto
+HOST-SUFFIX,aimoon.com,Crypto
+HOST-SUFFIX,coingecko.com,Crypto
+HOST-SUFFIX,coinmarketcap.com,Crypto
+HOST-SUFFIX,tradingview.com,Crypto
 
-DOMAIN-SUFFIX,fxhapp.com,Crypto
-DOMAIN-SUFFIX,feixiaohao.info,Crypto
+HOST-SUFFIX,fxhapp.com,Crypto
+HOST-SUFFIX,feixiaohao.info,Crypto
