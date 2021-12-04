@@ -1,10 +1,10 @@
 # > Store content such as apps, books, and music
-DOMAIN-SUFFIX,apps.apple.com,AppStore
-DOMAIN-SUFFIX,itunes.apple.com,AppStore
-DOMAIN-SUFFIX,itunes-apple.com.akadns.net,AppStore
-DOMAIN-SUFFIX,mzstatic.com,AppStore
-DOMAIN,ppq.apple.com,AppStore
+HOST-SUFFIX,apps.apple.com,AppStore
+HOST-SUFFIX,itunes.apple.com,AppStore
+HOST-SUFFIX,itunes-apple.com.akadns.net,AppStore
+HOST-SUFFIX,mzstatic.com,AppStore
+HOST,ppq.apple.com,AppStore
 # > App Store Connect
-DOMAIN,appstoreconnect.apple.com,AppStore
-DOMAIN,iosapps-ssl.itunes.apple.com,AppStore
-DOMAIN,itcmobile.itunes.apple.com,AppStore
+HOST,appstoreconnect.apple.com,AppStore
+HOST,iosapps-ssl.itunes.apple.com,AppStore
+HOST,itcmobile.itunes.apple.com,AppStore
