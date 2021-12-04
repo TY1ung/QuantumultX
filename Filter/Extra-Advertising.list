@@ -487,3 +487,7 @@ DOMAIN-SUFFIX,114so.cn,REJECT
 DOMAIN-SUFFIX,go.10086.cn,REJECT
 DOMAIN-SUFFIX,hivedata.cc,REJECT
 DOMAIN-SUFFIX,navi.gd.chinamobile.com,REJECT
+
+# APP广告+隐私
+DOMAIN,wangpengwuxiao.github.io,REJECT
+DOMAIN,sdk.6463.com,REJECT
