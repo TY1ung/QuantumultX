@@ -560,3 +560,6 @@ HOST-SUFFIX,metapix.net,PROXY
 HOST-SUFFIX,s3.amazonaws.com,PROXY
 HOST-SUFFIX,zaobao.com.sg,PROXY
 HOST,international-gfe.download.nvidia.com,PROXY
+
+HOST-SUFFIX,xtonl.com,PROXY
+HOST-SUFFIX,xtoml.com,PROXY
