@@ -1,7 +1,7 @@
 # Supercell
 # > Clash of Clans
-DOMAIN-SUFFIX,clashofclans.com,DIRECT
-DOMAIN-SUFFIX,helpshift.com,DIRECT
+HOST-SUFFIX,clashofclans.com,Supercell
+HOST-SUFFIX,helpshift.com,Supercell
 # > Clash Royale
-DOMAIN-SUFFIX,clashroyale.com,DIRECT
-DOMAIN-SUFFIX,clashroyaleapp.com,DIRECT
+HOST-SUFFIX,clashroyale.com,Supercell
+HOST-SUFFIX,clashroyaleapp.com,Supercell
