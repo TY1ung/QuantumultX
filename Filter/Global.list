@@ -10,17 +10,6 @@ HOST,a248.e.akamai.net,PROXY
 HOST,a771.dscq.akamai.net,PROXY
 # > Apple
 HOST,testflight.apple.com,PROXY
-# > Cryptocurrency
-HOST-SUFFIX,aex.com,PROXY
-HOST-SUFFIX,bibox.com,PROXY
-HOST-SUFFIX,binance.com,PROXY
-HOST-SUFFIX,bitcointalk.org,PROXY
-HOST-SUFFIX,bitfinex.com,PROXY
-HOST-SUFFIX,bitmex.com,PROXY
-HOST-SUFFIX,gate.io,PROXY
-HOST-SUFFIX,huobi.com,PROXY
-HOST-SUFFIX,okex.com,PROXY
-HOST-SUFFIX,zb.com,PROXY
 # > Discord
 HOST-SUFFIX,discordapp.com,PROXY
 HOST-SUFFIX,discordapp.net,PROXY
