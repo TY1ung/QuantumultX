@@ -516,9 +516,6 @@ HOST,news-edge.apple.com,PROXY
 HOST,news-events.apple.com,PROXY
 HOST,apple.comscoreresearch.com,PROXY
 # ------
-# Google
-HOST-SUFFIX,go.dev,PROXY
-HOST-SUFFIX,golang.org,PROXY
 # > Others
 HOST-SUFFIX,aicoin.com,PROXY
 HOST-SUFFIX,aimoon.com,PROXY
