@@ -24,6 +24,7 @@ HOST-SUFFIX,zb.com,PROXY
 # > Discord
 HOST-SUFFIX,discordapp.com,PROXY
 HOST-SUFFIX,discordapp.net,PROXY
+HOST-SUFFIX,discord.meida,PROXY
 # > Dropbox
 HOST-SUFFIX,dropbox.com,PROXY
 HOST-SUFFIX,dropboxapi.com,PROXY
