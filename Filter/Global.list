@@ -13,7 +13,8 @@ HOST,testflight.apple.com,PROXY
 # > Discord
 HOST-SUFFIX,discordapp.com,PROXY
 HOST-SUFFIX,discordapp.net,PROXY
-HOST-SUFFIX,discord.meida,PROXY
+HOST-SUFFIX,discord.com,PROXY
+HOST-SUFFIX,discord.media,PROXY
 # > Dropbox
 HOST-SUFFIX,dropbox.com,PROXY
 HOST-SUFFIX,dropboxapi.com,PROXY
