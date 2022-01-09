@@ -25,3 +25,10 @@ HOST-SUFFIX,udpolimeok.baidu.com,REJECT
 HOST-SUFFIX,usug.baidu.com,REJECT
 HOST-SUFFIX,wts.xinwen.cn,REJECT
 HOST-SUFFIX,yun-hl.3g.qq.com,REJECT
+HOST-SUFFIX,cmpassport.com,REJECT
+HOST-SUFFIX,hmrz.wo.cn,REJECT
+HOST-SUFFIX,e.189.cn,REJECT
+HOST-SUFFIX,id6.me,REJECT
+HOST-SUFFIX,opencloud.wostore.cn,REJECT
+HOST-SUFFIX,auth.wosms.cn,REJECT
+HOST-SUFFIX,id.mail.wo.cn,REJECT
