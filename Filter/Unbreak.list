@@ -29,3 +29,5 @@ HOST,analytics.strava.com,DIRECT
 # > Umeng
 HOST,msg.umeng.com,DIRECT
 HOST,msg.umengcloud.com,DIRECT
+# >Passcloud
+HOST-SUFFIX,passcloud.xyz,DIRECT
