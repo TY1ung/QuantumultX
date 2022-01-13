@@ -1,5 +1,4 @@
 HOST-SUFFIX,50union.com,REJECT
-HOST-SUFFIX,acs.m.taobao.com,REJECT
 HOST-SUFFIX,activity.baidu.com,REJECT
 HOST-SUFFIX,cd.xdplt.com,REJECT
 HOST-SUFFIX,cdn.polyfill.io,REJECT
