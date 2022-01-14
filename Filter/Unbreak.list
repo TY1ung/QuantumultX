@@ -31,4 +31,5 @@ HOST,msg.umeng.com,DIRECT
 HOST,msg.umengcloud.com,DIRECT
 # >DoH
 HOST-SUFFIX,233py.com,DIRECT
+HOST-SUFFIX,dns.sb,DIRECT
 HOST-SUFFIX,passcloud.xyz,DIRECT
