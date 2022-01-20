@@ -6,6 +6,7 @@ HOST-SUFFIX,cdn-go.cn,REJECT
 HOST-SUFFIX,config.cmpassport.com,REJECT
 HOST-SUFFIX,dl.txcdns.com,REJECT
 HOST-SUFFIX,dnet.mb.qq.com,REJECT
+HOST-SUFFIX,dns.weixin.qq.com,REJECT
 HOST-SUFFIX,ext.baidu.com,REJECT
 HOST-SUFFIX,fxgate.baidu.com,REJECT
 HOST-SUFFIX,game.weixin.qq.com,REJECT
