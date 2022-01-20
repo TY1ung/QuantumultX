@@ -8,8 +8,6 @@ HOST,s3-ap-southeast-2.amazonaws.com,PROXY
 # > Akamai
 HOST,a248.e.akamai.net,PROXY
 HOST,a771.dscq.akamai.net,PROXY
-# > Apple
-HOST,testflight.apple.com,PROXY
 # > Discord
 HOST-SUFFIX,discordapp.com,PROXY
 HOST-SUFFIX,discordapp.net,PROXY
@@ -495,29 +493,6 @@ HOST-SUFFIX,weebly.com,PROXY
 HOST-SUFFIX,twitter.jp,PROXY
 
 # (Region-Restricted Access Denied)
-# ---(Apple)---
-HOST-SUFFIX,appsto.re,PROXY
-HOST,books.itunes.apple.com,PROXY
-HOST-SUFFIX,smoot.apple.com,PROXY
-HOST,beta.music.apple.com,PROXY
-HOST,lookup-api.apple.com,PROXY
-# > Web Preview
-HOST,apps.apple.com,PROXY
-HOST,itunes.apple.com,PROXY
-HOST,tv.apple.com,PROXY
-# > Podcasts
-HOST,amp-api.podcasts.apple.com,PROXY
-HOST,bookkeeper.itunes.apple.com,PROXY
-# > News
-HOST,gateway.icloud.com,PROXY
-HOST-SUFFIX,apple.news,PROXY
-HOST,news-assets.apple.com,PROXY
-HOST,news-client.apple.com,PROXY
-HOST,news-client-search.apple.com,PROXY
-HOST,news-edge.apple.com,PROXY
-HOST,news-events.apple.com,PROXY
-HOST,apple.comscoreresearch.com,PROXY
-# ------
 # > Others
 HOST-SUFFIX,aicoin.com,PROXY
 HOST-SUFFIX,aimoon.com,PROXY
@@ -532,11 +507,6 @@ HOST-SUFFIX,sushi.com,PROXY
 # URL-REGEX,http:\/\/img\.sina\.com\/usweibo\/
 
 # (Network Jitter)
-# > Apple
-HOST,appleid.apple.com,PROXY
-HOST,developer.apple.com,PROXY
-HOST,www.icloud.com,PROXY
-HOST,ocsp.apple.com,PROXY
 # > DigiCert
 HOST,cacerts.digicert.com,PROXY
 HOST,crl3.digicert.com,PROXY
