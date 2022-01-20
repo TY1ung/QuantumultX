@@ -9,16 +9,6 @@ HOST,bdtj.tagtic.cn,DIRECT
 # > Alibaba
 HOST,log.mmstat.com,DIRECT
 HOST,sycm.mmstat.com,DIRECT
-# > Google
-HOST-SUFFIX,blog.google,DIRECT
-HOST-SUFFIX,googletraveladservices.com,DIRECT
-HOST,clientservices.googleapis.com,DIRECT
-HOST,dl.google.com,DIRECT
-HOST,dl.l.google.com,DIRECT
-HOST,fonts.googleapis.com,DIRECT
-HOST,fonts.gstatic.com,DIRECT
-HOST,translate.googleapis.com,DIRECT
-HOST,update.googleapis.com,DIRECT
 # > Paramount+
 HOST,pubads.g.doubleclick.net,DIRECT
 # > Tencent
@@ -29,7 +19,7 @@ HOST,analytics.strava.com,DIRECT
 # > Umeng
 HOST,msg.umeng.com,DIRECT
 HOST,msg.umengcloud.com,DIRECT
-# >DoH
+# > DoH
 HOST-SUFFIX,233py.com,DIRECT
 HOST-SUFFIX,dns.sb,DIRECT
 HOST-SUFFIX,passcloud.xyz,DIRECT
