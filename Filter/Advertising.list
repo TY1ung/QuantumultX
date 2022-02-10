@@ -110,8 +110,6 @@ HOST-SUFFIX,adinall.com,REJECT
 HOST-SUFFIX,adkernel.com,REJECT
 HOST-SUFFIX,ad-locus.com,REJECT
 HOST-SUFFIX,adlooxtracking.com,REJECT
-HOST-SUFFIX,admarvel.com,REJECT
-HOST-SUFFIX,admaster.com.cn,REJECT
 HOST-SUFFIX,ad-maven.com,REJECT
 HOST-SUFFIX,admicro.vn,REJECT
 HOST-SUFFIX,admob.com,REJECT
@@ -123,10 +121,7 @@ HOST-SUFFIX,ad-plus.cn,REJECT
 HOST-SUFFIX,adpushup.com,REJECT
 HOST-SUFFIX,adroll.com,REJECT
 HOST-SUFFIX,adsafeprotected.com,REJECT
-HOST-SUFFIX,adsage.cn,REJECT
-HOST-SUFFIX,adsage.com,REJECT
 HOST-SUFFIX,ad-score.com,REJECT
-HOST-SUFFIX,adsensor.org,REJECT
 HOST-SUFFIX,adserve.work,REJECT
 HOST-SUFFIX,adsmediabox.com,REJECT
 HOST-SUFFIX,ads-pixiv.net,REJECT
