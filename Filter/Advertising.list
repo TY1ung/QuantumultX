@@ -495,7 +495,6 @@ IP-CIDR,124.192.153.42/32,REJECT
 HOST-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 HOST,ad.toutiao.com,REJECT
 HOST,pangolin.snssdk.com,REJECT
-HOST-SUFFIX,pstatp.com,REJECT
 # > baicizhan
 HOST,advertise.baicizhan.com,REJECT
 HOST,advertise.baicizhan.org,REJECT
