@@ -483,7 +483,3 @@ HOST-SUFFIX,114so.cn,REJECT
 HOST-SUFFIX,go.10086.cn,REJECT
 HOST-SUFFIX,hivedata.cc,REJECT
 HOST-SUFFIX,navi.gd.chinamobile.com,REJECT
-
-# APP广告+隐私
-HOST,wangpengwuxiao.github.io,REJECT
-HOST,sdk.6463.com,REJECT
