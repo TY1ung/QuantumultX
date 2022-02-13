@@ -224,8 +224,6 @@ HOST-SUFFIX,dialogflow.com,Google
 HOST-SUFFIX,digisfera.com,Google
 HOST-SUFFIX,digitalassetlinks.org,Google
 HOST-SUFFIX,digitalattackmap.com,Google
-HOST-SUFFIX,doubleclick.com,Google
-HOST-SUFFIX,doubleclick.net,Google
 HOST-SUFFIX,episodic.com,Google
 HOST-SUFFIX,fastlane.ci,Google
 HOST-SUFFIX,fastlane.tools,Google
@@ -431,7 +429,6 @@ HOST-SUFFIX,googlecapital.com,Google
 HOST-SUFFIX,googlecert.net,Google
 HOST-SUFFIX,googlecnapps.cn,Google
 HOST-SUFFIX,googlecode.com,Google
-HOST-SUFFIX,googlecommerce.com,Google
 HOST-SUFFIX,googlecompare.co.uk,Google
 HOST-SUFFIX,googledanmark.com,Google
 HOST-SUFFIX,googleHOSTs.com,Google
@@ -452,7 +449,6 @@ HOST-SUFFIX,googlescholar.com,Google
 HOST-SUFFIX,googlesource.com,Google
 HOST-SUFFIX,googlestore.com,Google
 HOST-SUFFIX,googlesverige.com,Google
-HOST-SUFFIX,googlesyndication.com,Google
 HOST-SUFFIX,googletraveladservices.com,Google
 HOST-SUFFIX,googleusercontent.com,Google
 HOST-SUFFIX,googleventures.com,Google
