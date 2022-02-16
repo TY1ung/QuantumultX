@@ -1,17 +1,14 @@
 # Unbreak
 # > General
-USER-AGENT,archero*,DIRECT
-USER-AGENT,coffeecorp*,DIRECT
-USER-AGENT,Coffee%20Corp*,DIRECT
-USER-AGENT,restaurant-mobile*,DIRECT
 HOST,app.adjust.com,DIRECT
 HOST,bdtj.tagtic.cn,DIRECT
 # > Alibaba
 HOST,log.mmstat.com,DIRECT
 HOST,sycm.mmstat.com,DIRECT
-# > Paramount+
-HOST,pubads.g.doubleclick.net,DIRECT
+# >> Paramount+
+# HOST,pubads.g.doubleclick.net,DIRECT
 # > Tencent
+HOST,fairplay.l.qq.com,DIRECT
 HOST,livew.l.qq.com,DIRECT
 HOST,vd.l.qq.com,DIRECT
 # > Strava
