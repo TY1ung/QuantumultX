@@ -2,7 +2,6 @@
 # Google
 HOST-SUFFIX,ads.gmodules.com,REJECT
 HOST-SUFFIX,ads.google.com,REJECT
-HOST-SUFFIX,adservice.google.com,REJECT
 HOST-SUFFIX,afd.l.google.com,REJECT
 HOST-SUFFIX,badad.googleplex.com,REJECT
 HOST-SUFFIX,csi.gstatic.com,REJECT
@@ -121,8 +120,6 @@ HOST-SUFFIX,clicktracks.com,REJECT
 HOST-SUFFIX,clickzs.com,REJECT
 HOST-SUFFIX,cmcore.com,REJECT
 HOST-SUFFIX,cnxad.com,REJECT
-HOST-SUFFIX,cnzz.com,REJECT
-HOST-SUFFIX,cnzzlink.com,REJECT
 HOST-SUFFIX,cocounion.com,REJECT
 HOST-SUFFIX,coocaatv.com,REJECT
 HOST-SUFFIX,cooguo.com,REJECT
@@ -304,6 +301,7 @@ HOST-SUFFIX,ujian.cc,REJECT
 HOST-SUFFIX,ukeiae.com,REJECT
 HOST-SUFFIX,umeng.co,REJECT
 HOST-SUFFIX,umeng.com,REJECT
+HOST-SUFFIX,umengcloud.com,REJECT
 HOST-SUFFIX,umtrack.com,REJECT
 HOST-SUFFIX,union-wifi.com,REJECT
 HOST-SUFFIX,union001.com,REJECT
@@ -373,7 +371,6 @@ HOST-SUFFIX,adotmob.com,REJECT
 HOST-SUFFIX,adperium.com,REJECT
 HOST-SUFFIX,adriver.ru,REJECT
 HOST-SUFFIX,adsco.re,REJECT
-HOST-SUFFIX,adservice.com,REJECT
 HOST-SUFFIX,adtaily.com,REJECT
 HOST-SUFFIX,adtech.de,REJECT
 HOST-SUFFIX,adtechjp.com,REJECT
@@ -487,7 +484,3 @@ HOST-SUFFIX,114so.cn,REJECT
 HOST-SUFFIX,go.10086.cn,REJECT
 HOST-SUFFIX,hivedata.cc,REJECT
 HOST-SUFFIX,navi.gd.chinamobile.com,REJECT
-
-# APP广告+隐私
-HOST,wangpengwuxiao.github.io,REJECT
-HOST,sdk.6463.com,REJECT

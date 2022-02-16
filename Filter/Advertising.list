@@ -110,8 +110,6 @@ HOST-SUFFIX,adinall.com,REJECT
 HOST-SUFFIX,adkernel.com,REJECT
 HOST-SUFFIX,ad-locus.com,REJECT
 HOST-SUFFIX,adlooxtracking.com,REJECT
-HOST-SUFFIX,admarvel.com,REJECT
-HOST-SUFFIX,admaster.com.cn,REJECT
 HOST-SUFFIX,ad-maven.com,REJECT
 HOST-SUFFIX,admicro.vn,REJECT
 HOST-SUFFIX,admob.com,REJECT
@@ -123,10 +121,7 @@ HOST-SUFFIX,ad-plus.cn,REJECT
 HOST-SUFFIX,adpushup.com,REJECT
 HOST-SUFFIX,adroll.com,REJECT
 HOST-SUFFIX,adsafeprotected.com,REJECT
-HOST-SUFFIX,adsage.cn,REJECT
-HOST-SUFFIX,adsage.com,REJECT
 HOST-SUFFIX,ad-score.com,REJECT
-HOST-SUFFIX,adsensor.org,REJECT
 HOST-SUFFIX,adserve.work,REJECT
 HOST-SUFFIX,adsmediabox.com,REJECT
 HOST-SUFFIX,ads-pixiv.net,REJECT
@@ -150,7 +145,6 @@ HOST-SUFFIX,adzerk.net,REJECT
 HOST-SUFFIX,aiclk.com,REJECT
 HOST-SUFFIX,airpush.com,REJECT
 HOST-SUFFIX,algovid.com,REJECT
-HOST-SUFFIX,amazon-adsystem.com,REJECT
 HOST-SUFFIX,amoad.com,REJECT
 HOST-SUFFIX,amobee.com,REJECT
 HOST-SUFFIX,app-adforce.jp,REJECT
@@ -158,9 +152,7 @@ HOST-SUFFIX,appads.com,REJECT
 HOST-SUFFIX,appcpi.net,REJECT
 HOST-SUFFIX,appier.net,REJECT
 HOST-SUFFIX,applift.com,REJECT
-HOST-SUFFIX,applovin.com,REJECT
 HOST-SUFFIX,applvn.com,REJECT
-HOST-SUFFIX,appsflyer.com,REJECT
 HOST-SUFFIX,apsalar.com,REJECT
 HOST-SUFFIX,apxadtracking.net,REJECT
 HOST-SUFFIX,aralego.com,REJECT
@@ -415,7 +407,6 @@ HOST,ads.weilitoutiao.net,REJECT
 HOST,adsapi.manhuaren.com,REJECT
 HOST,adsdk.dmzj.com,REJECT
 HOST,adserver.pandora.com,REJECT
-HOST,adservice.tohsoft.com,REJECT
 HOST,adshow.58.com,REJECT
 HOST,adui.tg.meitu.com,REJECT
 HOST,adv.bandi.so,REJECT
@@ -534,8 +525,6 @@ HOST,exp.360in.com,REJECT
 # (G)
 # > Google
 HOST-SUFFIX,doubleclick.net,REJECT
-HOST-SUFFIX,googleadservices.com,REJECT
-HOST-SUFFIX,googleadsserving.cn,REJECT
 HOST-SUFFIX,googlesyndication.com,REJECT
 HOST-SUFFIX,googletagservices.com,REJECT
 HOST,ads.youtube.com,REJECT
@@ -626,7 +615,6 @@ HOST,cdn.adapi.fotoable.com,REJECT
 HOST,adnew.wifi8.com,REJECT
 HOST,adfile.wifi8.com,REJECT
 # > PConline
-HOST,ad-analysis.pconline.com.cn,REJECT
 HOST,iad0ssl.pcauto.com.cn,REJECT
 HOST,iad0ssl.pconline.com.cn,REJECT
 HOST,imgad0.pcauto.com.cn,REJECT
