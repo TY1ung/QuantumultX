@@ -1,26 +1,21 @@
-# 如无特殊需求可不用加此策略及选择代理，在大部分地区 Apple CDN 可正常工作，使用代理后可能导致「Cannot Connect to iCloud」等问题
 # Apple
 HOST-SUFFIX,aaplimg.com,Apple
 HOST-SUFFIX,apple.co,Apple
 HOST-SUFFIX,apple.com,Apple
+HOST-SUFFIX,apple.com.cn,Apple
 HOST-SUFFIX,apple-cloudkit.com,Apple
-HOST-SUFFIX,apple.news,Apple
-HOST-SUFFIX,appsto.re,Apple
+HOST-SUFFIX,apple-livephotoskit.com,Apple
+HOST-SUFFIX,apple-mapkit.com,Apple
+HOST-SUFFIX,applemusic.com,Apple
 HOST-SUFFIX,appstore.com,Apple
+HOST-SUFFIX,apzones.com,Apple
 HOST-SUFFIX,cdn-apple.com,Apple
 HOST-SUFFIX,icloud.com,Apple
 HOST-SUFFIX,icloud.com.cn,Apple
 HOST-SUFFIX,icloud-content.com,Apple
 HOST-SUFFIX,me.com,Apple
 HOST-SUFFIX,mzstatic.com,Apple
-HOST,apple.comscoreresearch.com,Apple
 HOST-KEYWORD,apple.com.akadns.net,Apple
+HOST-KEYWORD,apple.com.edgekey.net,Apple
+HOST-KEYWORD,apple-support.akadns.net,Apple
 HOST-KEYWORD,icloud.com.akadns.net,Apple
-IP-CIDR,17.0.0.0/8,Apple
-IP-CIDR,63.92.224.0/19,Apple
-IP-CIDR,65.199.22.0/23,Apple
-IP-CIDR,139.178.128.0/18,Apple
-IP-CIDR,144.178.0.0/19,Apple
-IP-CIDR,192.35.50.0/24,Apple
-IP-CIDR,198.183.17.0/24,Apple
-IP-CIDR,205.180.175.0/24,Apple
