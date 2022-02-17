@@ -61,9 +61,6 @@ HOST-SUFFIX,adsensecustomsearchads.com,Google
 HOST-SUFFIX,adsenseformobileapps.com,Google
 HOST-SUFFIX,advertisercommunity.com,Google
 HOST-SUFFIX,advertiserscommunity.com,Google
-HOST-SUFFIX,adwords-community.com,Google
-HOST-SUFFIX,adwords.com,Google
-HOST-SUFFIX,adwordsexpress.com,Google
 HOST-SUFFIX,amp.dev,Google
 HOST-SUFFIX,ampproject.com,Google
 HOST-SUFFIX,ampproject.net,Google
@@ -275,7 +272,6 @@ HOST-SUFFIX,goo.gl,Google
 HOST-SUFFIX,googel.com,Google
 HOST-SUFFIX,googil.com,Google
 HOST-SUFFIX,googl.com,Google
-HOST-SUFFIX,google-analytics.com,Google
 HOST-SUFFIX,google-syndication.com,Google
 HOST-SUFFIX,google.ad,Google
 HOST-SUFFIX,google.ae,Google
@@ -417,8 +413,6 @@ HOST-SUFFIX,google.vu,Google
 HOST-SUFFIX,google.ws,Google
 HOST-SUFFIX,googleacquisitionmigration.com,Google
 HOST-SUFFIX,googleadapis.com,Google
-HOST-SUFFIX,googleadservices.com,Google
-HOST-SUFFIX,googleanalytics.com,Google
 HOST-SUFFIX,googleapis.cn,Google
 HOST-SUFFIX,googleapis.com,Google
 HOST-SUFFIX,googleapps.com,Google
@@ -449,7 +443,6 @@ HOST-SUFFIX,googlescholar.com,Google
 HOST-SUFFIX,googlesource.com,Google
 HOST-SUFFIX,googlestore.com,Google
 HOST-SUFFIX,googlesverige.com,Google
-HOST-SUFFIX,googletraveladservices.com,Google
 HOST-SUFFIX,googleusercontent.com,Google
 HOST-SUFFIX,googleventures.com,Google
 HOST-SUFFIX,googlevideo.com,Google
