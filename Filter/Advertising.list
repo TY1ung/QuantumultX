@@ -109,7 +109,6 @@ HOST-SUFFIX,adform.net,REJECT
 HOST-SUFFIX,adinall.com,REJECT
 HOST-SUFFIX,adkernel.com,REJECT
 HOST-SUFFIX,ad-locus.com,REJECT
-HOST-SUFFIX,adlooxtracking.com,REJECT
 HOST-SUFFIX,ad-maven.com,REJECT
 HOST-SUFFIX,admicro.vn,REJECT
 HOST-SUFFIX,admob.com,REJECT
@@ -154,7 +153,6 @@ HOST-SUFFIX,appier.net,REJECT
 HOST-SUFFIX,applift.com,REJECT
 HOST-SUFFIX,applvn.com,REJECT
 HOST-SUFFIX,apsalar.com,REJECT
-HOST-SUFFIX,apxadtracking.net,REJECT
 HOST-SUFFIX,aralego.com,REJECT
 HOST-SUFFIX,atomhike.com,REJECT
 HOST-SUFFIX,axonix.com,REJECT
@@ -175,7 +173,6 @@ HOST-SUFFIX,criteo.com,REJECT
 HOST-SUFFIX,criteo.net,REJECT
 HOST-SUFFIX,crwdcntrl.net,REJECT
 HOST-SUFFIX,ctrmi.com,REJECT
-HOST-SUFFIX,domob.cn,REJECT
 HOST-SUFFIX,dotomi.com,REJECT
 HOST-SUFFIX,doubleverify.com,REJECT
 HOST-SUFFIX,eroadvertising.com,REJECT
@@ -220,8 +217,6 @@ HOST-SUFFIX,nexage.com,REJECT
 HOST-SUFFIX,o333o.com,REJECT
 HOST-SUFFIX,okjhb.xyz,REJECT
 HOST-SUFFIX,open-adx.com,REJECT
-HOST-SUFFIX,openx.com,REJECT
-HOST-SUFFIX,openx.net,REJECT
 HOST-SUFFIX,outbrain.com,REJECT
 HOST-SUFFIX,pubmatic.com,REJECT
 HOST-SUFFIX,qchannel01.cn,REJECT
@@ -242,7 +237,6 @@ HOST-SUFFIX,smaato.net,REJECT
 HOST-SUFFIX,smartadserver.com,REJECT
 HOST-SUFFIX,smartnews-ads.com,REJECT
 HOST-SUFFIX,snapads.com,REJECT
-HOST-SUFFIX,socdm.com,REJECT
 HOST-SUFFIX,sonobi.com,REJECT
 HOST-SUFFIX,springserve.com,REJECT
 HOST-SUFFIX,startappservice.com,REJECT
@@ -259,7 +253,6 @@ HOST-SUFFIX,superad2.com.sg,REJECT
 HOST-SUFFIX,superadbox.com,REJECT
 HOST-SUFFIX,superads.cn,REJECT
 HOST-SUFFIX,supersonic.com,REJECT
-HOST-SUFFIX,supersonicads.com,REJECT
 HOST-SUFFIX,synergy-e.com,REJECT
 HOST-SUFFIX,tabmo.io,REJECT
 HOST-SUFFIX,taboola.com,REJECT
@@ -362,7 +355,6 @@ HOST-SUFFIX,yieldmo.com,REJECT
 HOST-SUFFIX,yieldoptimizer.com,REJECT
 HOST-SUFFIX,yllix.com,REJECT
 HOST-SUFFIX,ymtrack6.co,REJECT
-HOST-SUFFIX,ymtracking.com,REJECT
 HOST-SUFFIX,yoc.com,REJECT
 HOST-SUFFIX,yoc-performance.com,REJECT
 HOST-SUFFIX,yomedia.vn,REJECT
@@ -669,7 +661,6 @@ HOST,wxsnsdy.wxs.qq.com,REJECT
 HOST,wxsnsdythumb.wxs.qq.com,REJECT
 # > Tencent Music (TME)
 HOST,ad.tencentmusic.com,REJECT
-HOST,adserviceretry.kugou.com,REJECT
 HOST,ads.service.kugou.com,REJECT
 HOST,adsfile.bssdlbig.kugou.com,REJECT
 HOST,g.koowo.com,REJECT
@@ -683,7 +674,6 @@ HOST,rich.kuwo.cn,REJECT
 HOST,adm.10jqka.com.cn,REJECT
 HOST,stat.10jqka.com.cn,REJECT
 # > The Paper
-HOST,admonitor.thepaper.cn,REJECT
 HOST,adpai.thepaper.cn,REJECT
 HOST,imgadpai.thepaper.cn,REJECT
 # > Thunder
