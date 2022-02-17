@@ -3,7 +3,6 @@ HOST-SUFFIX,adjust.com,REJECT
 HOST-SUFFIX,cpatrk.net,REJECT
 HOST-SUFFIX,kochava.com,REJECT
 HOST-SUFFIX,marketo.com,REJECT
-HOST-SUFFIX,mobileapptracking.com,REJECT
 HOST-SUFFIX,rtbasia.com,REJECT
 HOST-SUFFIX,scorecardresearch.com,REJECT
 HOST-SUFFIX,sumologic.com,REJECT
@@ -18,12 +17,9 @@ HOST-SUFFIX,tapstream.com,REJECT
 HOST-SUFFIX,tealiumiq.com,REJECT
 HOST-SUFFIX,tend.io,REJECT
 HOST-SUFFIX,tpctrust.com,REJECT
-HOST-SUFFIX,trackingio.com,REJECT
 HOST-SUFFIX,tremormedia.com,REJECT
 HOST-SUFFIX,woopra.com,REJECT
 HOST-SUFFIX,wootric.com,REJECT
-HOST-SUFFIX,wowanalytics.co.uk,REJECT
-HOST-SUFFIX,zoomanalytics.co,REJECT
 
 HOST,track.tenjin.com,REJECT
 HOST,track.tenjin.io,REJECT
@@ -44,11 +40,8 @@ HOST,hm.baidu.com,REJECT
 HOST,hmma.baidu.com,REJECT
 # > Google
 HOST-SUFFIX,googletagmanager.com,REJECT
-HOST-SUFFIX,google-analytics.com,REJECT
 HOST,safebrowsing.googleapis.com,REJECT
 # > MI
-HOST-SUFFIX,tracking.miui.com,REJECT
 HOST,data.mistat.xiaomi.com,REJECT
-HOST,tracking.intl.miui.com,REJECT
 # > Tencent
 HOST,safebrowsing.urlsec.qq.com,REJECT
