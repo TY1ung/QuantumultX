@@ -60,8 +60,6 @@ HOST-SUFFIX,adpush.cn,REJECT
 HOST-SUFFIX,adquan.com,REJECT
 HOST-SUFFIX,adreal.cn,REJECT
 HOST-SUFFIX,ads8.com,REJECT
-HOST-SUFFIX,adsmogo.com,REJECT
-HOST-SUFFIX,adsmogo.org,REJECT
 HOST-SUFFIX,adsunflower.com,REJECT
 HOST-SUFFIX,adsunion.com,REJECT
 HOST-SUFFIX,adtrk.me,REJECT
@@ -136,14 +134,11 @@ HOST-SUFFIX,ddapp.cn,REJECT
 HOST-SUFFIX,dianjoy.com,REJECT
 HOST-SUFFIX,dianru.com,REJECT
 HOST-SUFFIX,disqusads.com,REJECT
-HOST-SUFFIX,domob.com.cn,REJECT
-HOST-SUFFIX,domob.org,REJECT
 HOST-SUFFIX,dotmore.com.tw,REJECT
 HOST-SUFFIX,doudouguo.com,REJECT
 HOST-SUFFIX,doumob.com,REJECT
 HOST-SUFFIX,duanat.com,REJECT
 HOST-SUFFIX,duiba.com.cn,REJECT
-HOST-SUFFIX,duomeng.cn,REJECT
 HOST-SUFFIX,dxpmedia.com,REJECT
 HOST-SUFFIX,edigitalsurvey.com,REJECT
 HOST-SUFFIX,eduancm.com,REJECT
