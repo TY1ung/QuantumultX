@@ -1,6 +1,7 @@
 # Internet Service Providers Hijacking
 HOST-SUFFIX,17gouwuba.com,REJECT
 HOST-SUFFIX,186078.com,REJECT
+HOST-SUFFIX,189key.com,REJECT
 HOST-SUFFIX,189zj.cn,REJECT
 HOST-SUFFIX,285680.com,REJECT
 HOST-SUFFIX,3721zh.com,REJECT
@@ -92,6 +93,7 @@ HOST-SUFFIX,taoggou.com,REJECT
 HOST-SUFFIX,tcxshop.com,REJECT
 HOST-SUFFIX,tjqonline.cn,REJECT
 HOST-SUFFIX,topitme.com,REJECT
+HOST-SUFFIX,tt114.net,REJECT
 HOST-SUFFIX,tt3sm4.cn,REJECT
 HOST-SUFFIX,tuia.cn,REJECT
 HOST-SUFFIX,tuipenguin.com,REJECT
@@ -227,6 +229,7 @@ HOST-SUFFIX,mycleanmymac.com,REJECT
 HOST-SUFFIX,nicelabel.cc,REJECT
 HOST-SUFFIX,ntfsformac.cc,REJECT
 HOST-SUFFIX,ntfsformac.cn,REJECT
+HOST-SUFFIX,officesoftcn.com,REJECT
 HOST-SUFFIX,overturechina.com,REJECT
 HOST-SUFFIX,passwordrecovery.cn,REJECT
 HOST-SUFFIX,pdfexpert.cc,REJECT
