@@ -472,6 +472,7 @@ HOST-SUFFIX,win-stock.com.cn,REJECT
 HOST-SUFFIX,zantainet.com,REJECT
 
 HOST-SUFFIX,dh54wf.xyz,REJECT
+HOST-SUFFIX,ftte.fun,REJECT
 HOST-SUFFIX,g2q3e.cn,REJECT
 
 # 运营商广告****************
@@ -479,3 +480,13 @@ HOST-SUFFIX,114so.cn,REJECT
 HOST-SUFFIX,go.10086.cn,REJECT
 HOST-SUFFIX,hivedata.cc,REJECT
 HOST-SUFFIX,navi.gd.chinamobile.com,REJECT
+
+# 知乎去广告，以下规则请放置在filter_local最顶部
+IP-CIDR,118.89.204.198/32,REJECT
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
+HOST,118.89.204.198,REJECT
+# 知乎去广告，以下规则的位置越前方越好
+HOST,appcloud2.in.zhihu.com,REJECT
+HOST,mqtt.zhihu.com,reject
+HOST,sugar.zhihu.com,reject
+USER-AGENT,AVOS*,REJECT
