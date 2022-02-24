@@ -474,6 +474,7 @@ HOST-SUFFIX,zantainet.com,REJECT
 HOST-SUFFIX,dh54wf.xyz,REJECT
 HOST-SUFFIX,ftte.fun,REJECT
 HOST-SUFFIX,g2q3e.cn,REJECT
+HOST,ios.bugly.qq.com,REJECT
 
 # 运营商广告****************
 HOST-SUFFIX,114so.cn,REJECT
