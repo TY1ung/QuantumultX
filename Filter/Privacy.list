@@ -1,5 +1,6 @@
 # Privacy
 HOST-SUFFIX,adjust.com,REJECT
+HOST-SUFFIX,clarity.ms,REJECT
 HOST-SUFFIX,cpatrk.net,REJECT
 HOST-SUFFIX,kochava.com,REJECT
 HOST-SUFFIX,marketo.com,REJECT
@@ -40,8 +41,18 @@ HOST,hm.baidu.com,REJECT
 HOST,hmma.baidu.com,REJECT
 # > Google
 HOST-SUFFIX,googletagmanager.com,REJECT
+HOST-SUFFIX,google-analytics.com,REJECT
 HOST,safebrowsing.googleapis.com,REJECT
 # > MI
 HOST,data.mistat.xiaomi.com,REJECT
 # > Tencent
 HOST,safebrowsing.urlsec.qq.com,REJECT
+
+# 其它
+HOST-SUFFIX,a.realsrv.com,REJECT
+HOST-SUFFIX,aegis.qq.com,REJECT
+HOST-SUFFIX,dev.visualwebsiteoptimizer.com,REJECT
+HOST-SUFFIX,go.xxxjmp.com,REJECT
+HOST-SUFFIX,kxlogo.knet.cn,REJECT
+HOST-SUFFIX,s.pc.qq.com,REJECT
+HOST-SUFFIX,widget-mediator.zopim.com,REJECT
