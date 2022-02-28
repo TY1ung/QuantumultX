@@ -11,6 +11,7 @@ HOST,sycm.mmstat.com,DIRECT
 HOST,fairplay.l.qq.com,DIRECT
 HOST,livew.l.qq.com,DIRECT
 HOST,vd.l.qq.com,DIRECT
+HOST,vi.l.qq.com,DIRECT
 # > Strava
 HOST,analytics.strava.com,DIRECT
 # > Umeng
