@@ -3,6 +3,8 @@
 HOST-SUFFIX,ads.gmodules.com,REJECT
 HOST-SUFFIX,ads.google.com,REJECT
 HOST-SUFFIX,afd.l.google.com,REJECT
+HOST-SUFFIX,app-measurement.com,REJECT
+HOST-SUFFIX,app-measurement.net,REJECT
 HOST-SUFFIX,badad.googleplex.com,REJECT
 HOST-SUFFIX,csi.gstatic.com,REJECT
 HOST-SUFFIX,doubleclick.com,REJECT
