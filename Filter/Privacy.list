@@ -56,3 +56,8 @@ HOST-SUFFIX,go.xxxjmp.com,REJECT
 HOST-SUFFIX,kxlogo.knet.cn,REJECT
 HOST-SUFFIX,s.pc.qq.com,REJECT
 HOST-SUFFIX,widget-mediator.zopim.com,REJECT
+
+# ACL4SSR
+HOST-SUFFIX,brontops.com,REJECT
+HOST-SUFFIX,capturehighered.net,REJECT
+HOST-SUFFIX,k5a.io,REJECT
