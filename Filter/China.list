@@ -41,7 +41,6 @@ HOST-SUFFIX,bilibili.tv,DIRECT
 HOST-SUFFIX,hdslb.com,DIRECT
 # > ByteDance
 HOST-SUFFIX,feiliao.com,DIRECT
-HOST-SUFFIX,pstatp.com,DIRECT
 HOST-SUFFIX,snssdk.com,DIRECT
 HOST-SUFFIX,iesdouyin.com,DIRECT
 HOST-SUFFIX,toutiao.com,DIRECT
