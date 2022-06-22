@@ -18,6 +18,7 @@ HOST,analytics.strava.com,DIRECT
 HOST,msg.umeng.com,DIRECT
 HOST,msg.umengcloud.com,DIRECT
 # > DoH
+HOST-SUFFIX,apad.pro,DIRECT
 HOST-SUFFIX,233py.com,DIRECT
 HOST-SUFFIX,xns.one,DIRECT
 HOST-SUFFIX,dns.sb,DIRECT
