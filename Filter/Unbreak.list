@@ -1,22 +1,22 @@
 # Unbreak
 # > General
-HOST,app.adjust.com,DIRECT
-HOST,bdtj.tagtic.cn,DIRECT
+#HOST,app.adjust.com,DIRECT
+#HOST,bdtj.tagtic.cn,DIRECT
 # > Alibaba
-HOST,log.mmstat.com,DIRECT
-HOST,sycm.mmstat.com,DIRECT
+#HOST,log.mmstat.com,DIRECT
+#HOST,sycm.mmstat.com,DIRECT
 # >> Paramount+
 # HOST,pubads.g.doubleclick.net,DIRECT
 # > Tencent
-HOST,fairplay.l.qq.com,DIRECT
-HOST,livew.l.qq.com,DIRECT
-HOST,vd.l.qq.com,DIRECT
-HOST,vi.l.qq.com,DIRECT
+#HOST,fairplay.l.qq.com,DIRECT
+#HOST,livew.l.qq.com,DIRECT
+#HOST,vd.l.qq.com,DIRECT
+#HOST,vi.l.qq.com,DIRECT
 # > Strava
-HOST,analytics.strava.com,DIRECT
+#HOST,analytics.strava.com,DIRECT
 # > Umeng
-HOST,msg.umeng.com,DIRECT
-HOST,msg.umengcloud.com,DIRECT
+#HOST,msg.umeng.com,DIRECT
+#HOST,msg.umengcloud.com,DIRECT
 # > DoH
 HOST-SUFFIX,233py.com,DIRECT
 HOST-SUFFIX,passcloud.xyz,DIRECT
