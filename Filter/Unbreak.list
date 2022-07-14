@@ -2,6 +2,7 @@
 # > General
 #HOST,app.adjust.com,DIRECT
 #HOST,bdtj.tagtic.cn,DIRECT
+HOST,safebrowsing.googleapis.com,DIRECT
 # > Alibaba
 #HOST,log.mmstat.com,DIRECT
 #HOST,sycm.mmstat.com,DIRECT
