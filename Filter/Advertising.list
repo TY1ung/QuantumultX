@@ -224,28 +224,28 @@ HOST,toots-a.akamaihd.net,REJECT
 HOST,videoads-cloud.rovio.com,REJECT
 HOST,video-ads-module.ad-tech.nbcuni.com,REJECT
 
-# (0~9),REJECT
-# > 51wnl,REJECT
+# (0~9)
+# > 51wnl
 HOST,ad.51wnl-cq.com,REJECT
 HOST,adextra.51wnl-cq.com,REJECT
 HOST,log.51wnl-cq.com,REJECT
 HOST,r.51wnl-cq.com,REJECT
-# (A),REJECT
-# > Apple,REJECT
+# (A)
+# > Apple
 HOST-SUFFIX,ads.internal.unity3d.com,REJECT
 HOST-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
-# --- (Alibaba) ---,REJECT
+# --- (Alibaba) ---
 HOST,tunion-api.m.taobao.com,REJECT
-# > YOUKU,REJECT
+# > YOUKU
 HOST-SUFFIX,atm.youku.com,REJECT
 HOST,ad.mobile.youku.com,REJECT
 HOST,iyes.youku.com,REJECT
 HOST,pl.cp31.ott.cibntv.net,REJECT
-# > AMap,REJECT
+# > AMap
 HOST,optimus-ads.amap.com,REJECT
 HOST,optimus-ads.amap.com.w.alikunlun.com,REJECT
-# ------,REJECT
-# > Autohome,REJECT
+# ------
+# > Autohome
 HOST,adproxy.autohome.com.cn,REJECT
 HOST,rd.autohome.com.cn,REJECT
 HOST,al.autohome.com.cn,REJECT
@@ -254,8 +254,8 @@ HOST,adm0.autoimg.cn,REJECT
 HOST,adm1.autoimg.cn,REJECT
 HOST,adm2.autoimg.cn,REJECT
 HOST,adm3.autoimg.cn,REJECT
-# (B),REJECT
-# --- (Baidu) ---,REJECT
+# (B)
+# --- (Baidu) ---
 HOST,afd.baidu.com,REJECT
 HOST,als.baidu.com,REJECT
 HOST,duclick.baidu.com,REJECT
@@ -263,23 +263,23 @@ HOST,mobads.baidu.com,REJECT
 HOST,mobads-logs.baidu.com,REJECT
 HOST,nadvideo2.baidu.com,REJECT
 HOST,nsclick.baidu.com,REJECT
-# > iQIYI,REJECT
+# > iQIYI
 HOST,t7z.cupid.iqiyi.com,REJECT
 HOST,t7z.cupid.ptqy.gitv.tv,REJECT
 IP-CIDR,101.227.97.240/32,REJECT
 IP-CIDR,101.227.200.11/32,REJECT
 IP-CIDR,101.227.200.28/32,REJECT
 IP-CIDR,124.192.153.42/32,REJECT
-# > ByteDance,REJECT
+# > ByteDance
 HOST,ad.toutiao.com,REJECT
 HOST,pangolin.snssdk.com,REJECT
-# > baicizhan,REJECT
+# > baicizhan
 HOST,advertise.baicizhan.com,REJECT
 HOST,advertise.baicizhan.org,REJECT
-# > BitAuto,REJECT
+# > BitAuto
 HOST,adx.yiche.com,REJECT
 HOST,log.ycapp.yiche.com,REJECT
-# > Braze,REJECT
+# > Braze
 HOST-SUFFIX,iad.appboy.com,REJECT
 HOST-SUFFIX,iad-03.appboy.com,REJECT
 HOST-SUFFIX,iad-01.braze.com,REJECT
@@ -289,38 +289,38 @@ HOST-SUFFIX,iad-04.braze.com,REJECT
 HOST-SUFFIX,iad-05.braze.com,REJECT
 HOST-SUFFIX,iad-06.braze.com,REJECT
 HOST-SUFFIX,iad-08.braze.com,REJECT
-# (C),REJECT
-# > CCTVVideo,REJECT
+# (C)
+# > CCTVVideo
 HOST,adstore-index-1252524079.file.myqcloud.com,REJECT
-# > CNTV,REJECT
+# > CNTV
 HOST,galaxy.bjcathay.com,REJECT
 HOST,mdrecv.app.cntvwb.cn,REJECT
 HOST,sdapprecv.app.cntvwb.cn,REJECT
 HOST,vdapprecv.app.cntvwb.cn,REJECT
-# > ChinaTelecom,REJECT
+# > ChinaTelecom
 HOST,ad.21cn.com,REJECT
 HOST,ad.k.21cn.com,REJECT
 HOST,admarket.21cn.com,REJECT
 HOST,adshows.21cn.com,REJECT
-# > Chelaile,REJECT
+# > Chelaile
 HOST,atrace.chelaile.net.cn,REJECT
 HOST,logs.chelaile.net.cn,REJECT
-# > Camera360,REJECT
+# > Camera360
 HOST,dispatcher.360in.com,REJECT
 HOST,ad.360in.com,REJECT
 HOST,exp.360in.com,REJECT
-# (G),REJECT
-# > Google,REJECT
+# (G)
+# > Google
 HOST,ads.youtube.com,REJECT
-# (H),REJECT
-# > HunanTV,REJECT
+# (H)
+# > HunanTV
 HOST-SUFFIX,da.mgtv.com,REJECT
 HOST-SUFFIX,v2.hunantv.com,REJECT
-# > Hupu,REJECT
+# > Hupu
 HOST,adx.hupu.com,REJECT
 HOST,adx-api.hupu.com,REJECT
 HOST,goblin.hupu.com,REJECT
-# > happycast,REJECT
+# > happycast
 HOST,ad.hpplay.cn,REJECT
 HOST,adc.hpplay.cn,REJECT
 HOST,adcdn.hpplay.cn,REJECT
@@ -328,13 +328,13 @@ HOST,adeng.hpplay.cn,REJECT
 HOST,pin.hpplay.cn,REJECT
 HOST,rp.hpplay.cn,REJECT
 HOST,rpt.hpplay.cn,REJECT
-# (J),REJECT
-# >jxedt,REJECT
+# (J)
+# >jxedt
 HOST,richmanapi.jxedt.com,REJECT
 HOST,richmanmain.jxedt.com,REJECT
 HOST,richmanrules.jxedt.com,REJECT
-# (K),REJECT
-# > Kingsoft,REJECT
+# (K)
+# > Kingsoft
 HOST,ad-stat.ksosoft.com,REJECT
 HOST,img.auction-ads.wpscdn.cn,REJECT
 HOST,counter.kingsoft.com,REJECT
@@ -343,30 +343,30 @@ HOST,minfo.wps.cn,REJECT
 HOST,mobad.ijinshan.com,REJECT
 HOST,ups.ksmobile.net,REJECT
 HOST,ws.ksmobile.net,REJECT
-# > Kuaishou,REJECT
+# > Kuaishou
 HOST,js-ad.a.yximgs.com,REJECT
-# (L),REJECT
-# > Le,REJECT
+# (L)
+# > Le
 HOST-SUFFIX,webp2p.letv.com,REJECT
 HOST,ark.letv.com,REJECT
 HOST,emma-414870e223.huodonghezi.com,REJECT
 HOST,g3.letv.com,REJECT
 HOST,n.mark.letv.com,REJECT
-# > LinkWiFi,REJECT
+# > LinkWiFi
 HOST,a.wkanx.com,REJECT
 HOST,cwx.lianwangtech.com,REJECT
 HOST,c1wx.lianwangtech.com,REJECT
-# (M),REJECT
-# > Microsoft,REJECT
+# (M)
+# > Microsoft
 HOST-SUFFIX,rads.msn.com,REJECT
 HOST,mobileads.msn.com,REJECT
-# > MojiWeather,REJECT
+# > MojiWeather
 HOST,ad.api.moji.com,REJECT
 HOST,adlaunch.moji.com,REJECT
 HOST,ads.mojicdn.com,REJECT
 HOST,v1.log.moji.com,REJECT
-# (N),REJECT
-# > NetEase,REJECT
+# (N)
+# > NetEase
 HOST,ad.bn.netease.com,REJECT
 HOST,ad.yixin.im,REJECT
 HOST,admusicpic.music.126.net,REJECT
@@ -381,53 +381,53 @@ HOST,n.3g.163.com,REJECT
 HOST,nex.163.com,REJECT
 HOST,yt-adp.nosdn.127.net,REJECT
 HOST,yt-adp.ws.126.net,REJECT
-# (P),REJECT
-# > PPTV,REJECT
+# (P)
+# > PPTV
 HOST,ads.aplus.pptv.com,REJECT
 HOST,ads.aplusapi.pptv.com,REJECT
 HOST,asimgs.pplive.cn,REJECT
 HOST,de.as.pptv.com,REJECT
-# > Photoable,REJECT
+# > Photoable
 HOST,regist.fotoable.com,REJECT
 HOST,cdn.adapi.fotoable.com,REJECT
-# > PeanutWiFi,REJECT
+# > PeanutWiFi
 HOST,adnew.wifi8.com,REJECT
 HOST,adfile.wifi8.com,REJECT
-# > PConline,REJECT
+# > PConline
 HOST,ad-analysis.pconline.com.cn,REJECT
 HOST,iad0ssl.pcauto.com.cn,REJECT
 HOST,iad0ssl.pconline.com.cn,REJECT
 HOST,imgad0.pcauto.com.cn,REJECT
 HOST,imgad0.pconline.com.cn,REJECT
 HOST,ivy.pchouse.com.cn,REJECT
-# > Phoenix New Media,REJECT
+# > Phoenix New Media
 HOST,api.newad.ifeng.com,REJECT
 HOST,ifengad.3g.ifeng.com,REJECT
-# (Q),REJECT
-# > QingTing,REJECT
+# (Q)
+# > QingTing
 HOST,ad.qingting.fm,REJECT
 HOST,adlaunch.qingting.fm,REJECT
 HOST,ad-cdn.qingting.fm,REJECT
-# > OPPO,REJECT
+# > OPPO
 HOST-SUFFIX,ads.oppomobile.com,REJECT
 HOST,adsfs.oppomobile.com,REJECT
-# (S),REJECT
-# > Sina,REJECT
+# (S)
+# > Sina
 HOST,adimg.uve.weibo.com,REJECT
 HOST,adimg.vue.weibo.com,REJECT
 HOST,u1.img.mobile.sina.cn,REJECT
 HOST,sax.sina.com.cn,REJECT
 HOST,saxs.sina.com.cn,REJECT
 HOST,saxn.sina.com.cn,REJECT
-# > SOHU,REJECT
+# > SOHU
 HOST,imp.optaim.com,REJECT
 HOST,v2.reachmax.cn,REJECT
 HOST,hui.sohu.com,REJECT
-# > Snapcha‪t‬,REJECT
+# > Snapcha‪t‬
 HOST,ads.snapchat.com,REJECT
 HOST,adsapi.snapchat.com,REJECT
-# (T),REJECT
-# --- (Tencent) ---,REJECT
+# (T)
+# --- (Tencent) ---
 HOST-SUFFIX,l.qq.com,REJECT
 HOST,adsmind.apdcdn.tc.qq.com,REJECT
 HOST,adsmind.gdtimg.com,REJECT
@@ -439,7 +439,7 @@ HOST,splashqqlive.gtimg.com,REJECT
 HOST,wa.gtimg.com,REJECT
 HOST,wxsnsdy.wxs.qq.com,REJECT
 HOST,wxsnsdythumb.wxs.qq.com,REJECT
-# > Tencent Music (TME),REJECT
+# > Tencent Music (TME)
 HOST,ad.tencentmusic.com,REJECT
 HOST,adstats.tencentmusic.com,REJECT
 HOST,adserviceretry.kugou.com,REJECT
@@ -451,22 +451,22 @@ HOST,kgmobilestatbak.kugou.com,REJECT
 HOST,mobilelog.kugou.com,REJECT
 HOST,mobilead.kuwo.cn,REJECT
 HOST,rich.kuwo.cn,REJECT
-# > TongHuaShun,REJECT
+# > TongHuaShun
 HOST,adm.10jqka.com.cn,REJECT
 HOST,stat.10jqka.com.cn,REJECT
-# > The Paper,REJECT
+# > The Paper
 HOST,admonitor.thepaper.cn,REJECT
 HOST,adpai.thepaper.cn,REJECT
 HOST,imgadpai.thepaper.cn,REJECT
-# > Thunder,REJECT
+# > Thunder
 HOST,adsp.xunlei.com,REJECT
 HOST,etl.xlmc.sandai.net,REJECT
-# (V),REJECT
-# > VariFlight,REJECT
+# (V)
+# > VariFlight
 HOST,adv-adlog.variflight.com,REJECT
 HOST,adv-ads.variflight.com,REJECT
 HOST,app-ad.variflight.com,REJECT
-# > vivo,REJECT
+# > vivo
 HOST,adlog.vivo.com.cn,REJECT
 HOST,adreq.vivo.com.cn,REJECT
 HOST,ads-marketing-vivofs.vivo.com.cn,REJECT
@@ -476,12 +476,12 @@ HOST,adxlog.vivo.com.cn,REJECT
 HOST,vcardsdkservice.vivo.com.cn,REJECT
 HOST-KEYWORD,stsdk.vivo.com.cn,REJECT
 HOST-KEYWORD,stsdk.vivoglobal.com,REJECT
-# > Viber,REJECT
+# > Viber
 HOST,ads.viber.com,REJECT
 HOST,ads-d.viber.com,REJECT
 HOST,ads.aws.viber.com,REJECT
-# (X),REJECT
-# > Ximalaya,REJECT
+# (X)
+# > Ximalaya
 HOST,ad.ximalaya.com,REJECT
 HOST,adbs.ximalaya.com,REJECT
 HOST,adse.ximalaya.com,REJECT
@@ -489,13 +489,13 @@ HOST,adse.wsa.ximalaya.com,REJECT
 HOST,adbehavior.wsa.ximalaya.com,REJECT
 HOST,adbehavior.ximalaya.com,REJECT
 HOST,adsebs.ximalaya.com,REJECT
-# > Xiaohongshu,REJECT
+# > Xiaohongshu
 HOST,ads-img-qc.xhscdn.com,REJECT
 HOST,ads-video-al.xhscdn.com,REJECT
 HOST,ads-video-qc.xhscdn.com,REJECT
 HOST,t-ads.xiaohongshu.com,REJECT
-# (Y),REJECT
-# > Yahoo,REJECT
+# (Y)
+# > Yahoo
 HOST-SUFFIX,adspecs.yahoo.com,REJECT
 HOST-SUFFIX,advertising.yahoo.com,REJECT
 HOST,admarketing.yahoo.net,REJECT
@@ -503,8 +503,8 @@ HOST,ads.auctions.yahoo.com,REJECT
 HOST,ads.finance.yahoo.com,REJECT
 HOST,ads.yahoo.com,REJECT
 HOST,ads.yahoo.de,REJECT
-# (Z),REJECT
-# > Zhihu,REJECT
+# (Z)
+# > Zhihu
 USER-AGENT,AVOS*,REJECT
 HOST,appcloud2.in.zhihu.com,REJECT
 HOST,mqtt.zhihu.com,REJECT
@@ -512,6 +512,6 @@ HOST,sugar.zhihu.com,REJECT
 HOST,118.89.204.198,REJECT
 IP-CIDR,118.89.204.198/32,REJECT
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
-# > ZOL,REJECT
+# > ZOL
 HOST,apppv.zol.com.cn,REJECT
 HOST,pvnapp.zol.com.cn,REJECT
