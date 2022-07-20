@@ -22,5 +22,5 @@ HOST,safebrowsing.googleapis.com,DIRECT
 HOST-SUFFIX,233py.com,DIRECT
 HOST-SUFFIX,passcloud.xyz,DIRECT
 HOST-SUFFIX,xns.one,DIRECT
-HOST,proxy.safebrowsing.apple,PROXY
-HOST,token.safebrowsing.apple,PROXY
+# > Apple
+HOST-SUFFIX,safebrowsing.apple,PROXY
