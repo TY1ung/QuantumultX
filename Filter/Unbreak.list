@@ -2,7 +2,6 @@
 # > General
 #HOST,app.adjust.com,DIRECT
 #HOST,bdtj.tagtic.cn,DIRECT
-HOST,safebrowsing.googleapis.com,DIRECT
 # > Alibaba
 #HOST,log.mmstat.com,DIRECT
 #HOST,sycm.mmstat.com,DIRECT
@@ -19,8 +18,7 @@ HOST,safebrowsing.googleapis.com,DIRECT
 #HOST,msg.umeng.com,DIRECT
 #HOST,msg.umengcloud.com,DIRECT
 # > DoH
-HOST-SUFFIX,233py.com,DIRECT
-HOST-SUFFIX,passcloud.xyz,DIRECT
 HOST-SUFFIX,xns.one,DIRECT
 # > Apple
+HOST,safebrowsing.googleapis.com,DIRECT
 HOST-SUFFIX,safebrowsing.apple,PROXY
