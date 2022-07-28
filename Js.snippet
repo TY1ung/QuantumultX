@@ -1,7 +1,8 @@
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, nomo.dafork.com, pay.wecut.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, *.wtzw.com, ipadcms.caixin.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com
 
 # Remove Ads + unlock vip
 # Weibo - %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com
+^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_main.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/comments/build_comments\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_comment.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(statuses/unread_hot_timeline|statuses/friends/timeline|video/tiny_stream_video_list|statuses/unread_friends_timeline)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_statuses.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(searchall|page)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_cardlist.js
@@ -13,33 +14,33 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/Wechat.js
 
 # > Douyin(<= 16.2.0) - api*.amemv.com,aweme.snssdk.com
-#https?:\/\/(.+?)\.amemv\.com\/aweme\/v2\/feed\/ url request-header GET \/aweme\/v\d\/(.+\r\n) request-header GET /aweme/v1/$1
-#https?:\/\/(.+?)\.amemv\.com\/aweme\/v\d\/feed\/ url script-response-body https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/douyin.js
+; https?:\/\/(.+?)\.amemv\.com\/aweme\/v2\/feed\/ url request-header GET \/aweme\/v\d\/(.+\r\n) request-header GET /aweme/v1/$1
+; https?:\/\/(.+?)\.amemv\.com\/aweme\/v\d\/feed\/ url script-response-body https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/douyin.js
 
 # > TB_price - trade-acs.m.taobao.com
-;^http://.+/amdc/mobileDispatch url script-request-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-;^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+; ^http://.+/amdc/mobileDispatch url script-request-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+; ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
 # > JD_price - api.m.jd.com
-;^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://cdn.jsdelivr.net/gh/JDHelloWorld/jd_price@main/jd_price.js
+; ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://cdn.jsdelivr.net/gh/JDHelloWorld/jd_price@main/jd_price.js
 
 # > Caiyun vip - biz.caiyunapp.com
-# ^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/ColorWeather.js
+; ^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/ColorWeather.js
 
 # > 91 short - *.my10api.com,
-# ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
+; ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
 
 # > Nomo - nomo.dafork.com
-# ^https?:\/\/nomo\.dafork\.com\/api\/v3\/register\/phone_signin$ url script-response-body NoMoPro.js
+; ^https?:\/\/nomo\.dafork\.com\/api\/v3\/register\/phone_signin$ url script-response-body NoMoPro.js
 
 # > MolyCam - pay.wecut.com
-^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
+; ^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
 
 # > vsco - api.revenuecat.com
-#^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/vsco.js
+# ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/vsco.js
 
 # > adguardpremium
-#^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url script-response-body https://cdn.jsdelivr.net/gh/langkhach270389/Quantumult-X-LK@master/Scripts/langkhach/adguard.js
+# ^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url script-response-body https://cdn.jsdelivr.net/gh/langkhach270389/Quantumult-X-LK@master/Scripts/langkhach/adguard.js
 
 # > PornHubPremium
 ^https?:\/\/cn\.pornhubpremium.com\/ url script-request-header https://cdn.jsdelivr.net/gh/yqc007/QuantumultX@master/PornHubPremiumCrack.js
@@ -51,4 +52,4 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/ipadcms\.caixin\.com\/(api|tmp|power)\/(articles?|myfree(v\d+)?) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXinWeekly.js
 
 # > 七猫小说 - *.wtzw.com
-^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+; ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
