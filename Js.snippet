@@ -1,4 +1,4 @@
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, nomo.dafork.com, pay.wecut.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, *.wtzw.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, nomo.dafork.com, pay.wecut.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, *.wtzw.com, ipadcms.caixin.com
 
 # Remove Ads + unlock vip
 # Weibo - %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com
@@ -46,6 +46,9 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 
 # > Caixin - gateway.caixin.com
 ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth) url script-request-header https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXin.js
+
+# CaixinWeekly - ipadcms.caixin.com
+^https?:\/\/ipadcms\.caixin\.com\/(api|tmp|power)\/(articles?|myfree(v\d+)?) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXinWeekly.js
 
 # > 七猫小说 - *.wtzw.com
 ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
