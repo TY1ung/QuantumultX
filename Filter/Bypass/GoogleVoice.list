@@ -1,4 +1,5 @@
 # > GoogleVoice
+HOST,imap.gmail.com,GoogleVoice
 HOST,lens.l.google.com,GoogleVoice
 HOST-SUFFIX,googleusercontent.com,GoogleVoice
 HOST-SUFFIX,googleapis.com,GoogleVoice
