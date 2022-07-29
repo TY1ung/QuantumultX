@@ -7,7 +7,6 @@ USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*,Google
 USER-AGENT,*com.google.Drive*,Google
 USER-AGENT,Google.Drive*,Google
 HOST-KEYWORD,blogspot,Google
-HOST-KEYWORD,gmail,Google
 HOST-KEYWORD,appspot,Google
 HOST-KEYWORD,google,Google
 HOST-KEYWORD,googlesource,Google
