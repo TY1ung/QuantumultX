@@ -1,6 +1,5 @@
 # Advertising
 # > General
-HOST-KEYWORD,adservice,REJECT
 
 HOST-SUFFIX,1rtb.com,REJECT
 HOST-SUFFIX,1xl.co.uk,REJECT
@@ -223,7 +222,6 @@ HOST,nativeadv.dftoutiao.com,REJECT
 HOST,toots-a.akamaihd.net,REJECT
 HOST,videoads-cloud.rovio.com,REJECT
 HOST,video-ads-module.ad-tech.nbcuni.com,REJECT
-
 # (0~9)
 # > 51wnl
 HOST,ad.51wnl-cq.com,REJECT
@@ -423,7 +421,7 @@ HOST,saxn.sina.com.cn,REJECT
 HOST,imp.optaim.com,REJECT
 HOST,v2.reachmax.cn,REJECT
 HOST,hui.sohu.com,REJECT
-# > Snapcha‪t‬
+# > Snapchat
 HOST,ads.snapchat.com,REJECT
 HOST,adsapi.snapchat.com,REJECT
 # (T)
