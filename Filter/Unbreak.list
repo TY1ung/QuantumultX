@@ -20,5 +20,4 @@
 # > DoH
 HOST-SUFFIX,xns.one,DIRECT
 # > Apple
-HOST,safebrowsing.googleapis.com,DIRECT
 HOST-SUFFIX,safebrowsing.apple,PROXY
