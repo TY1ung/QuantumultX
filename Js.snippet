@@ -2,6 +2,7 @@ hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixi
 
 # Remove Ads + unlock vip
 # Weibo - %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com
+^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_main.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/comments/build_comments\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_comment.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(statuses/unread_hot_timeline|statuses/friends/timeline|video/tiny_stream_video_list|statuses/unread_friends_timeline)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_statuses.js
 http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(searchall|page)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_cardlist.js
