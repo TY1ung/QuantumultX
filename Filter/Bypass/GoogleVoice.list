@@ -1,5 +1,5 @@
 # > GoogleVoice
-HOST-KEYWORD,gmail,GoogleVoice
-HOST,lens.l.google.com,GoogleVoice
-HOST-SUFFIX,googleusercontent.com,GoogleVoice
-HOST-SUFFIX,googleapis.com,GoogleVoice
+DOMAIN-KEYWORD,gmail,GoogleVoice
+DOMAIN,lens.l.google.com,GoogleVoice
+DOMAIN-SUFFIX,googleusercontent.com,GoogleVoice
+DOMAIN-SUFFIX,googleapis.com,GoogleVoice
