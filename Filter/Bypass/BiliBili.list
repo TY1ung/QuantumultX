@@ -1,0 +1,9 @@
+# > BiliBiliIntl
+
+HOST,apm-misaka.biliapi.net,BiliBili
+HOST,p-bstarstatic.akamaized.net,BiliBili
+HOST,p.bstarstatic.com,BiliBili
+HOST,upos-bstar-mirrorakam.akamaized.net,BiliBili
+HOST,upos-bstar1-mirrorakam.akamaized.net,BiliBili
+HOST-SUFFIX,bilibili.tv,BiliBili
+HOST-SUFFIX,biliintl.com,BiliBili
