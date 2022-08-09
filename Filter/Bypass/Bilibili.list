@@ -1,9 +1,14 @@
-# > BilibiliIntl
+# > Bilibili
 
-HOST,apm-misaka.biliapi.net,PROXY
-HOST,p-bstarstatic.akamaized.net,PROXY
-HOST,p.bstarstatic.com,PROXY
-HOST,upos-bstar-mirrorakam.akamaized.net,PROXY
-HOST,upos-bstar1-mirrorakam.akamaized.net,PROXY
-HOST-SUFFIX,PROXY.tv,PROXY
-HOST-SUFFIX,biliintl.com,PROXY
+host,api.biliapi.com,PROXY
+host,api.biliapi.net,PROXY
+host,api.bilibili.com,PROXY
+host,app.biliapi.com,PROXY
+host,app.biliapi.net,PROXY
+host,app.bilibili.com,PROXY
+host,grpc.biliapi.net,PROXY
+host,m.bilibili.com,PROXY
+host,upos-hz-mirrorakam.akamaized.net,PROXY
+host,www.bilibili.com,PROXY
+host-keyword,cn-hk-eq-bcache-,PROXY
+ip-cidr,121.11.192.0/24,PROXY
