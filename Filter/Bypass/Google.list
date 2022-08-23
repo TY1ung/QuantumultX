@@ -13,6 +13,7 @@ DOMAIN-KEYWORD,google,Google
 DOMAIN-KEYWORD,googlesource,Google
 DOMAIN-KEYWORD,gstatic,Google
 DOMAIN-KEYWORD,recaptcha,Google
+DOMAIN-KEYWORD,youtube,Google
 IP-CIDR,173.194.0.0/16,Google
 IP-CIDR,74.125.0.0/16,Google
 IP-CIDR,172.110.32.0/21,Google
