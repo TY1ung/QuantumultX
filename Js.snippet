@@ -1,14 +1,10 @@
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com
 
 # Remove Ads + unlock vip
-# Weibo - %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com
-^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_main.js
-http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/comments/build_comments\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_comment.js
-http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(statuses/unread_hot_timeline|statuses/friends/timeline|video/tiny_stream_video_list|statuses/unread_friends_timeline)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_statuses.js
-http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(searchall|page)\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_cardlist.js
-http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/cardlist\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_cardlist_discover.js
-http-response ^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/statuses/extend\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_statuses_extend.js
-http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/weibo/weibo_sdkad.js
+# Weibo - api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, new.vip.weibo.cn
+^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|messageflow|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline|unread_topic_timeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item|search/(finder|container_timeline|container_discover)) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
+^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 
 # > Wechat (By Choler) - mp.weixin.qq.com
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/Wechat.js
@@ -53,3 +49,15 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 
 # > 七猫小说 - *.wtzw.com
 ; ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+
+# > 什么值得买
+^https?:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/homepage-api\.smzdm\.com\/v3\/home url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/haojia-api\.smzdm\.com\/home\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10 url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
+
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, new.vip.weibo.cn, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com
