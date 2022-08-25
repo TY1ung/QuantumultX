@@ -1,14 +1,5 @@
-# Redirect Google Search Service
-^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
+# > General
 
-# Redirect Google Maps Service
-^https?:\/\/(ditu|maps).google\.cn url 302 https://maps.google.com
-
-# Turn Off Google Safesearch(Beta)
-(https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=strict&)(.+) url 302 $1&safe=off
-https://www\.google\.com\.hk\/search\?q=([\w.]+)&.+ url 302 https://www.google.com.sg/search?q=$1&safe=off
-
-# > 
 ^https:\/\/god\.gameyw\.netease\.com\/v1\/ad\/.* url reject
 ^https?://cdn\.fivecdm\.com/cr/ url reject
 ^https?://ssp\.dzh\.com\.cn/v2api/adgroupjson url reject
