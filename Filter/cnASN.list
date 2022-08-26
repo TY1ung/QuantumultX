@@ -169,6 +169,7 @@ IP-ASN,38057,DIRECT // Dell (China) Co.,Ltd
 IP-ASN,38238,DIRECT // Societe Generale (China) Limited
 IP-ASN,38255,DIRECT // China Education and Research Network (CERNET)
 IP-ASN,38272,DIRECT // China Education and Research Network (CERNET)
+IP-ASN,38281,DIRECT // SSL Corporation
 IP-ASN,38283,DIRECT // CHINANET SiChuan Telecom Internet Data Center
 IP-ASN,38323,DIRECT // Meifeng Advertising Co., Ltd.
 IP-ASN,38337,DIRECT // NIU Telecommunications Inc
@@ -460,6 +461,7 @@ IP-ASN,135357,DIRECT // Shenzhen Katherine Heng Technology Information Co., Ltd.
 IP-ASN,135363,DIRECT // Beijing Dunhuang Heguang Information Technology Co.,Lt.
 IP-ASN,135629,DIRECT // Ningxia West Cloud Data Technology Co.Ltd.
 IP-ASN,135646,DIRECT // Luginbash AS
+IP-ASN,135663,DIRECT // ShenZhen rainbow Computer Network company Limited
 IP-ASN,135671,DIRECT // RBB InfoTech
 IP-ASN,136146,DIRECT // Beijing 3389 Network Technology Co., Ltd.
 IP-ASN,136160,DIRECT // Beijing Shijihulian Yuntong Network Technology Co., Ltd.
@@ -824,9 +826,11 @@ IP-ASN,141739,DIRECT // China Telecom
 IP-ASN,141771,DIRECT // China Telecom
 IP-ASN,141776,DIRECT // Baoshuo Network
 IP-ASN,141998,DIRECT // China Telecom
+IP-ASN,142031,DIRECT // Nanjing Echofa Precision Mould Manufacturing Co., Ltd.
 IP-ASN,142048,DIRECT // vscloud.cc
 IP-ASN,142111,DIRECT // Zhejiang Aiyun Network Technology Co Ltd
 IP-ASN,142112,DIRECT // Star Horizon Tech Inc
+IP-ASN,142158,DIRECT // Neko LLC
 IP-ASN,142164,DIRECT // GoldDoge Computer Technologies & Networks Information Center
 IP-ASN,142280,DIRECT // NaiveTomcat Education and Research Experimental Network Backbone
 IP-ASN,142284,DIRECT // Koala Network
