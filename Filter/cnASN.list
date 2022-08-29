@@ -80,7 +80,6 @@ IP-ASN,18239,DIRECT // CAPNET - NO.11 Xi San Huan Zhong Road,Beijing
 IP-ASN,18241,DIRECT // SPINET - State Power Information Net
 IP-ASN,18242,DIRECT // CDIH - Chengdu Information Harbor Co., Ltd
 IP-ASN,18243,DIRECT // Shanghai-EaseNet - 5th Floor, Builidng 9, No.690 Bi Bo Road, Shanghai, China
-IP-ASN,18244,DIRECT // STIDC - Stateline Internet Data Center Co., Ltd. Shanghai
 IP-ASN,18245,DIRECT // Founderbn - CNNIC
 IP-ASN,18257,DIRECT // BITCOMM-AS - ChangZhou Bitcomm Software Technology Co., Limited
 IP-ASN,23650,DIRECT // CHINANET-Jiangsu-Province-IDC - China Telecom
@@ -433,7 +432,6 @@ IP-ASN,134488,DIRECT // CTJ-AS-AP - Ningbo Dahuamao Information Technology Co Lt
 IP-ASN,134542,DIRECT // UNICOM-GUIAN - China Unicom IP network
 IP-ASN,134543,DIRECT // UNICOM-DongGuan-IDC - China Unicom Guangdong IP network
 IP-ASN,134578,DIRECT // UFWDTL-AS-AP - UNION FU WAH DIGITAL TECHNOLOGY LIMITED
-IP-ASN,134602,DIRECT // SHUIM-AS-AP - Shanghai Huajuan Information Technology Co., Ltd.
 IP-ASN,134708,DIRECT // TLY-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,134756,DIRECT // ChinaNet-NANJING-JISHAN-IDC - China Telecom
 IP-ASN,134760,DIRECT // ChinaNet-Hebei-Shijiazhuang-IDC - Shijiazhuang IDC network, CHINANET Hebei province
@@ -859,6 +857,7 @@ IP-ASN,149648,DIRECT // FLNTCL-AS-AP - Fuzhou Lefeng Networks Technology Co., Lt
 IP-ASN,149795,DIRECT // ZHIJIE-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,149837,DIRECT // ChinaNet-JX-Yunhe-IDC - China Telecom
 IP-ASN,149979,DIRECT // ChinaNet-Hunan-Across-region-IDC - China Telecom
+IP-ASN,203236,DIRECT // RIPE NCC ASN block
 IP-ASN,203804,DIRECT // arkerny - Pengyuan Fan
 IP-ASN,203874,DIRECT // MIREYA-AS - Haoyu Jin
 IP-ASN,203888,DIRECT // YU-Net - Yu Li
