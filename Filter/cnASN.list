@@ -73,7 +73,6 @@ IP-ASN,17830,DIRECT // David Liu aka PotatoNet
 IP-ASN,17897,DIRECT // asn for Heilongjiang Provincial Net of CT
 IP-ASN,17962,DIRECT // ShenZhen Topway Video Communication Co. Ltd
 IP-ASN,17964,DIRECT // Beijing Dian-Xin-Tong Network Technologies Co., Ltd.
-IP-ASN,17966,DIRECT // China Information Broadcast Network Ltd.Co.
 IP-ASN,17968,DIRECT // Daqing zhongji petroleum telecommunication construction limited cpmpany
 IP-ASN,17969,DIRECT // ChongQing Broadcast & TV Transfer Network Co. Ltd
 IP-ASN,18118,DIRECT // CITIC Networks Management Co.,Ltd.
@@ -336,7 +335,6 @@ IP-ASN,63582,DIRECT // Chinese Academy of Telecommunication Research
 IP-ASN,63583,DIRECT // Chinese Academy of Telecommunication Research
 IP-ASN,63590,DIRECT // Hebei Broadcasting&TV Network
 IP-ASN,63593,DIRECT // Guangdong HeyTap Technology Co., Ltd.
-IP-ASN,63598,DIRECT // Hebei Kun Time Network Technology Co. Ltd.
 IP-ASN,63603,DIRECT // GSS China
 IP-ASN,63612,DIRECT // Shenzhen Qianhai bird cloud computing Co. Ltd.
 IP-ASN,63614,DIRECT // A4, 5th Floor, Tower C, Triumph Plaza, Unit A, No 143,
@@ -460,7 +458,6 @@ IP-ASN,135357,DIRECT // Shenzhen Katherine Heng Technology Information Co., Ltd.
 IP-ASN,135363,DIRECT // Beijing Dunhuang Heguang Information Technology Co.,Lt.
 IP-ASN,135629,DIRECT // Ningxia West Cloud Data Technology Co.Ltd.
 IP-ASN,135646,DIRECT // Luginbash AS
-IP-ASN,135663,DIRECT // ShenZhen rainbow Computer Network company Limited
 IP-ASN,135671,DIRECT // RBB InfoTech
 IP-ASN,136146,DIRECT // Beijing 3389 Network Technology Co., Ltd.
 IP-ASN,136160,DIRECT // Beijing Shijihulian Yuntong Network Technology Co., Ltd.
@@ -851,6 +848,7 @@ IP-ASN,146753,DIRECT // kgzxnet
 IP-ASN,146758,DIRECT // ShangHai Sensetime Technology Development Co., Ltd.
 IP-ASN,146769,DIRECT // Maanshan xinghuo Network Technology Co., Ltd
 IP-ASN,146814,DIRECT // Hong Kong University of Science and Technology, Dongchung Town,
+IP-ASN,146822,DIRECT // Shenzhenshi Zhongyun Shujujishu Youxiangongsi
 IP-ASN,146834,DIRECT // SiChuan XunYou Network Technologe Limit, co
 IP-ASN,146842,DIRECT // ChinaDataCom Corporation Limited
 IP-ASN,146845,DIRECT // Shanghai Longjing Information Technology Co., Ltd
@@ -866,6 +864,9 @@ IP-ASN,149648,DIRECT // Fuzhou Lefeng Networks Technology Co., Ltd.
 IP-ASN,149795,DIRECT // Zhijie Jin
 IP-ASN,149837,DIRECT // China Telecom
 IP-ASN,149979,DIRECT // China Telecom
+IP-ASN,150173,DIRECT // PoloCloud Computing (Hong Kong) Limited
+IP-ASN,150184,DIRECT // Chen Chi
+IP-ASN,203133,DIRECT // Tao Zhang
 IP-ASN,203236,DIRECT // Mingyang Shen
 IP-ASN,203804,DIRECT // Pengyuan Fan
 IP-ASN,203874,DIRECT // Haoyu Jin
