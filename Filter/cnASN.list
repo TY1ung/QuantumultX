@@ -538,7 +538,6 @@ IP-ASN,137882,DIRECT // Huajuan Enterprise Network
 IP-ASN,138029,DIRECT // Shen Zhen Hu Lian Xian Feng Technology Co., Limited
 IP-ASN,138169,DIRECT // China Telecom
 IP-ASN,138182,DIRECT // CERNET2 regional IX at Hebei Normal University
-IP-ASN,138211,DIRECT // MoeQing Network Service
 IP-ASN,138369,DIRECT // CERNET2 regional IX at Shenzhen University
 IP-ASN,138370,DIRECT // CERNET2 regional IX at Nanchang University
 IP-ASN,138371,DIRECT // CERNET2 regional IX at Ocean University of China
@@ -853,6 +852,7 @@ IP-ASN,146834,DIRECT // SiChuan XunYou Network Technologe Limit, co
 IP-ASN,146842,DIRECT // ChinaDataCom Corporation Limited
 IP-ASN,146845,DIRECT // Shanghai Longjing Information Technology Co., Ltd
 IP-ASN,146966,DIRECT // China Telecom
+IP-ASN,147008,DIRECT // Shenzhen Dianjiang Technology Co Ltd
 IP-ASN,148969,DIRECT // China Telecom
 IP-ASN,149056,DIRECT // Harbin Liangyue Network Technology Co., Ltd.
 IP-ASN,149178,DIRECT // China Telecom
@@ -864,10 +864,13 @@ IP-ASN,149648,DIRECT // Fuzhou Lefeng Networks Technology Co., Ltd.
 IP-ASN,149795,DIRECT // Zhijie Jin
 IP-ASN,149837,DIRECT // China Telecom
 IP-ASN,149979,DIRECT // China Telecom
+IP-ASN,150141,DIRECT // Wang Jiacheng
 IP-ASN,150173,DIRECT // PoloCloud Computing (Hong Kong) Limited
 IP-ASN,150184,DIRECT // Chen Chi
+IP-ASN,203023,DIRECT // Cheng Zhuang
 IP-ASN,203133,DIRECT // Tao Zhang
 IP-ASN,203236,DIRECT // Mingyang Shen
+IP-ASN,203664,DIRECT // LAN XING trading as "Haikou Meilan Lanxing Electronic Technology Trading House"
 IP-ASN,203804,DIRECT // Pengyuan Fan
 IP-ASN,203874,DIRECT // Haoyu Jin
 IP-ASN,203888,DIRECT // Yu Li
