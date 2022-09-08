@@ -50,7 +50,7 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/ipadcms\.caixin\.com\/(api|tmp|power)\/(articles?|myfree(v\d+)?) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXinWeekly.js
 
 # > 七猫小说 - *.wtzw.com
-; ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
 
 # > 什么值得买
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
@@ -62,4 +62,4 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 ^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, *.wtzw.com
