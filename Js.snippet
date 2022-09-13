@@ -32,7 +32,7 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ; ^https?:\/\/nomo\.dafork\.com\/api\/v3\/register\/phone_signin$ url script-response-body NoMoPro.js
 
 # > MolyCam - pay.wecut.com
-; ^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
+^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
 
 # > vsco - api.revenuecat.com
 # ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/vsco.js
@@ -69,4 +69,4 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/(www\.google)(\.\w{2,4}){1,2}\/search\?(?!.*?(apps=)).* url script-response-body https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js
 
 
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, *.wtzw.com, ddrk.me, ddys.tv, ddys2.me, www.google.com
+hostname = pay.wecut.com, %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, mp.weixin.qq.com, cn.pornhubpremium.com, gateway.caixin.com, ipadcms.caixin.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, *.wtzw.com, ddrk.me, ddys.tv, ddys2.me, www.google.com
