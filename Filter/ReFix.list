@@ -1,2 +1,3 @@
 DOMAIN-KEYWORD,duolingo,PROXY
 DOMAIN-SUFFIX,iqmtp.live,direct
+DOMAIN-SUFFIX,push.apple.com,direct
