@@ -324,6 +324,7 @@ IP-ASN,63548,DIRECT // Lenovo-BeiJing - LENOVO (BEIJING) Co.ltd
 IP-ASN,63555,DIRECT // CNBIDCC - Beijing Beilong Yunhai Network Data Technology Corporation
 IP-ASN,63561,DIRECT // WESTONE - China Electronics Technology Cyber Security Co.,LTD
 IP-ASN,63565,DIRECT // YHWLM - Beijing lian guang tong network technology co., LTD
+IP-ASN,63566,DIRECT // YWNET - Beijing yiwangxin science and Technology Development Co., Ltd.
 IP-ASN,63570,DIRECT // China Internet Network Information Center
 IP-ASN,63571,DIRECT // GWLink - Shenzhen cyberlink Century Investment Co., Ltd.
 IP-ASN,63580,DIRECT // Novartis-CN - China Novartis Institutes for Bio-Medical Research Co., Ltd.
@@ -846,8 +847,10 @@ IP-ASN,146845,DIRECT // LJNET - Shanghai Longjing Information Technology Co., Lt
 IP-ASN,146958,DIRECT // KAKAWAN-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,146966,DIRECT // CHINANET-YANGZHOUNORTH-IDC - China Telecom
 IP-ASN,147008,DIRECT // DIANJIANG-AS-AP - Shenzhen Dianjiang Technology Co Ltd
+IP-ASN,147038,DIRECT // CHINANET-QINGYANG-IDC - China Telecom
 IP-ASN,148969,DIRECT // CHINANET-JIANGXI-LINKONG-IDC - China Telecom
 IP-ASN,149056,DIRECT // LIANGYUE-AS-AP - Harbin Liangyue Network Technology Co., Ltd.
+IP-ASN,149163,DIRECT // SHUANGSEN-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,149178,DIRECT // CT-HEFEI-NANGANG-IDC - China Telecom
 IP-ASN,149292,DIRECT // YFNET-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,149475,DIRECT // NTITC-AS-AP - Nanjing Tiankai Information Technology Co.Ltd.
