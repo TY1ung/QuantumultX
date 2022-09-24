@@ -1,3 +1,4 @@
 HOST-KEYWORD,duolingo,PROXY
 HOST-SUFFIX,iqmtp.live,direct
 HOST-SUFFIX,push.apple.com,direct
+HOST-SUFFIX,time.apple.com,direct
