@@ -318,7 +318,7 @@ IP-ASN,59080,DIRECT // Yakue - Beijing HuaxiaYakue Network Technology Co., Ltd.
 IP-ASN,59083,DIRECT // KHTech - Shanghai Kuanhui Tech. Co.,ltd
 IP-ASN,59089,DIRECT // CloudVsp - NO.18 Building University of Technology
 IP-ASN,59201,DIRECT // CERNET-PKU-AS - Peking University
-IP-ASN,59265,DIRECT // CT-CNGI - China telecom â China Next Generation Internet
+IP-ASN,59265,DIRECT // CT-CNGI - China telecom China Next Generation Internet
 IP-ASN,63531,DIRECT // bw - Beijing BAIWU Technology Co., Ltd.
 IP-ASN,63548,DIRECT // Lenovo-BeiJing - LENOVO (BEIJING) Co.ltd
 IP-ASN,63555,DIRECT // CNBIDCC - Beijing Beilong Yunhai Network Data Technology Corporation
@@ -349,9 +349,6 @@ IP-ASN,63646,DIRECT // XJKJ - Beijing Xiaoju Science and Technology Co., Ltd.
 IP-ASN,63648,DIRECT // XJKJ - Beijing Xiaoju Science and Technology Co., Ltd.
 IP-ASN,63655,DIRECT // HWDGNET - Huawei Technologies Co., Ltd
 IP-ASN,63673,DIRECT // PINGANCOM - Shenzhen Ping An Communication Technology Co.,Ltd
-IP-ASN,63677,DIRECT // XDCPLUSB - Jiangsu Cloud Ever Information Technology Co. Ltd.
-IP-ASN,63678,DIRECT // XDCPLUSB - Jiangsu Cloud Ever Information Technology Co. Ltd.
-IP-ASN,63679,DIRECT // XDCPLUSA - Jiangsu Cloud Together Information Technology Co. Ltd.
 IP-ASN,63689,DIRECT // ESUNNET - Esun Technology(Shanghai) Co.,Ltd
 IP-ASN,63690,DIRECT // CDTNET - China Dragon Telecom Co.,Ltd
 IP-ASN,63695,DIRECT // WYNETWORK - WeiYi Network Technology Co., Ltd
@@ -447,7 +444,6 @@ IP-ASN,134771,DIRECT // CHINATELECOM-ZHEJIANG-WENZHOU-IDC - WENZHOU, ZHEJIANG Pr
 IP-ASN,134772,DIRECT // ChinaNet-Guangdong-Dongguan-MAN - CHINANET Guangdong province Dongguan MAN network
 IP-ASN,134773,DIRECT // ChinaNet-Guangdong-Guangzhou-MAN - CHINANET Guangdong province Guangzhou MAN network
 IP-ASN,134774,DIRECT // ChinaNet-Guangdong-Shenzhen-MAN - CHINANET Guangdong province Shenzhen MAN network
-IP-ASN,134775,DIRECT // ChinaNet-Guangdong-Zhusanjiao-MAN - CHINANET Guangdong province Zhusanjiao MAN network
 IP-ASN,134810,DIRECT // CMNET-JILIN-AS-AP - China Mobile Communications Corporation
 IP-ASN,134993,DIRECT // ILEMONRAIN-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,135006,DIRECT // BHICL-AS-AP - Bit Huitong (Beijing) Information Co., Ltd.
@@ -467,15 +463,12 @@ IP-ASN,136189,DIRECT // OPERA-AS-AP - Opera Software Technology (Beijing) Co., L
 IP-ASN,136190,DIRECT // CHINATELECOM-ZHEJIANG-JINHUA-IDC - JINHUA, ZHEJIANG Province
 IP-ASN,136191,DIRECT // CHINATELECOM-HUBEI-YICHANG-IDC - YICHANG, Hubei Province
 IP-ASN,136192,DIRECT // CHINATELECOM-HUBEI-XIANGYANG-IDC - Xiangyang, Hubei Province
-IP-ASN,136193,DIRECT // CHINATELECOM-HUBEI-JINGZHOU-IDC - Jingzhou, Hubei Province
 IP-ASN,136194,DIRECT // CHINATELECOM-HUBEI-HUANGSHI-IDC - Huangshi, Hubei Province
 IP-ASN,136195,DIRECT // CHINATELECOM-QINGDAO-CLOUDBASE - Qingdao, Shandong Province
 IP-ASN,136197,DIRECT // CHINATELECOM-HEBEI-XIONGAN - Xiong'an, Hebei Province
 IP-ASN,136198,DIRECT // ChinaNet-Guangdong-Yuexi-MAN - CHINANET Guangdong province Yuexi MAN network
-IP-ASN,136199,DIRECT // ChinaNet-Guangdong-Yuedong-MAN - CHINANET Guangdong province Yuedong MAN network
 IP-ASN,136200,DIRECT // ChinaNet-Guangdong-Foshan-MAN - CHINANET Guangdong province Foshan MAN network
 IP-ASN,136237,DIRECT // SSCTC-AS-AP - Shanghai Shuangyu Communication Technology co.,Ltd.
-IP-ASN,136250,DIRECT // ZQHWL-AS-AP - ZhongShanShi QiYi HuDong WangLuoKeJi Ltd
 IP-ASN,136545,DIRECT // BlueNET - KLAYER LLC
 IP-ASN,136591,DIRECT // MXXCLOUD-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,136600,DIRECT // FENGNIAO - Beijing Fengniao Network Technology Co., Ltd
@@ -548,7 +541,6 @@ IP-ASN,138378,DIRECT // CNGI-KMN-IX-AS-AP - China Education and Research Network
 IP-ASN,138381,DIRECT // CNGI-GYN-IX-AS-AP - China Education and Research Network (CERNET)
 IP-ASN,138387,DIRECT // CHINATELECOM-SHAANXI-XIAN-5G-NETWORK - China Telecom
 IP-ASN,138393,DIRECT // CNGI-NAN-IX-AS-AP - China Education and Research Network (CERNET)
-IP-ASN,138405,DIRECT // L-KS - Shijiazhuang Xuding Technology Co., Ltd
 IP-ASN,138407,DIRECT // CMNET-GZIDC-CN - China Mobile Communications Corporation
 IP-ASN,138409,DIRECT // CHINATELECOM-SHAANXI-TONGCHUAN-5G-NETWORK - China Telecom
 IP-ASN,138421,DIRECT // CU-CN-AS - China Unicom
@@ -608,7 +600,6 @@ IP-ASN,139231,DIRECT // ZERO-AS-AP - Ningbo Dahuamao Information Technology Co L
 IP-ASN,139247,DIRECT // PPPWAW-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,139249,DIRECT // ENMOE-AS-CN - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,139266,DIRECT // GTITCL-AS-AP - Guangzhou Tiansui Information Technology Co., Ltd.
-IP-ASN,139316,DIRECT // CHINANET-Hubei-Huanggang-IDC - China Telecom
 IP-ASN,139317,DIRECT // ZX-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,139328,DIRECT // HAIMANETWORK-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,139462,DIRECT // CHINANET-GY-AS - China Telecom
@@ -623,10 +614,8 @@ IP-ASN,139767,DIRECT // CHINANET-AS-OA - China Telecom
 IP-ASN,139796,DIRECT // JIUYAONET-AS-CN - Wuhan LSHIY Network Technology Co., Ltd.
 IP-ASN,139799,DIRECT // BDIITCL-AS-AP - Beijing Dajia Internet Information Technology Co., Ltd.
 IP-ASN,139833,DIRECT // EVSIO0N-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
-IP-ASN,139866,DIRECT // APNTCL-AS-AP - Ankang Puchuang Network Technology Co., Ltd.
 IP-ASN,139887,DIRECT // ChinaNet-Yantai-IDC - China Telecom
 IP-ASN,139888,DIRECT // D430-COM-AS-AP - Wuhan LSHIY Network Technology Co., Ltd.
-IP-ASN,139908,DIRECT // HZNET-AS-AP - Karamay Hzon Network Technology Development Co.,Ltd.
 IP-ASN,140053,DIRECT // CHINANET-HUIZHOU-AS-AP - China Telecom
 IP-ASN,140056,DIRECT // CHINANET-MAOMING-AS-AP - China Telecom
 IP-ASN,140061,DIRECT // CHINANET-Qinghai-AS-AP - China Telecom
@@ -666,16 +655,8 @@ IP-ASN,140300,DIRECT // CHINATELECOM-JIANGSU-SUQIAN-5G-NETWORK - China Telecom
 IP-ASN,140301,DIRECT // CHINATELECOM-JIANGSU-TAIZHOU-5G-NETWORK - China Telecom
 IP-ASN,140302,DIRECT // CHINATELECOM-JIANGSU-ZHENJIANG-5G-NETWORK - China Telecom
 IP-ASN,140303,DIRECT // CHINATELECOM-JIANGSU-HUAIAN-5G-NETWORK - China Telecom
-IP-ASN,140308,DIRECT // CHINATELECOM-GUANGDONG-ZHUHAI-5G-NETWORK - China Telecom
 IP-ASN,140309,DIRECT // CHINATELECOM-GUANGDONG-ZHONGSHAN-5G-NETWORK - China Telecom
-IP-ASN,140310,DIRECT // CHINATELECOM-GUANGDONG-DONGGUAN-5G-NETWORK - China Telecom
 IP-ASN,140311,DIRECT // CHINATELECOM-GUANGDONG-JIANGMEN-5G-NETWORK - China Telecom
-IP-ASN,140312,DIRECT // CHINATELECOM-GUANGDONG-ZHANJIANG-5G-NETWORK - China Telecom
-IP-ASN,140313,DIRECT // CHINATELECOM-GUANGDONG-ZHAOQING-5G-NETWORK - CHINATELECOM Guangdong province Zhaoqing 5G network
-IP-ASN,140314,DIRECT // CHINATELECOM-GUANGDONG-SHANTOU-5G-NETWORK - CHINATELECOM Guangdong province Shantou 5G network
-IP-ASN,140315,DIRECT // CHINATELECOM-GUANGDONG-JIEYANG-5G-NETWORK - China Telecom
-IP-ASN,140316,DIRECT // CHINATELECOM-GUANGDONG-CHAOZHOU-5G-NETWORK - China Telecom
-IP-ASN,140317,DIRECT // CHINATELECOM-GUANGDONG-SHAOGUAN-5G-NETWORK - China Telecom
 IP-ASN,140318,DIRECT // CHINATELECOM-GUANGDONG-HEYUAN-5G-NETWORK - China Telecom
 IP-ASN,140319,DIRECT // CHINATELECOM-GUANGDONG-QINGYUAN-5G-NETWORK - China Telecom
 IP-ASN,140320,DIRECT // CHINATELECOM-GUANGDONG-SHANWEI-5G-NETWORK - China Telecom
@@ -849,7 +830,6 @@ IP-ASN,146966,DIRECT // CHINANET-YANGZHOUNORTH-IDC - China Telecom
 IP-ASN,147008,DIRECT // DIANJIANG-AS-AP - Shenzhen Dianjiang Technology Co Ltd
 IP-ASN,147038,DIRECT // CHINANET-QINGYANG-IDC - China Telecom
 IP-ASN,148969,DIRECT // CHINANET-JIANGXI-LINKONG-IDC - China Telecom
-IP-ASN,149056,DIRECT // LIANGYUE-AS-AP - Harbin Liangyue Network Technology Co., Ltd.
 IP-ASN,149163,DIRECT // SHUANGSEN-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,149178,DIRECT // CT-HEFEI-NANGANG-IDC - China Telecom
 IP-ASN,149292,DIRECT // YFNET-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
@@ -864,6 +844,7 @@ IP-ASN,150141,DIRECT // W1N0DL-AS-AP - Ningbo Dahuamao Information Technology Co
 IP-ASN,150145,DIRECT // CHINANET-HUBEI-SANXIA-IDC - China Telecom
 IP-ASN,150173,DIRECT // POLOCLOUD-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,150184,DIRECT // OWONET-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
+IP-ASN,150323,DIRECT // XIN-AS-AP - Ningbo Dahuamao Information Technology Co Ltd
 IP-ASN,203023,DIRECT // CANOZIIA-AS - Cheng Zhuang
 IP-ASN,203133,DIRECT // HABAOR-AS - Tao Zhang
 IP-ASN,203236,DIRECT // Lily-Network - Mingyang Shen
