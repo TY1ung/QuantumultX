@@ -47,7 +47,7 @@ http-response ^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$ require
 ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth) url script-request-header https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXin.js
 
 # > CaixinWeekly - ipadcms.caixin.com
-^https?:\/\/ipadcms\.caixin\.com\/(api|tmp|power)\/(articles?|myfree(v\d+)?) url script-response-body https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/CaiXinWeekly.js
+http://ipadcms.caixin.com/tmp/articles/* url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/cxzk.js
 
 # > 七猫小说 - *.wtzw.com
 ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
