@@ -7,13 +7,13 @@
 # ^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 
 # > Wechat (By Choler) - mp.weixin.qq.com
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/Wechat.js
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body Wechat.js
 
 # > 91 short - *.my10api.com
 # ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
 
 # > Nicegram - restore-access.indream.app
-^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ url script-echo-response https://raw.githubusercontent.com/TY1ung/QuantumultX/master/Scripts/Nicegram.js
+^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ url script-echo-response Nicegram.js
 
 # > MolyCam - pay.wecut.com
 ^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
@@ -53,6 +53,6 @@ https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body ht
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body Pandora.js
 
 # > Pillow - api.revenuecat.com
-https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body pillow.js
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body Pillow.js
 
 hostname = restore-access.indream.app, biz.caiyunapp.com, pay.wecut.com, mp.weixin.qq.com, ddrk.me, ddys.tv, ddys2.me, youtubei.googleapis.com, bmall.camera360.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, buy.itunes.apple.com
