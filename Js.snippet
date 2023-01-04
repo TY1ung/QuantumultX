@@ -6,7 +6,7 @@
 # ^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 # ^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 
-# > Amap - optimus-ads.amap.com, m5.amap.com, sns.amap.com
+# > Amap - optimus-ads.amap.com, m*.amap.com, sns.amap.com
 ^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 ^https?:\/\/sns\.amap\.com\/ws\/msgbox\/pull url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
@@ -20,7 +20,7 @@
 # ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
 
 # > Nicegram - restore-access.indream.app
-^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ url script-echo-response Nicegram.js
+# ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ url script-echo-response Nicegram.js
 
 # > MolyCam - pay.wecut.com
 ^https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php url script-response-body https://cdn.jsdelivr.net/gh/sirsunknight/QuantumultX@master/Scripts/MolyCam.js
@@ -65,4 +65,4 @@ https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-b
 # > Xmind - www.xmind.cn, www.xmind.net, www.xmind.app
 https?:\/\/www\.xmind\.(cn|net|app)\/\_res\/devices url script-response-body Xmind.js
 
-hostname = optimus-ads.amap.com, m5.amap.com, sns.amap.com,restore-access.indream.app, biz.caiyunapp.com, pay.wecut.com, mp.weixin.qq.com, ddrk.me, ddys.tv, ddys2.me, bmall.camera360.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, buy.itunes.apple.com, www.xmind.cn, www.xmind.net, www.xmind.app
+hostname = optimus-ads.amap.com, m*.amap.com, sns.amap.com, pay.wecut.com, mp.weixin.qq.com, ddrk.me, ddys.tv, ddys2.me, bmall.camera360.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, buy.itunes.apple.com, www.xmind.cn, www.xmind.net, www.xmind.app
