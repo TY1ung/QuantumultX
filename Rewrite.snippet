@@ -29,7 +29,6 @@
 ^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg url reject
 ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/limitedAds$ url reject
 ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ url reject
-^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ url reject
 ^https:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash url reject-200
 ^https:\/\/us\.l\.qq\.com\/exapp\?spsa=\d url reject
 ^https:\/\/vip7\.fzwdyy\.cn:8083\/api\/(getAdvertInfo|getGOOGAdvert) url reject
@@ -40,6 +39,13 @@
 ^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native url reject
 ^https?:\/\/(mobile|shop)\.laichon\.com\/api\/(v1\/goods\/goodsList|exposureAdvStatistics|getWebAdvList) url reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
+^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif url reject-img
+^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution url reject
+^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information url reject-200
+^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? url reject-dict
+^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list url reject-dict
+^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend url reject-dict
+^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather url reject-dict
 ^https?:\/\/.*\/yyting\/advertclient\/ClientAdvertList.action url reject
 ^https?:\/\/.*mangaapi\.manhuaren\.com\/(v2\/public\/getStartUpMessage|v1\/public\/getStartPageAds) url reject
 ^https?:\/\/.*mangaapi\.manhuaren\.com\/v2\/ad\/getMultiAdsStrategy url reject
@@ -71,7 +77,6 @@
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners url reject
 ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
-^https?:\/\/api\.dangdang\.com\/mapi\d\/mobile\/init url reject
 ^https?:\/\/api\.dangdang\.com\/mapi\d\/mobile\/init url reject
 ^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.* url reject
 ^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash url reject
@@ -113,7 +118,6 @@
 ^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad url reject
 ^https?:\/\/atrace.chelaile.net.cn\/adpub\/ url reject
 ^https?:\/\/atrace.chelaile.net.cn\/exhibit\?&adv_image url reject
-^https?:\/\/bgw\.xinyue\.qq\.com\/xyapi\.PageService\/GetIndexPopFlash url reject
 ^https?:\/\/bgw\.xinyue\.qq\.com\/xyapi\.PageService\/GetIndexPopFlash url reject
 ^https?:\/\/bp-api\.bestv\.com\.cn\/cms\/api\/(free\/open\/advertisingV2|c\/home\/searchMark) url reject
 ^https?:\/\/business\.msstatic\.com\/advertiser\/material url reject
@@ -165,6 +169,22 @@
 ^https?:\/\/img\.jiemian\.com\/ads\/ url reject
 ^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject
 ^https?:\/\/img\.meituan\.net\/(bizad|brandCpt)\/\w+\.(png|jpg) url reject
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ad\/ url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/feed\/inserted url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/hotcomment\/collect url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ios\/upgrade url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/position\/show\/resource url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/scene\/show\/resource url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/middle\/clientcfg\/config url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/resource-exposure\/activity\/config url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default\/keyword url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/rcmd\/keyword url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/specialkeyword url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/sp\/flow url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/v1\/content\/exposure\/comment url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?eapi\/resource-exposure\/config url reject-dict
 ^https?:\/\/jad-api\.jin10\.com\/ad url reject
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens url reject-200
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup url reject-200
