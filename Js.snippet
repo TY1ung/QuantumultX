@@ -1,6 +1,7 @@
 # Remove Ads + unlock vip
 
 # > Amap - *.amap.com
+^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 ^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
 ^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
@@ -63,12 +64,7 @@ https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body ht
 https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body Pillow.js
 
 # > Weibo - *api.weibo*, *uve.weibo.com, new.vip.weibo.cn
-^https?:\/\/api\.weibo\.cn\/\d\/!\/huati\/discovery_home_bottom_getdotinfo url reject-dict
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d/push/daily url reject-dict
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
-^https?:\/\/(preload-click|preload-impression)\.uve\.weibo\.com\/(interface\/wbpullad\/wbpullad_click\.php|wbapplua\/get_wbpullad_log\.lua) url reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php url reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/hot\/hours_spotlight url reject-dict
 ^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(searchall|page\?|messageflow) url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
@@ -80,8 +76,6 @@ https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-b
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/search/(finder|container_timeline|container_discover) url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/(checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item) url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users url reject-dict
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? url reject-dict
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info url echo-response text/html echo-response https://github.com/ddgksf2013/Scripts/raw/master/weibo_search_info.json
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic url echo-response text/html echo-response https://github.com/ddgksf2013/Scripts/raw/master/weibo_search_topic.json
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
