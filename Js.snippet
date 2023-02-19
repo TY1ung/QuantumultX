@@ -63,7 +63,9 @@ https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body ht
 # > Pillow - api.revenuecat.com
 https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body Pillow.js
 
-# > Weibo - *api.weibo*, *uve.weibo.com, new.vip.weibo.cn
+# > Weibo - *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, boot.biz.weibo.com
+^https?:\/\/boot\.biz\.weibo\.com\/v1\/ad\/realtime url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
+^https?:\/\/api\.weibo\.cn\/\d\/video\/tiny_stream_mid_detail url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/\w{5}\/cardlist url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
 ^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weibo_json.js
@@ -95,4 +97,4 @@ https?:\/\/www\.xmind\.(cn|net|app)\/\_res\/devices url script-response-body Xmi
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
 
-hostname = *.amap.com, app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, ipadcms.caixin.com, pay.wecut.com, mp.weixin.qq.com, ddrk.me, ddys.tv, ddys2.me, bmall.camera360.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, buy.itunes.apple.com, www.xmind.cn, www.xmind.net, www.xmind.app, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
+hostname = *.amap.com, app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, ipadcms.caixin.com, pay.wecut.com, mp.weixin.qq.com, ddrk.me, ddys.tv, ddys2.me, bmall.camera360.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, buy.itunes.apple.com, www.xmind.cn, www.xmind.net, www.xmind.app, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, boot.biz.weibo.com, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
