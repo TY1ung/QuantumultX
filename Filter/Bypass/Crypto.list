@@ -5,14 +5,7 @@ HOST-SUFFIX,bitcointalk.org,Crypto
 
 # Exchange
 # > Binance
-HOST-SUFFIX,binance.cc,Crypto
-HOST-SUFFIX,binance.cloud,Crypto
-HOST-SUFFIX,binance.com,Crypto
-HOST-SUFFIX,binance.gg,Crypto
-HOST-SUFFIX,binance.im,Crypto
-HOST-SUFFIX,binance.me,Crypto
-HOST-SUFFIX,binance.us,Crypto
-HOST-SUFFIX,binancezh.cc,Crypto
+HOST-KEYWORD,binance,Crypto
 HOST-SUFFIX,bnappzh.co,Crypto
 HOST-SUFFIX,bnappzh.com,Crypto
 HOST-SUFFIX,bnbstatic.com,Crypto
