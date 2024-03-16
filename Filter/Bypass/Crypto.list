@@ -1,4 +1,7 @@
 HOST-KEYWORD,crypto,Crypto
+HOST-KEYWORD,huobi,Crypto
+HOST-KEYWORD,metamask,Crypto
+HOST-KEYWORD,okx,Crypto
 
 # Forum
 HOST-SUFFIX,bitcointalk.org,Crypto
